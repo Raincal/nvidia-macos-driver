@@ -7,6 +7,7 @@ from pathlib import Path, PurePosixPath
 import posixpath
 import shutil
 import struct
+import subprocess
 import tarfile
 import urllib.request
 from importlib.machinery import SourceFileLoader
@@ -77,7 +78,12 @@ def main():
             raise SystemExit("Unexpected package kext destination.")
         shutil.rmtree(target)
         shutil.copytree(out / "kexts" / (name + ".kext"), target)
+        # 官方包里 NVRM 是 adhoc 签名的，install.sh 不会再替它签（只有 primary 分支才签）。
+        # 源码构建不带签名，不补的话装完 codesign 报 "not signed at all"。
+        subprocess.run(["codesign", "--force", "--sign", "-", str(target)], check=True)
+        subprocess.run(["codesign", "--verify", "--strict", str(target)], check=True)
     proof["replaced_kexts"] = ["NVRM"]
+    proof["signed_kexts"] = ["NVRM"]
     retained = {name: sha for name, sha in stock_files.items()
                 if name != "SHA256SUMS" and not name.startswith("Library/Extensions/NVRM.kext/")}
     for name, sha in retained.items():

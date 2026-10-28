@@ -173,6 +173,30 @@ def native_flags(exported, sdk, headers, resource, root, vendor):
             *retained, *["-I" + str(p) for p in includes]]
 
 
+def stamp_release_version(bundle):
+    """把 Info.plist 里的占位版本换成实际的上游版本。
+
+    kexts/NVRM/Info.plist 在源码树里一直写着 0.1；官方是在发布流水线里把它改成
+    实际 tag 的，公开仓库里没有这一步。不补的话装上去 ioreg 和 kmutil 都会报 0.1，
+    看起来像装错了版本。
+    """
+    tag_file = Path(__file__).resolve().parents[1] / "ci/upstream-tag"
+    if not tag_file.is_file():
+        return
+    version = tag_file.read_text().strip().lstrip("v")
+    if not version:
+        return
+    plist_path = bundle / "Contents/Info.plist"
+    raw = plist_path.read_bytes()
+    fmt = plistlib.FMT_BINARY if raw.startswith(b"bplist00") else plistlib.FMT_XML
+    data = plistlib.loads(raw)
+    if data.get("CFBundleVersion") == version and data.get("CFBundleShortVersionString") == version:
+        return
+    data["CFBundleVersion"] = version
+    data["CFBundleShortVersionString"] = version
+    plist_path.write_bytes(plistlib.dumps(data, fmt=fmt))
+
+
 def link_kext(name, objects, archives, plist, sdk, out):
     bundle = out / "kexts" / (name + ".kext")
     binary = bundle / "Contents/MacOS" / name
@@ -183,6 +207,7 @@ def link_kext(name, objects, archives, plist, sdk, out):
         log=out / "logs" / (name + "-link.log"))
     shutil.copy2(plist, bundle / "Contents/Info.plist")
     plistlib.loads((bundle / "Contents/Info.plist").read_bytes())
+    stamp_release_version(bundle)
     run(["xcrun", "lipo", str(binary), "-verify_arch", "x86_64"])
     description = run(["file", str(binary)])
     if "kext bundle" not in description:
