@@ -32,6 +32,7 @@ jobs:
     timeout-minutes: 10
     outputs:
       tag: ${{ steps.c.outputs.tag }}
+      ver: ${{ steps.c.outputs.ver }}
       build: ${{ steps.c.outputs.build }}
     steps:
       - uses: actions/checkout@v4
@@ -91,6 +92,7 @@ jobs:
 
           print(reason)
           out("tag", tag)
+          out("ver", tag.lstrip("v"))
           out("build", "true" if build else "false")
           PY
 
@@ -101,6 +103,7 @@ jobs:
     timeout-minutes: 120
     env:
       TAG: ${{ needs.check.outputs.tag }}
+      VER: ${{ needs.check.outputs.ver }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -181,7 +184,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: nvrm-${{ env.TAG }}-${{ github.run_number }}
+          name: nullmoth-${{ env.VER }}-bar-preflight-${{ github.run_number }}
           path: |
             src/build-out/nullmoth-*.tar.gz
             src/build-out/1401-*.zip
@@ -196,7 +199,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: logs-${{ env.TAG }}-${{ github.run_number }}
+          name: logs-${{ env.VER }}-${{ github.run_number }}
           path: src/build-out/logs/
           if-no-files-found: ignore
           retention-days: 7

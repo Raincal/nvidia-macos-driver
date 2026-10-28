@@ -87,14 +87,14 @@ def main():
     proof["stock_package_sha256"] = args.stock_sha
     proof["stock_components_retained"] = ["NVRMFB", "NVAccel", "NVRMAGDC", "all user-space and firmware files", "official install and uninstall scripts"]
     proof["package_note"] = f"BAR preflight port on NullMoth {tag} (bar-preflight branch). Not hardware validated."
-    (package / "Library/NullMoth/bar-preflight-v1.json").parent.mkdir(parents=True, exist_ok=True)
-    (package / "Library/NullMoth/bar-preflight-v1.json").write_text(json.dumps(proof, indent=2) + "\n")
+    (package / "Library/NullMoth/bar-preflight.json").parent.mkdir(parents=True, exist_ok=True)
+    (package / "Library/NullMoth/bar-preflight.json").write_text(json.dumps(proof, indent=2) + "\n")
     (package / "EXPERIMENTAL-BUILD.json").write_text(json.dumps(proof, indent=2) + "\n")
     checksum = package / "SHA256SUMS"
     lines = [f"{digest(p)}  {p.relative_to(package).as_posix()}" for p in sorted(package.rglob("*"))
              if p.is_file() and p != checksum and not p.is_symlink()]
     checksum.write_text("\n".join(lines) + "\n")
-    suffix = "bar-preflight-v1"
+    suffix = "bar-preflight"
     archive = out / f"nullmoth-{tag.lstrip('v')}-{suffix}.tar.gz"
     with tarfile.open(archive, "w:gz") as tf:
         tf.add(package, arcname="pkgroot")
