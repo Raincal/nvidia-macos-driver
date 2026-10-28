@@ -45,6 +45,7 @@ def main():
     out = args.output.resolve()
     if out == root or not out.is_relative_to(root):
         raise SystemExit("Output must be a build directory inside this checkout.")
+    tag = args.tag or (root / "ci/upstream-tag").read_text().strip()
     proof = json.loads((out / "build-proof.json").read_text())
     if proof["status"] != "KEXTS_COMPILED_HARDWARE_NOT_TESTED" or proof["experiment"] != "bar-preflight-port":
         raise SystemExit("Both kext builds must succeed before packaging.")
@@ -94,7 +95,6 @@ def main():
              if p.is_file() and p != checksum and not p.is_symlink()]
     checksum.write_text("\n".join(lines) + "\n")
     suffix = "bar-preflight-v1"
-    tag = args.tag or (root / "ci/upstream-tag").read_text().strip()
     archive = out / f"nullmoth-{tag.lstrip('v')}-{suffix}.tar.gz"
     with tarfile.open(archive, "w:gz") as tf:
         tf.add(package, arcname="pkgroot")
