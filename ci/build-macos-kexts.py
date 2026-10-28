@@ -75,13 +75,35 @@ def export_vendor(root, vendor, component, out):
     return directory, flags, sources, spdm_sources, spdm_flags, cc_flags, cxx_flags
 
 
+# 命中缓存的编译单元计数（缓存恢复后只重编真正变动过的文件）
+_CACHED = {"n": 0}
+
+
+def source_key(source_path, flags):
+    """内容 + 编译参数的哈希：同一个 .o 只有源和参数都没变才可复用。
+
+    不能用路径做键 —— 换上游 tag 时路径不变而内容变了，会错误复用旧对象。
+    """
+    h = hashlib.sha256(source_path.read_bytes())
+    for flag in flags:
+        h.update(b"\0")
+        h.update(flag.encode())
+    return h.hexdigest()[:14]
+
+
+def object_path(source_path, flags, out, label):
+    return out / "objects" / label / (source_path.stem + "-" + source_key(source_path, flags) + ".o")
+
+
 def compile_one(source, directory, flags, out, label):
     source_path = (directory / source).resolve()
     if not source_path.is_file():
         raise RuntimeError(f"Missing source: {source_path}")
-    key = hashlib.sha256(str(source_path).encode()).hexdigest()[:14]
-    obj = out / "objects" / label / (source_path.stem + "-" + key + ".o")
+    obj = object_path(source_path, flags, out, label)
     obj.parent.mkdir(parents=True, exist_ok=True)
+    if obj.is_file() and obj.stat().st_size > 0:
+        _CACHED["n"] += 1
+        return obj
     log = out / "logs" / label / (obj.stem + ".log")
     compiler = "clang++" if source_path.suffix in (".cpp", ".cc", ".cxx") else "clang"
     command = ["xcrun", compiler, *flags, "-c", str(source_path), "-o", str(obj)]
@@ -97,6 +119,7 @@ def build_archive(component, exported, common, out, jobs):
         extra = spdm_flags if source in spdm_sources else []
         language_flags = cxx_flags if Path(source).suffix in (".cpp", ".cc", ".cxx") else cc_flags
         commands.append((source, directory, [*flags, *language_flags, *common, *extra], out, component))
+    before = _CACHED["n"]
     print(f"Compiling {component}: {len(commands)} sources", flush=True)
     with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
         futures = {pool.submit(compile_one, *command): command[0] for command in commands}
@@ -115,6 +138,9 @@ def build_archive(component, exported, common, out, jobs):
                 print(f"{component}: {completed}/{len(commands)} compiled", flush=True)
         if errors:
             raise RuntimeError("\n".join(errors))
+    cached = _CACHED["n"] - before
+    if cached:
+        print(f"{component}: {cached}/{len(commands)} 直接复用缓存对象，跳过编译", flush=True)
     archive = out / f"lib{component}.a"
     run(["xcrun", "libtool", "-static", "-o", str(archive), *map(str, sorted(objects))],
         log=out / "logs" / f"{component}-archive.log")
