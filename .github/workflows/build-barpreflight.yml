@@ -1,33 +1,71 @@
-name: Build NVRM (bar-preflight, Intel)
+name: Build NVRM (bar-preflight port)
 
-# 在 GitHub 的 Intel runner 上，用 ci/ 里的构建链把当前分支的源码编成 kext。
-# 分支 bar-preflight = 上游 tag + 构建链 + 社区 BAR preflight 移植，
-# 上游升级做法见 ci/UPSTREAM.md。
+# 两种触发：
+#   1. 手动：指定上游 tag（留空 = 最新 release）
+#   2. 定时：每天 04:00 (CST) 检查上游是否有新 release，有就自动构建
+# 构建方式：克隆上游 tag → 拷入 ci/ → 应用社区 BAR preflight 移植补丁 → 编译 → 打包
+# 成功后把 tag 写回 ci/upstream-tag 并提交，下次定时检查据此判断是否已构建。
 
 on:
   workflow_dispatch:
-  push:
-    branches: [bar-preflight]
-    paths-ignore: ['ci/UPSTREAM.md', '**.md']
+    inputs:
+      tag:
+        description: "上游 tag（留空 = 最新 release）"
+        required: false
+      package:
+        description: "打包成完整驱动（否则只留 kext）"
+        type: boolean
+        default: true
+  schedule:
+    - cron: '0 20 * * *'      # 20:00 UTC = 04:00 CST
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: bar-preflight-${{ github.ref }}
-  cancel-in-progress: true
+  group: bar-preflight-build
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: macos-15-intel
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
-          persist-credentials: false
+
+      - name: Resolve upstream tag
+        id: r
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ inputs.tag }}"
+          if [ -z "$TAG" ]; then
+            TAG=$(gh api repos/nullmoth/nvidia-macos-driver/releases/latest --jq .tag_name)
+          fi
+          BASE=$(cat ci/upstream-tag)
+          echo "tag=$TAG"   >> "$GITHUB_OUTPUT"
+          echo "base=$BASE" >> "$GITHUB_OUTPUT"
+          if [ "$TAG" = "$BASE" ]; then
+            echo "skip=true"  >> "$GITHUB_OUTPUT"
+            echo "上游仍是 $TAG，无需构建"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+            echo "将构建 $TAG（上次构建的是 $BASE）"
+          fi
+
+      - name: Decide whether to build
+        id: gate
+        run: |
+          if [ "${{ steps.r.outputs.skip }}" = "true" ] && [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Toolchain
+        if: steps.gate.outputs.run == 'true'
         run: |
           test "$(uname -m)" = x86_64
           if [ -d /Applications/Xcode_16.4.app ]; then
@@ -35,10 +73,23 @@ jobs:
           fi
           xcodebuild -version
           command -v gmake || brew install make
-          echo "upstream tag: $(cat ci/upstream-tag 2>/dev/null || echo unknown)"
+
+      - name: Fetch upstream tree + apply the port patch
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          TAG="${{ steps.r.outputs.tag }}"
+          git clone --depth 1 --branch "$TAG" https://github.com/nullmoth/nvidia-macos-driver.git src
+          cp -R ci src/ci
+          echo "$TAG" > src/ci/upstream-tag
+          cd src
+          git apply -3 ci/patches/community-bar-preflight.patch \
+            || { echo "STOP: 移植补丁套不上 $TAG，需要人工 rebase 后更新 ci/patches/community-bar-preflight.patch"; exit 1; }
+          grep -n "nvrmBarAddressMax(physBits" kexts/NVRM/NVRM.cpp
 
       - name: Fetch pinned NVIDIA source and apply patches
+        if: steps.gate.outputs.run == 'true'
         run: |
+          cd src
           mkdir -p .deps build-out/logs
           git clone --depth 1 --branch 615.78.08 https://github.com/NVIDIA/open-gpu-kernel-modules.git .deps/open-gpu-kernel-modules
           test "$(git -C .deps/open-gpu-kernel-modules rev-parse HEAD)" = 1a82fbfda8f321b056eb3568850f9316c5e465c5
@@ -49,39 +100,52 @@ jobs:
           git apply --directory=src/nvidia-modeset ../../kexts/NVRM/patches/610-backlight-register-log.patch
           git apply --recount --directory=src/nvidia-modeset ../../kexts/NVRM/patches/615-viewport-scaling.patch
 
-      - name: Show the ported BAR preflight code
-        run: |
-          grep -n "nvrm_bar_limits.h\|nvrmBarAddressMax(physBits\|advertisedWindow\|StagedApertures" kexts/NVRM/NVRM.cpp | head
-
       - name: Build kexts
-        run: python3 ci/build-macos-kexts.py --vendor .deps/open-gpu-kernel-modules --output build-out --jobs 4
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          cd src
+          python3 ci/build-macos-kexts.py --vendor .deps/open-gpu-kernel-modules --output build-out --jobs 4
 
       - name: Package — replace only NVRM in the official package
-        run: python3 ci/package-experiment.py --output build-out
-
-      - name: Summarise
-        if: always()
+        if: steps.gate.outputs.run == 'true' && (github.event_name == 'schedule' || inputs.package)
         run: |
-          ls -la build-out/*.tar.gz build-out/SHA256SUMS.txt 2>/dev/null || true
-          cat build-out/SHA256SUMS.txt 2>/dev/null || true
+          cd src
+          TAG="${{ steps.r.outputs.tag }}"
+          VER="${TAG#v}"
+          SUM_URL="https://github.com/nullmoth/nvidia-macos-driver/releases/download/$TAG/SHA256SUMS.txt"
+          PKG_URL="https://github.com/nullmoth/nvidia-macos-driver/releases/download/$TAG/nullmoth-nvidia-$VER.tar.gz"
+          SHA=$(curl -sL "$SUM_URL" | awk -v f="nullmoth-nvidia-$VER.tar.gz" '$2==f || $2=="*"f {print $1; exit}')
+          [ -n "$SHA" ] || { echo "STOP: 拿不到 $TAG 的 SHA256"; exit 1; }
+          echo "stock: $PKG_URL  sha=$SHA"
+          python3 ci/package-experiment.py --output build-out --tag "$TAG" --stock-url "$PKG_URL" --stock-sha "$SHA"
 
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: steps.gate.outputs.run == 'true'
         with:
-          name: nullmoth-2.6.3-barpreflight-${{ github.run_number }}
+          name: nvrm-${{ steps.r.outputs.tag }}-${{ github.run_number }}
           path: |
-            build-out/nullmoth-*.tar.gz
-            build-out/SHA256SUMS.txt
-            build-out/build-proof.json
+            src/build-out/nullmoth-*.tar.gz
+            src/build-out/SHA256SUMS.txt
+            src/build-out/build-proof.json
+            src/build-out/kexts/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - uses: actions/upload-artifact@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          name: logs-${{ steps.r.outputs.tag }}-${{ github.run_number }}
+          path: src/build-out/logs/
           if-no-files-found: warn
           retention-days: 14
 
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: kexts-and-logs-${{ github.run_number }}
-          path: |
-            build-out/kexts/
-            build-out/logs/
-          if-no-files-found: warn
-          retention-days: 14
+      - name: Record the built tag
+        if: steps.gate.outputs.run == 'true' && steps.r.outputs.tag != steps.r.outputs.base
+        run: |
+          TAG="${{ steps.r.outputs.tag }}"
+          echo "$TAG" > ci/upstream-tag
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ci/upstream-tag
+          git commit -m "ci: built upstream $TAG"
+          git push
