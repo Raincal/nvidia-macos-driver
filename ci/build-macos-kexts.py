@@ -70,7 +70,7 @@ def export_vendor(root, vendor, component, out):
     spdm_flags = shlex.split((generated / "ci-libspdm-cflags.txt").read_text())
     idname = "NV_RM_ID" if component == "nvidia" else "NV_KMS_ID"
     (generated / "g_nvid_string.c").write_text(
-        f'const char {idname}[] = "nvidia id: NVIDIA UNIX Open Kernel Module for x86_64 615.78.08 Research Build (yuanjing-hash 2.6.3 bar-preflight port)";\n'
+        f'const char {idname}[] = "nvidia id: NVIDIA UNIX Open Kernel Module for x86_64 615.78.08 Research Build (yuanjing-hash bar-preflight port)";\n'
         f'const char *const p{idname} = {idname} + 11;\n')
     return directory, flags, sources, spdm_sources, spdm_flags, cc_flags, cxx_flags
 
@@ -185,8 +185,9 @@ def main():
     resource = Path(run(["xcrun", "clang", "-print-resource-dir"]))
     if not (headers / "IOKit/IOLib.h").is_file():
         raise RuntimeError(f"Kernel SDK headers unavailable: {headers}")
-    proof = {"status": "BUILDING", "experiment": "bar-preflight-v1-port-2.6.3",
-             "upstream": "v2.6.3", "nvidia_commit": NVIDIA_COMMIT,
+    tag = (root / "ci/upstream-tag").read_text().strip() if (root / "ci/upstream-tag").is_file() else "unknown"
+    proof = {"status": "BUILDING", "experiment": "bar-preflight-port",
+             "upstream": tag, "nvidia_commit": NVIDIA_COMMIT,
              "fork_commit": run(["git", "rev-parse", "HEAD"], cwd=root),
              "sdk": str(sdk), "hardware_tested": False, "installed": False}
     (out / "build-proof.json").write_text(json.dumps(proof, indent=2))
