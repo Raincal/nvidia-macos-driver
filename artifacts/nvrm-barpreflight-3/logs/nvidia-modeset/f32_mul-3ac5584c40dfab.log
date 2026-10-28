@@ -1,0 +1,10 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_mul.c:80:19: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
+   80 |         magBits = expB | sigB;
+      |                   ^~~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_mul.c:85:19: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
+   85 |         magBits = expA | sigA;
+      |                   ^~~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_mul.c:107:12: warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint_fast32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+  107 |     sigZ = softfloat_shortShiftRightJam64( (uint_fast64_t) sigA * sigB, 32 );
+      |          ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.

@@ -1,0 +1,7 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_secured_message_lib/libspdm_secmes_session.c:45:18: warning: implicit conversion changes signedness: 'char' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+   45 |     out_bin[6] = (char)('0' + ((spdm_version >> 12) & 0xF));
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_secured_message_lib/libspdm_secmes_session.c:46:18: warning: implicit conversion changes signedness: 'char' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+   46 |     out_bin[8] = (char)('0' + ((spdm_version >> 8) & 0xF));
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

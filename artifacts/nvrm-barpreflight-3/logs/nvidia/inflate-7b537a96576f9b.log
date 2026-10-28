@@ -1,0 +1,29 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/zlib/inflate.c:111:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/zlib/inflate.c:453:9: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+  453 |     k = j;                      /* minimum code length */
+      |       ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/zlib/inflate.c:455:13: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+  455 |         l = j;
+      |           ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/zlib/inflate.c:471:13: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  471 |     c[i] += y;
+      |          ~~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/zlib/inflate.c:514:38: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  514 |                 if ((f = 1 << (j = k - w)) > a + 1)     /* try a k-w bit table */
+      |                                  ~ ~~^~~
+8 warnings generated.

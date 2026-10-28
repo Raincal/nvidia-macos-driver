@@ -1,0 +1,22 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF64.c:77:24: warning: implicit conversion changes signedness: 'uint_fast64_t' (aka 'unsigned long long') to 'int_fast64_t' (aka 'long long') [-Wsign-conversion]
+   77 |         sigDiff = sigA - sigB;
+      |                 ~ ~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF64.c:89:52: warning: implicit conversion changes signedness: 'int_fast64_t' (aka 'long long') to 'uint64_t' (aka 'unsigned long long') [-Wsign-conversion]
+   89 |         shiftDist = softfloat_countLeadingZeros64( sigDiff ) - 11;
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF64.c:92:25: warning: implicit conversion loses integer precision: 'int_fast16_t' (aka 'short') to 'int_fast8_t' (aka 'signed char') [-Wimplicit-int-conversion]
+   92 |             shiftDist = expA;
+      |                       ~ ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF64.c:95:48: warning: implicit conversion changes signedness: 'int_fast64_t' (aka 'long long') to 'uint_fast64_t' (aka 'unsigned long long') [-Wsign-conversion]
+   95 |         uiZ = packToF64UI( signZ, expZ, sigDiff<<shiftDist );
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../common/softfloat/source/include/internals.h:111:114: note: expanded from macro 'packToF64UI'
+  111 | #define packToF64UI( sign, exp, sig ) ((uint64_t) (((uint_fast64_t) (sign)<<63) + ((uint_fast64_t) (exp)<<52) + (sig)))
+      |                                                                                                               ~  ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF64.c:112:53: warning: implicit conversion changes signedness: 'int' to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
+  112 |             sigA = softfloat_shiftRightJam64( sigA, -expDiff );
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF64.c:125:53: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
+  125 |             sigB = softfloat_shiftRightJam64( sigB, expDiff );
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~
+6 warnings generated.

@@ -1,0 +1,47 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:32:
+In file included from inc/kernel/os/os.h:2:
+In file included from generated/g_os_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:678:58: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  678 |         cpuinfo.DisplayedModel = (cpuinfo.ExtModel << 4) + cpuinfo.Model;
+      |                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:773:20: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  773 |     if (osNv_cpuid(0x80000000, 0, &eax, &ebx, &ecx, &edx) && eax >= 0x80000001)
+      |         ~~~~~~~~~~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:775:24: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  775 |         if (osNv_cpuid(0x80000001, 0, &eax, &ebx, &ecx, &edx))
+      |             ~~~~~~~~~~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:986:20: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  986 |     if (osNv_cpuid(0x80000000, 0, &eax, &ebx, &ecx, &edx) == 0 || eax < 0x80000004)
+      |         ~~~~~~~~~~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:991:20: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  991 |         osNv_cpuid(op, 0, (NvU32 *)&p[0], (NvU32 *)&p[4], (NvU32 *)&p[8], (NvU32 *)&p[12]);
+      |         ~~~~~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:1465:20: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1465 |     if (osNv_cpuid(0x80000000, 0, &eax, &ebx, &ecx, &edx))
+      |         ~~~~~~~~~~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:1472:28: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1472 |             if (osNv_cpuid(0x80000005, 0, &eax, &ebx, &ecx, &edx))
+      |                 ~~~~~~~~~~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:1479:28: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1479 |             if (osNv_cpuid(0x80000006, 0, &eax, &ebx, &ecx, &edx))
+      |                 ~~~~~~~~~~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/cpu.c:1485:24: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1485 |             osNv_cpuid(0x8000001f, 0, &eax, &ebx, &ecx, &edx))
+      |             ~~~~~~~~~~ ^~~~~~~~~~
+13 warnings generated.

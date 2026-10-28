@@ -1,0 +1,4 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_normSubnormalF16Sig.c:48:16: warning: implicit conversion loses integer precision: 'int' to 'uint_fast16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   48 |     z.sig = sig<<shiftDist;
+      |           ~ ~~~^~~~~~~~~~~
+1 warning generated.

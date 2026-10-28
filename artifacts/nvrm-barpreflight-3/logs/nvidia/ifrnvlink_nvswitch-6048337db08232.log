@@ -1,0 +1,44 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:82:16: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   82 |     p.linkId = linkId;
+      |              ~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:104:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  103 |     pErrorCounts->flitCrc =
+      |                           ~
+  104 |         p.nvlinkCounters[BIT_IDX_32(NVSWITCH_NVLINK_COUNTER_DL_RX_ERR_CRC_FLIT)];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:107:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  106 |     pErrorCounts->txLinkReplay =
+      |                                ~
+  107 |         p.nvlinkCounters[BIT_IDX_32(NVSWITCH_NVLINK_COUNTER_DL_TX_ERR_REPLAY)];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:110:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  109 |     pErrorCounts->rxLinkReplay =
+      |                                ~
+  110 |         p.nvlinkCounters[BIT_IDX_32(NVSWITCH_NVLINK_COUNTER_DL_RX_ERR_REPLAY)];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:113:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  112 |     pErrorCounts->linkRecovery =
+      |                                ~
+  113 |         p.nvlinkCounters[BIT_IDX_32(NVSWITCH_NVLINK_COUNTER_DL_TX_ERR_RECOVERY)];
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:118:39: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  118 |         pErrorCounts->laneCrc[lane] = p.nvlinkCounters[idx];
+      |                                     ~ ^~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:160:27: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  158 |         if (device->hal.nvswitch_inforom_nvl_update_link_correctable_error_info(device,
+      |             ~~~~~~
+  159 |                 pNvlinkState->pNvl, &pNvlinkState->correctableErrorRateState, linkId,
+  160 |                 publicId, localLinkIdx, &errorCounts, &bDirtyTemp) != NVL_SUCCESS)
+      |                           ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:160:17: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  158 |         if (device->hal.nvswitch_inforom_nvl_update_link_correctable_error_info(device,
+      |             ~~~~~~
+  159 |                 pNvlinkState->pNvl, &pNvlinkState->correctableErrorRateState, linkId,
+  160 |                 publicId, localLinkIdx, &errorCounts, &bDirtyTemp) != NVL_SUCCESS)
+      |                 ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/ifrnvlink_nvswitch.c:159:79: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  158 |         if (device->hal.nvswitch_inforom_nvl_update_link_correctable_error_info(device,
+      |             ~~~~~~
+  159 |                 pNvlinkState->pNvl, &pNvlinkState->correctableErrorRateState, linkId,
+      |                                                                               ^~~~~~
+9 warnings generated.

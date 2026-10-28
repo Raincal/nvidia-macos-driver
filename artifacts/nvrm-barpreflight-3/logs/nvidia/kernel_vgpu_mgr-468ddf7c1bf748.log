@@ -1,0 +1,291 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:26:
+In file included from inc/kernel/virtualization/kernel_hostvgpudeviceapi.h:2:
+In file included from generated/g_kernel_hostvgpudeviceapi_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:26:
+In file included from inc/kernel/virtualization/kernel_hostvgpudeviceapi.h:2:
+In file included from generated/g_kernel_hostvgpudeviceapi_nvoc.h:48:
+In file included from inc/kernel/virtualization/kernel_vgpu_mgr.h:2:
+In file included from generated/g_kernel_vgpu_mgr_nvoc.h:60:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:39:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1239:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1239 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:39:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1247:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1247 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:40:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2372:41: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2372 |                     pVfInfo->bus      = bus;
+      |                                       ~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2373:41: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2373 |                     pVfInfo->slot     = slot;
+      |                                       ~ ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2374:41: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2374 |                     pVfInfo->function = function;
+      |                                       ~ ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2632:22: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2632 |         fnId = devfn - pGpu->sriovState.firstVFOffset;
+      |              ~ ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2816:100: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2816 |                     status = _kvgpumgrUpdateHeterogeneousCreatablePlacementIds(pGpu, pRequestVgpu->placementId,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2822:98: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2822 |                     status = _kvgpumgrUpdateHomogeneousCreatablePlacementIds(pGpu, pRequestVgpu->placementId,
+      |                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:2860:31: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2860 |             NvU8 fnId = devfn - pGpu->sriovState.firstVFOffset;
+      |                  ~~~~   ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3159:90: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3159 |                 pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedPlacementId = placementIdMin;
+      |                                                                                        ~ ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3160:89: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3160 |                 pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedChidOffset = chidMin;
+      |                                                                                       ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3212:36: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3211 |                 pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedPlacementId =
+      |                                                                                        ~
+ 3212 |                     placementIdMax - pVgpuTypeSupportedPlacementInfo->placementSize;
+      |                     ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3214:29: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3213 |                 pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedChidOffset =
+      |                                                                                       ~
+ 3214 |                     chidMax - pVgpuTypeSupportedPlacementInfo->channelCount;
+      |                     ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3224:81: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3223 |                         pVgpuInstancePlacementInfo->heterogeneousSupportedVmmuOffset =
+      |                                                                                      ~
+ 3224 |                             vmmuSegMax - pVgpuTypePlacementInfo->guestVmmuCount - (pVgpuTypeInfo->gspHeapSize / vmmuSegSize);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3277:30: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3274 |     _kvgpumgrSetHeterogeneousResources(pGpu, pPgpuInfo, placementIdMin,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3275 |                              (placementIdMin + placementIdMax) / 2,
+ 3276 |                              chidMin, (chidMin + chidMax) / 2, newVmmuSegMin,
+ 3277 |                              newVmmuSegMax, newGspHeapOffsetMin, newGspHeapOffsetMax, partitionCount * 2,
+      |                              ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3276:64: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3274 |     _kvgpumgrSetHeterogeneousResources(pGpu, pPgpuInfo, placementIdMin,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3275 |                              (placementIdMin + placementIdMax) / 2,
+ 3276 |                              chidMin, (chidMin + chidMax) / 2, newVmmuSegMin,
+      |                                                                ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3303:54: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3301 |     _kvgpumgrSetHeterogeneousResources(pGpu, pPgpuInfo, (placementIdMin + placementIdMax) / 2,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3302 |                              placementIdMax, (chidMin + chidMax) / 2,
+ 3303 |                              chidMax, newVmmuSegMin, newVmmuSegMax,
+      |                                                      ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3303:39: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3301 |     _kvgpumgrSetHeterogeneousResources(pGpu, pPgpuInfo, (placementIdMin + placementIdMax) / 2,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3302 |                              placementIdMax, (chidMin + chidMax) / 2,
+ 3303 |                              chidMax, newVmmuSegMin, newVmmuSegMax,
+      |                                       ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3353:86: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3353 |             pVgpuInstanceSupportedPlacementInfo->homogeneousSupportedPlacementId = j * pVgpuTypeSupportedPlacementInfo->placementSize;
+      |                                                                                  ~ ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3356:91: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3356 |             pVgpuInstanceSupportedPlacementInfo->homogeneousSupportedChidOffset = chidMax - pVgpuTypeSupportedPlacementInfo->channelCount;
+      |                                                                                 ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3538:47: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3537 |             pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedPlacementId =
+      |                                                                                    ~
+ 3538 |                     (placementRegionSize * j) / maxInstance;
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3541:66: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3540 |             pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedChidOffset =
+      |                                                                                   ~
+ 3541 |                                 (hostChannelCount * placementId) / placementRegionSize;
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3495:40: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3495 |     guestMaxVmmuCount = totalVmmuCount - ((maxTotalGspHeapSize + vmmuSegSize - 1) / vmmuSegSize);
+      |                       ~ ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3860:29: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3859 |                         pKernelVgpuTypePlacementInfo->placementRegionSize =
+      |                                                                           ~
+ 3860 |                             placementRegionSize;
+      |                             ^~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3809:72: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3809 |                 pVgpuTypePlacementInfo->guestVmmuCount = guestFbLength / gpuGetVmmuSegmentSize(pGpu);
+      |                                                        ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3817:86: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3817 |                     pVgpuTypePlacementInfo->guestVmmuCount = pVgpuTypeInfo->fbLength / gpuGetVmmuSegmentSize(pGpu);
+      |                                                            ~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3830:76: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3830 |                     pVgpuTypePlacementInfo->guestVmmuCount = guestFbLength / gpuGetVmmuSegmentSize(pGpu);
+      |                                                            ~ ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3899:75: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3899 |                 _kvgpumgrSetHeterogeneousResources_GB100(pGpu, pPgpuInfo, vmmuSegmentMin,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3913:89: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3911 |                 _kvgpumgrSetHeterogeneousResources(pGpu, pPgpuInfo, 0,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3912 |                                                    pKernelVgpuTypePlacementInfo->placementRegionSize,
+ 3913 |                                                    0, hostChannelCount, vmmuSegmentMin, vmmuSegmentMax,
+      |                                                                                         ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3913:73: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3911 |                 _kvgpumgrSetHeterogeneousResources(pGpu, pPgpuInfo, 0,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 3912 |                                                    pKernelVgpuTypePlacementInfo->placementRegionSize,
+ 3913 |                                                    0, hostChannelCount, vmmuSegmentMin, vmmuSegmentMax,
+      |                                                                         ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:3923:67: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 3923 |                 _kvgpumgrSetHomogeneousResources(pGpu, pPgpuInfo, vmmuSegmentMin, hostChannelCount);
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                  ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4291:88: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4289 |                 if (isAlloc && isPlacementOverlapping(min, max,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~
+ 4290 |                                                       pVgpuInstancePlacementInfo->creatablePlacementId,
+ 4291 |                                                       pVgpuTypeSupportedPlacementInfo->placementSize))
+      |                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4289:60: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4289 |                 if (isAlloc && isPlacementOverlapping(min, max,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~      ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4289:55: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4289 |                 if (isAlloc && isPlacementOverlapping(min, max,
+      |                                ~~~~~~~~~~~~~~~~~~~~~~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4300:84: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4298 |                 if (!isAlloc && isPlacementSubset(min, max,
+      |                                 ~~~~~~~~~~~~~~~~~
+ 4299 |                                                   pVgpuInstanceSupportedPlacementInfo->heterogeneousSupportedPlacementId,
+ 4300 |                                                   pVgpuTypeSupportedPlacementInfo->placementSize))
+      |                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4298:56: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4298 |                 if (!isAlloc && isPlacementSubset(min, max,
+      |                                 ~~~~~~~~~~~~~~~~~      ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4298:51: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4298 |                 if (!isAlloc && isPlacementSubset(min, max,
+      |                                 ~~~~~~~~~~~~~~~~~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4762:37: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4761 |         rmStatus = _kvgpumgrUpdateHeterogeneousCreatablePlacementIds(pGpu,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4762 |                                     assignedPlacementId, pRequestVgpu->vgpuTypeId, NV_TRUE, pRequestVgpu->swizzId);
+      |                                     ^~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4769:56: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4768 |             rmStatus = _kvgpumgrUpdateHeterogeneousCreatablePlacementIds(pGpu,
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4769 |                                          pRequestVgpu->placementId,
+      |                                          ~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4777:37: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4776 |         rmStatus = _kvgpumgrUpdateHomogeneousCreatablePlacementIds(pGpu,
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4777 |                                     assignedPlacementId, pRequestVgpu->vgpuTypeId, NV_TRUE, pRequestVgpu->swizzId);
+      |                                     ^~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4784:56: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4783 |             rmStatus = _kvgpumgrUpdateHomogeneousCreatablePlacementIds(pGpu,
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4784 |                                          pRequestVgpu->placementId,
+      |                                          ~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4762:37: warning: variable 'assignedPlacementId' may be uninitialized when used here [-Wconditional-uninitialized]
+ 4762 |                                     assignedPlacementId, pRequestVgpu->vgpuTypeId, NV_TRUE, pRequestVgpu->swizzId);
+      |                                     ^~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4667:75: note: initialize the variable 'assignedPlacementId' to silence this warning
+ 4667 |     NvU32                                index, i , j, assignedPlacementId;
+      |                                                                           ^
+      |                                                                            = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4943:95: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4943 |                         _kvgpumgrUpdateHeterogeneousCreatablePlacementIds(pGpu, pRequestVgpu->placementId,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~^~~~~~~~~~~
+inc/libraries/utils/nvassert.h:824:44: note: expanded from macro 'NV_CHECK_OK_OR_GOTO'
+  824 |     NV_CHECK_OK_OR_ELSE_STR(status, level, expr, #expr, goto label)
+      |                                            ^~~~
+inc/libraries/utils/nvassert.h:876:19: note: expanded from macro 'NV_CHECK_OK_OR_ELSE_STR'
+  876 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4952:93: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4952 |                         _kvgpumgrUpdateHomogeneousCreatablePlacementIds(pGpu, pRequestVgpu->placementId,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~~^~~~~~~~~~~
+inc/libraries/utils/nvassert.h:824:44: note: expanded from macro 'NV_CHECK_OK_OR_GOTO'
+  824 |     NV_CHECK_OK_OR_ELSE_STR(status, level, expr, #expr, goto label)
+      |                                            ^~~~
+inc/libraries/utils/nvassert.h:876:19: note: expanded from macro 'NV_CHECK_OK_OR_ELSE_STR'
+  876 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4962:81: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4962 |                         _kvgpumgrUpdateHeterogeneousCreatablePlacementIds(pGpu, currPlacementId,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^~~~~~~~~~~~~~~
+inc/libraries/utils/nvassert.h:824:44: note: expanded from macro 'NV_CHECK_OK_OR_GOTO'
+  824 |     NV_CHECK_OK_OR_ELSE_STR(status, level, expr, #expr, goto label)
+      |                                            ^~~~
+inc/libraries/utils/nvassert.h:876:19: note: expanded from macro 'NV_CHECK_OK_OR_ELSE_STR'
+  876 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:4971:79: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 4971 |                         _kvgpumgrUpdateHomogeneousCreatablePlacementIds(pGpu, currPlacementId,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ^~~~~~~~~~~~~~~
+inc/libraries/utils/nvassert.h:824:44: note: expanded from macro 'NV_CHECK_OK_OR_GOTO'
+  824 |     NV_CHECK_OK_OR_ELSE_STR(status, level, expr, #expr, goto label)
+      |                                            ^~~~
+inc/libraries/utils/nvassert.h:876:19: note: expanded from macro 'NV_CHECK_OK_OR_ELSE_STR'
+  876 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:5063:57: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 5063 |                     *placementId        = pRequestVgpu->placementId;
+      |                                         ~ ~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:5086:57: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 5086 |                     *placementId        = pRequestVgpu->placementId;
+      |                                         ~ ~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:5462:32: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 5461 |             vgpuTotalVmmuCount = pDefaultVgpuTypePlacementInfo->guestVmmuCount
+      |                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 5462 |                                + pVgpuTypeInfo->gspHeapSize / gpuGetVmmuSegmentSize(pGpu);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:5473:40: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 5473 |     guestMaxVmmuCount = totalVmmuCount - ((maxTotalGspHeapSize + vmmuSegSize - 1) / vmmuSegSize);
+      |                       ~ ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:5511:80: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 5511 |                 pVgpuInstancePlacementInfo->heterogeneousSupportedVmmuOffset = vmmuSegmentMin;
+      |                                                                              ~ ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/virtualization/kernel_vgpu_mgr.c:5520:44: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 5519 |                 pVgpuInstancePlacementInfo->heterogeneousSupportedVmmuOffset =
+      |                                                                              ~
+ 5520 |                             vmmuSegmentMin + ((guestMaxVmmuCount * placementId) / placementRegionSize);
+      |                             ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+60 warnings generated.

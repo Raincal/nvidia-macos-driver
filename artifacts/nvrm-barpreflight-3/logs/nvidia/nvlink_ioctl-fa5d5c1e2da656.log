@@ -1,0 +1,28 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:320:27: warning: implicit conversion loses integer precision: 'nvlink_link_mode' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  320 |     linkState->linkMode = _nvlink_core_map_link_state(dlState, tlState);
+      |                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:334:32: warning: implicit conversion loses integer precision: 'nvlink_tx_sublink_mode' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  334 |     linkState->txSubLinkMode = _nvlink_core_map_tx_sublink_state(state);
+      |                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:341:32: warning: implicit conversion loses integer precision: 'nvlink_rx_sublink_mode' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  341 |     linkState->rxSubLinkMode = _nvlink_core_map_rx_sublink_state(state);
+      |                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:445:51: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  445 |     endPointInfo->pciInfo.domain   = dev->pciInfo.domain;
+      |                                    ~ ~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:450:48: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  450 |     endPointInfo->linkIndex        = connLink->linkNumber;
+      |                                    ~ ~~~~~~~~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:471:49: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  471 |     devInfo->pciInfo.domain   = tmpDev->pciInfo.domain;
+      |                               ~ ~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:475:33: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  475 |     devInfo->numLinks         = nvListCount(&tmpDev->link_list);
+      |                               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:492:64: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  492 |         nvlink_memcpy(devInfo->deviceName, tmpDev->deviceName, copyLen);
+      |         ~~~~~~~~~~~~~                                          ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/core/nvlink_ioctl.c:489:23: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'int' [-Wshorten-64-to-32]
+  489 |         int nameLen = nvlink_strlen(tmpDev->deviceName);
+      |             ~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9 warnings generated.

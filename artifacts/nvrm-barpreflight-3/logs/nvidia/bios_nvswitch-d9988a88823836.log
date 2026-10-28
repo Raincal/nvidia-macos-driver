@@ -1,0 +1,39 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:56:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   56 |     status = nvswitch_os_alloc_contig_memory(device->os_handle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   57 |                  (void**)&pReadBuffer, bufferSize, (device->dma_addr_width == 32));
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:61:16: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+   61 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:64:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   64 |     status = nvswitch_os_map_dma_region(device->os_handle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   65 |                                         pReadBuffer,
+      |                                         ~~~~~~~~~~~~
+   66 |                                         &dmaHandle,
+      |                                         ~~~~~~~~~~~
+   67 |                                         bufferSize,
+      |                                         ~~~~~~~~~~~
+   68 |                                         NVSWITCH_DMA_DIR_TO_SYSMEM);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:73:16: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+   73 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:91:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   91 |         status = nvswitch_os_sync_dma_region_for_device(device->os_handle, dmaHandle,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   92 |                         bufferSize, NVSWITCH_DMA_DIR_TO_SYSMEM);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:99:20: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+   99 |             return status;
+      |             ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:118:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  118 |         status = nvswitch_os_sync_dma_region_for_cpu(device->os_handle, dmaHandle,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  119 |                             bufferSize, NVSWITCH_DMA_DIR_TO_SYSMEM);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/bios_nvswitch.c:143:12: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  143 |     return status;
+      |     ~~~~~~ ^~~~~~
+8 warnings generated.

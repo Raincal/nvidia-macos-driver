@@ -1,0 +1,10 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_secured_message_lib/libspdm_secmes_encode_decode.c:241:60: warning: implicit conversion changes signedness: 'long' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  241 |                          - ((uint8_t*)(record_header1 + 1) - (uint8_t*)secured_message),
+      |                          ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_secured_message_lib/libspdm_secmes_encode_decode.c:289:60: warning: implicit conversion changes signedness: 'long' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  289 |                          - ((uint8_t*)(record_header1 + 1) - (uint8_t*)secured_message),
+      |                          ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_secured_message_lib/libspdm_secmes_encode_decode.c:296:60: warning: implicit conversion changes signedness: 'long' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  296 |                          - ((uint8_t*)(record_header2 + 1) - (uint8_t*)secured_message),
+      |                          ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.

@@ -1,0 +1,13 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/tnvl_ls10.c:353:50: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  353 |         tmp = (der[i] << 16) | (der[i + 1] << 8) | (der[i + 2]);
+      |             ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/tnvl_ls10.c:375:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  375 |         tmp = der[i] << 4;
+      |             ~ ~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/tnvl_ls10.c:386:46: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  386 |         tmp = ((der[i] << 8) | (der[i + 1])) << 2;
+      |             ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/tnvl_ls10.c:893:40: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  893 |     params->attestationCertChainSize = attestationCertChainSize;
+      |                                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.

@@ -1,0 +1,38 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:32:
+../common/displayport/inc/dp_linkconfig.h:588:36: warning: declaration shadows a field of 'DisplayPort::LinkConfiguration' [-Wshadow]
+  588 |         void setChannelCoding(bool bIs128b132bChannelCoding)
+      |                                    ^
+../common/displayport/inc/dp_linkconfig.h:284:18: note: previous declaration is here
+  284 |         bool     bIs128b132bChannelCoding;
+      |                  ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:107:52: warning: operand of ? changes signedness: 'NvS32' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+  107 |     dpInfo->hBlankSym = (hblank_symbols < 0) ? 0 : hblank_symbols;
+      |                       ~                            ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:157:52: warning: operand of ? changes signedness: 'NvS32' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+  157 |     dpInfo->vBlankSym = (vblank_symbols < 0) ? 0 : vblank_symbols;
+      |                       ~                            ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:303:52: warning: operand of ? changes signedness: 'NvS32' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+  303 |     dpInfo->hBlankSym = (hblank_symbols < 0) ? 0 : hblank_symbols;
+      |                       ~                            ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:397:52: warning: operand of ? changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  397 |     dpInfo->vBlankSym = (vblank_symbols < 0) ? 0 : vblank_symbols;
+      |                       ~                            ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:500:170: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  500 |     dpInfo->waterMark = (unsigned)(watermarkAdjust + ((3 * (modesetInfo.depth * PrecisionFactor / (8 * numLanesPerLink * DSC_FACTOR)) + watermarkF) / PrecisionFactor) + w0 + 3);
+      |                                                                                                                                                                        ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:598:34: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  598 |     NvU32 total_hblank_symbols = (NvS32)divide_ceil((HBlank * LINK_RATE_TO_DATA_RATE_8B_10B(linkConfig.peakRate)), modesetInfo.pixelClockHz);
+      |           ~~~~~~~~~~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:612:52: warning: operand of ? changes signedness: 'NvS32' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+  612 |     dpInfo->hBlankSym = (hblank_symbols < 0) ? 0 : hblank_symbols;
+      |                       ~                            ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:712:59: warning: implicit conversion changes signedness: 'unsigned int' to 'NvS32' (aka 'int') [-Wsign-conversion]
+  712 |         NvS32 squeezed_symbols = (dpInfo->tuSize * 3 / 2) - hblank_symbols;
+      |               ~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:712:61: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'unsigned int' [-Wsign-conversion]
+  712 |         NvS32 squeezed_symbols = (dpInfo->tuSize * 3 / 2) - hblank_symbols;
+      |                                                           ~ ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_watermark.cpp:730:52: warning: operand of ? changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  730 |     dpInfo->vBlankSym = (vblank_symbols < 0) ? 0 : vblank_symbols;
+      |                       ~                            ^~~~~~~~~~~~~~
+11 warnings generated.

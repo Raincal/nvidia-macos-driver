@@ -1,0 +1,197 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:31:
+In file included from inc/kernel/gpu/gpu.h:2:
+In file included from generated/g_gpu_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:55:
+In file included from inc/kernel/vgpu/rpc.h:42:
+In file included from inc/kernel/vgpu/vgpu_events.h:46:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:64:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:64:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:74:
+inc/lib/protobuf/prb_util.h:90:88: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 | static NV_FORCEINLINE NvU8 prbEncNestingLevel(PRB_ENCODER *pPrbEnc)  { return pPrbEnc->depth; }
+      |                                                                        ~~~~~~ ~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:64:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+generated/g_kernel_nvlink_nvoc.h:2458:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2458 |     pKernelNvlink_PRIVATE->maxRbmLinks = maxRbmLinks;
+      |                                        ~ ^~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:84:
+In file included from inc/kernel/gpu/bif/kernel_bif.h:2:
+generated/g_kernel_bif_nvoc.h:1920:13: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1920 |     return (REF_VAL(BIF_DMA_CAPS_SNOOP, kbifGetDmaCaps(pGpu, pKernelBif)));
+      |     ~~~~~~  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:342:57: note: expanded from macro 'REF_VAL'
+  342 | #define REF_VAL(drf,v)            (((v)>>DRF_SHIFT(drf))&DRF_MASK(drf))
+      |                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:1424:43: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'ENGDESCRIPTOR' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1424 |     ENGDESCRIPTOR               engDesc = MKENGDESC(classId, instanceID);
+      |                                 ~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_eng_desc_nvoc.h:58:83: note: expanded from macro 'MKENGDESC'
+   58 | #define MKENGDESC(class, inst)     ((((NvU32)(class)) << SF_SHIFT(ENGDESC_CLASS)) | \
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+   59 |                                     ((inst ) << SF_SHIFT(ENGDESC_INST )))
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:1429:47: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1429 |     if (!gpuShouldCreateObject(pGpu, classId, instanceID))
+      |          ~~~~~~~~~~~~~~~~~~~~~                ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:1542:45: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1542 |         Dynamic *pChild = gpuGetChild(pGpu, i);
+      |                           ~~~~~~~~~~~       ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4642:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4642 |             *gpuArch = GPU_ARCHITECTURE_T12X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:57:42: note: expanded from macro 'GPU_ARCHITECTURE_T12X'
+   57 | #define GPU_ARCHITECTURE_T12X            GPU_ARCHITECTURE(_TEGRA,   0x0040)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4649:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4649 |             *gpuArch = GPU_ARCHITECTURE_T13X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:58:42: note: expanded from macro 'GPU_ARCHITECTURE_T13X'
+   58 | #define GPU_ARCHITECTURE_T13X            GPU_ARCHITECTURE(_TEGRA,   0x0013)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4656:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4656 |             *gpuArch = GPU_ARCHITECTURE_T21X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:59:42: note: expanded from macro 'GPU_ARCHITECTURE_T21X'
+   59 | #define GPU_ARCHITECTURE_T21X            GPU_ARCHITECTURE(_TEGRA,   0x0021)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4663:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4663 |             *gpuArch = GPU_ARCHITECTURE_T18X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:60:42: note: expanded from macro 'GPU_ARCHITECTURE_T18X'
+   60 | #define GPU_ARCHITECTURE_T18X            GPU_ARCHITECTURE(_TEGRA,   0x0018)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4670:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4670 |             *gpuArch = GPU_ARCHITECTURE_T19X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:61:42: note: expanded from macro 'GPU_ARCHITECTURE_T19X'
+   61 | #define GPU_ARCHITECTURE_T19X            GPU_ARCHITECTURE(_TEGRA,   0x0019)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4677:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4677 |             *gpuArch = GPU_ARCHITECTURE_T23X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:62:42: note: expanded from macro 'GPU_ARCHITECTURE_T23X'
+   62 | #define GPU_ARCHITECTURE_T23X            GPU_ARCHITECTURE(_TEGRA,   0x0023)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4684:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4684 |             *gpuArch = GPU_ARCHITECTURE_T23X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:62:42: note: expanded from macro 'GPU_ARCHITECTURE_T23X'
+   62 | #define GPU_ARCHITECTURE_T23X            GPU_ARCHITECTURE(_TEGRA,   0x0023)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:4888:24: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 4888 |             *gpuArch = GPU_ARCHITECTURE_T26X;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:64:42: note: expanded from macro 'GPU_ARCHITECTURE_T26X'
+   64 | #define GPU_ARCHITECTURE_T26X            GPU_ARCHITECTURE(_TEGRA, 0x0026)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/swref/published/nv_arch.h:36:43: note: expanded from macro 'GPU_ARCHITECTURE'
+   36 | #define GPU_ARCHITECTURE(series, arch)   (DRF_DEF(GPU, _ARCHITECTURE, _SERIES, series) | \
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:5998:70: warning: operand of ? changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 5998 |             pIt->instanceID = bReverse ? pCurChildPresent->instances - 1 : 0;
+      |                             ~            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:6003:25: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 6003 |             *pEngDesc = MKENGDESC(pCurChildOrder->classId, pIt->instanceID);
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_eng_desc_nvoc.h:59:46: note: expanded from macro 'MKENGDESC'
+   58 | #define MKENGDESC(class, inst)     ((((NvU32)(class)) << SF_SHIFT(ENGDESC_CLASS)) | \
+      |                                                                                   ~
+   59 |                                     ((inst ) << SF_SHIFT(ENGDESC_INST )))
+      |                                      ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:7381:93: warning: implicit conversion loses integer precision: 'NV2080_CTRL_GPU_RECOVERY_ACTION' (aka 'enum NV2080_CTRL_GPU_RECOVERY_ACTION') to 'NvV16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 7381 |             gpuNotifySubDeviceEvent(pGpu, NV2080_NOTIFIERS_GPU_RECOVERY_ACTION, NULL, 0, 0, newAction);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+generated/g_gpu_nvoc.h:2969:190: note: expanded from macro 'gpuNotifySubDeviceEvent'
+ 2969 | #define gpuNotifySubDeviceEvent(pGpu, notifyIndex, pNotifyParams, notifyParamsSize, info32, info16) gpuNotifySubDeviceEvent_IMPL(pGpu, notifyIndex, pNotifyParams, notifyParamsSize, info32, info16)
+      |                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                             ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu.c:7660:66: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 7657 |         NvU8 GID_DATA[RM_SHA1_GID_SIZE]  = {0xA7,0xC6,0x6A,0xD2,
+      |                                            ~
+ 7658 |                                             0x6D,0xBB,0x0A,0xB8,
+ 7659 |                                             0xC1,0xA2,0x37,0xBA,
+ 7660 |                                             0x6D,0xBA,0x36,pGpu->gpuInstance};
+      |                                                            ~~~~~~^~~~~~~~~~~
+26 warnings generated.

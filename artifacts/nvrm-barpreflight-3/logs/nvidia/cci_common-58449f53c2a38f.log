@@ -1,0 +1,34 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:685:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  685 |         link = nvswitch_get_link(device, linkId);
+      |                ~~~~~~~~~~~~~~~~~         ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:721:57: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  721 |     cciModuleOnboardPerformPhaseTransitionAsync(device, moduleId, nextState);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1131:44: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1131 |         _cci_reset_module_state_sw(device, moduleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1132:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1132 |         cciCmisAccessReleaseLock(device, moduleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1139:43: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1139 |         if (!cciCmisAccessTryLock(device, moduleId))
+      |              ~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1144:43: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1144 |         _cci_module_onboard_async(device, moduleId);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1147:40: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1147 |         if (_cciCmisAccessSafe(device, moduleId))
+      |             ~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1149:46: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1149 |             cciCmisAccessReleaseLock(device, moduleId);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1281:58: warning: implicit conversion loses integer precision: 'CCI_MODULE_ONBOARD_PHASE' (aka 'enum cci_module_onboard_phase') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1281 |     pCmd->onboardPhase = pOnboardState->currOnboardState.onboardPhase;
+      |                        ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1287:85: warning: implicit conversion loses integer precision: 'CCI_MODULE_ONBOARD_SUBPHASE_OPTICAL' (aka 'enum cci_module_onboard_subphase_optical') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1287 |             pCmd->onboardSubPhase = pOnboardState->currOnboardState.onboardSubPhase.optical;
+      |                                   ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_common.c:1413:48: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1413 |             _cci_reset_module_state_sw(device, moduleId);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~         ^~~~~~~~
+11 warnings generated.

@@ -1,0 +1,154 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:26:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+In file included from ../common/unix/common/inc/nv_dpy_id.h:35:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:26:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+../common/unix/common/inc/nv_dpy_id.h:272:12: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  272 |     return nvPopCount32(dpyIdList.opaqueDpyIdList);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:310:33: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  310 |     dpyIdList.opaqueDpyIdList = val;
+      |                               ~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:320:55: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  320 |     dpyId.opaqueDpyId = (val == 0) ? 0 : 1 << (nv_ffs(val)-1);
+      |                                                ~~~~~~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:344:38: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../common/unix/common/inc/nv_dpy_id.h:344:25: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |            ~~~~~~ ~~~~~~^~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:356:23: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  356 |         1U << (nv_ffs(~excludeList.opaqueDpyIdList) - 1);
+      |                ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:28:
+In file included from interface/nvkms-api.h:201:
+../common/unix/common/inc/nv_mode_timings.h:154:23: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  154 |     return (hz + 500) / 1000;
+      |     ~~~~~~ ~~~~~~~~~~~^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:31:
+In file included from include/nvkms-vrr.h:27:
+include/nvkms-types.h:1565:44: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1565 |     viewPortOut.x = pViewPort->out.xAdjust +
+      |                   ~ ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1566 |                    (hVisible - pViewPort->out.width) / 2;
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:1567:45: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1567 |     viewPortOut.y = (pViewPort->out.yAdjust +
+      |                   ~  ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1568 |                    (vVisible - pViewPort->out.height) / 2);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:3403:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 3402 |     pApiHeadState->attributes.numberOfHardwareHeadsUsed =
+      |                                                         ~
+ 3403 |         nvPopCount32(hwHeadsMask);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:38:
+In file included from kapi/include/nvkms-kapi-internal.h:32:
+include/nvkms-utils.h:101:45: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  101 |     return (a << 24) | (b << 16) | (c << 8) | d;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:39:
+kapi/include/nvkms-kapi-notifiers.h:64:12: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+   64 |     return notifierIndex;
+      |     ~~~~~~ ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:732:31: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  732 |         memAllocParams.attr = FLD_SET_DRF(OS32, _ATTR, _COHERENCY,
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  733 |                                           _WRITE_BACK, memAllocParams.attr);
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:1328:20: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1328 |     *numDisplays = nvCountDpyIdsInDpyIdList(paramsDisp.reply.validDpys);
+      |                  ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:1974:13: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1974 |             FLD_SET_DRF(OS32, _ATTR, _COHERENCY, _WRITE_BACK,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1975 |                         memAllocParams.attr);
+      |                         ~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2485:44: warning: implicit conversion loses integer precision: 'const NvU64' (aka 'const unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 2485 |     mode->timings.pixelClockHz  = timings->pixelClockHz;
+      |                                 ~ ~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2602:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2602 |     timings->hVisible      = mode->timings.hVisible;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2603:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2603 |     timings->hSyncStart    = mode->timings.hSyncStart;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2604:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2604 |     timings->hSyncEnd      = mode->timings.hSyncEnd;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2605:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2605 |     timings->hTotal        = mode->timings.hTotal;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2606:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2606 |     timings->hSkew         = mode->timings.hSkew;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2607:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2607 |     timings->vVisible      = mode->timings.vVisible;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2608:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2608 |     timings->vSyncStart    = mode->timings.vSyncStart;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2609:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2609 |     timings->vSyncEnd      = mode->timings.vSyncEnd;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2610:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2610 |     timings->vTotal        = mode->timings.vTotal;
+      |                            ~ ~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2619:39: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2619 |     timings->sizeMM.w = mode->timings.widthMM;
+      |                       ~ ~~~~~~~~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2620:39: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2620 |     timings->sizeMM.h = mode->timings.heightMM;
+      |                       ~ ~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:2705:61: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2703 |             pSyncObject->u.semaphores.acquire.surface.offsetInWords =
+      |                                                                     ~
+ 2704 |             nvKmsKapiGetDisplaySemaphoreOffset(
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2705 |                 pLayerConfig->syncParams.u.semaphore.index) >> 2;
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:3009:64: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3009 |                 surface.offsetInWords = nextIndexOffsetInBytes >> 2;
+      |                                       ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:3229:68: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3229 |                 val.surface.offsetInWords = nextIndexOffsetInBytes >> 2;
+      |                                           ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:3465:45: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3464 |         paramsHead->viewPortSizeIn.width =
+      |                                          ~
+ 3465 |             headModeSetConfig->mode.timings.hVisible;
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:3467:45: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 3466 |         paramsHead->viewPortSizeIn.height =
+      |                                           ~
+ 3467 |             headModeSetConfig->mode.timings.vVisible;
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/kapi/src/nvkms-kapi.c:3782:42: warning: implicit conversion loses integer precision: 'enum NvKmsVrrFlipType' to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 3782 |     replyConfig->vrrFlip = params->reply.vrrFlipType;
+      |                          ~ ~~~~~~~~~~~~~~^~~~~~~~~~~
+35 warnings generated.

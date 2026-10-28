@@ -1,0 +1,145 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:26:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+In file included from generated/g_kern_gmmu_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:26:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:28:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:375:97: warning: operand of ? changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  371 |                 SF_IDX_NUM(_RAMIN_SC_PAGE_DIR_BASE, _TARGET, aperture,subctxId) |
+      |                                                                                 ~
+  372 |                 ((pParams->bIsFaultReplayable)?
+  373 |                     SF_IDX_DEF(_RAMIN_SC_PAGE_DIR_BASE, _FAULT_REPLAY_TEX, _ENABLED,  subctxId) |
+  374 |                     SF_IDX_DEF(_RAMIN_SC_PAGE_DIR_BASE, _FAULT_REPLAY_GCC, _ENABLED,  subctxId) :
+  375 |                     SF_IDX_DEF(_RAMIN_SC_PAGE_DIR_BASE, _FAULT_REPLAY_TEX, _DISABLED, subctxId) |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  376 |                     SF_IDX_DEF(_RAMIN_SC_PAGE_DIR_BASE, _FAULT_REPLAY_GCC, _DISABLED, subctxId)) |
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:792:27: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  792 |             copiedCount = queuePush(pRmShadowFaultBuf,
+      |                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  793 |                                     kgmmuFaultBufferGetFault_HAL(pGpu, pKernelGmmu, pHwFaultBuffer, copyIndex), 1);
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/containers/queue.h:102:5: note: expanded from macro 'queuePush'
+  102 |     circularQueuePush_IMPL(&(pQueue)->real,                                  \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  103 |         CONT_CHECK_ARG(pQueue, pElements), numElements)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:1269:22: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1269 |     *pFaultsCopied = queuePushNonManaged(pQueue, &pClientShadowFaultBuf->queueContext,
+      |                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1270 |                                          kgmmuFaultBufferGetFault_HAL(pGpu, pKernelGmmu,
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1271 |                                                                       pHwFaultBuffer,
+      |                                                                       ~~~~~~~~~~~~~~~
+ 1272 |                                                                       getIndex),
+      |                                                                       ~~~~~~~~~~
+ 1273 |                                          1);
+      |                                          ~~
+inc/libraries/containers/queue.h:106:5: note: expanded from macro 'queuePushNonManaged'
+  106 |     circularQueuePushNonManaged_IMPL(&(pQueue)->real, pCtx,                  \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  107 |         CONT_CHECK_ARG(pQueue, pElements), numElements)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:1472:14: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1472 |     regVal = FLD_SET_DRF(_HUBMMU, _PRI_MMU_FAULT_BUFFER_SIZE, _ENABLE, _TRUE, regVal);
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:1838:38: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1838 |     pParsedEntry->bFaultEntryValid = DRF_VAL_MW(C369, _BUF_ENTRY, _VALID, faultEntry);
+      |                                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:392:68: note: expanded from macro 'DRF_VAL_MW'
+  392 | #define DRF_VAL_MW(d,r,f,v)             ( DRF_SPANS(NV##d##r##f) ? DRF_VAL_MW_2WORD(d,r,f,v) : DRF_VAL_MW_1WORD(d,r,f,v) )
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:390:142: note: expanded from macro 'DRF_VAL_MW_2WORD'
+  390 | #define DRF_VAL_MW_2WORD(d,r,f,v)       (((((v)[DRF_WORD_MW_LOW(NV##d##r##f)])>>DRF_SHIFT_MW_LOW(NV##d##r##f))&DRF_MASK_MW_LOW(NV##d##r##f)) | \
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  391 |     (((((v)[DRF_WORD_MW_HIGH(NV##d##r##f)])>>DRF_SHIFT_MW_HIGH(NV##d##r##f))&DRF_MASK_MW_HIGH(NV##d##r##f)) << DRF_MERGE_SHIFT(NV##d##r##f)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:1839:43: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1839 |     pParsedEntry->bFaultInProtectedMode = DRF_VAL_MW(C369, _BUF_ENTRY, _PROTECTED_MODE, faultEntry);
+      |                                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:392:68: note: expanded from macro 'DRF_VAL_MW'
+  392 | #define DRF_VAL_MW(d,r,f,v)             ( DRF_SPANS(NV##d##r##f) ? DRF_VAL_MW_2WORD(d,r,f,v) : DRF_VAL_MW_1WORD(d,r,f,v) )
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:390:142: note: expanded from macro 'DRF_VAL_MW_2WORD'
+  390 | #define DRF_VAL_MW_2WORD(d,r,f,v)       (((((v)[DRF_WORD_MW_LOW(NV##d##r##f)])>>DRF_SHIFT_MW_LOW(NV##d##r##f))&DRF_MASK_MW_LOW(NV##d##r##f)) | \
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  391 |     (((((v)[DRF_WORD_MW_HIGH(NV##d##r##f)])>>DRF_SHIFT_MW_HIGH(NV##d##r##f))&DRF_MASK_MW_HIGH(NV##d##r##f)) << DRF_MERGE_SHIFT(NV##d##r##f)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:1840:42: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1840 |     pParsedEntry->bFaultTypeReplayable = DRF_VAL_MW(C369, _BUF_ENTRY, _REPLAYABLE_FAULT, faultEntry);
+      |                                        ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:392:68: note: expanded from macro 'DRF_VAL_MW'
+  392 | #define DRF_VAL_MW(d,r,f,v)             ( DRF_SPANS(NV##d##r##f) ? DRF_VAL_MW_2WORD(d,r,f,v) : DRF_VAL_MW_1WORD(d,r,f,v) )
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:390:142: note: expanded from macro 'DRF_VAL_MW_2WORD'
+  390 | #define DRF_VAL_MW_2WORD(d,r,f,v)       (((((v)[DRF_WORD_MW_LOW(NV##d##r##f)])>>DRF_SHIFT_MW_LOW(NV##d##r##f))&DRF_MASK_MW_LOW(NV##d##r##f)) | \
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  391 |     (((((v)[DRF_WORD_MW_HIGH(NV##d##r##f)])>>DRF_SHIFT_MW_HIGH(NV##d##r##f))&DRF_MASK_MW_HIGH(NV##d##r##f)) << DRF_MERGE_SHIFT(NV##d##r##f)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:1841:40: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1841 |     pParsedEntry->bReplayableFaultEn = DRF_VAL_MW(C369, _BUF_ENTRY, _REPLAYABLE_FAULT_EN, faultEntry);
+      |                                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:392:68: note: expanded from macro 'DRF_VAL_MW'
+  392 | #define DRF_VAL_MW(d,r,f,v)             ( DRF_SPANS(NV##d##r##f) ? DRF_VAL_MW_2WORD(d,r,f,v) : DRF_VAL_MW_1WORD(d,r,f,v) )
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:390:142: note: expanded from macro 'DRF_VAL_MW_2WORD'
+  390 | #define DRF_VAL_MW_2WORD(d,r,f,v)       (((((v)[DRF_WORD_MW_LOW(NV##d##r##f)])>>DRF_SHIFT_MW_LOW(NV##d##r##f))&DRF_MASK_MW_LOW(NV##d##r##f)) | \
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+  391 |     (((((v)[DRF_WORD_MW_HIGH(NV##d##r##f)])>>DRF_SHIFT_MW_HIGH(NV##d##r##f))&DRF_MASK_MW_HIGH(NV##d##r##f)) << DRF_MERGE_SHIFT(NV##d##r##f)))
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:2235:19: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 2235 |     faultStatus = FLD_SET_DRF(_HUBMMU, _PRI_MMU_FAULT_STATUS, _VALID, _CLEAR, faultStatus);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/volta/kern_gmmu_gv100.c:2368:23: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 2368 |         faultStatus = FLD_SET_DRF(_HUBMMU, _PRI_MMU_FAULT_STATUS, _VALID, _CLEAR, faultStatus);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+18 warnings generated.

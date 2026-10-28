@@ -1,0 +1,69 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:33:
+In file included from inc/kernel/rmapi/client.h:2:
+In file included from generated/g_client_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:45:
+In file included from inc/kernel/gpu/fifo/kernel_channel_group.h:2:
+In file included from generated/g_kernel_channel_group_nvoc.h:57:
+In file included from inc/kernel/gpu/fifo/kernel_channel.h:2:
+In file included from generated/g_kernel_channel_nvoc.h:56:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:46:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:175:37: warning: implicit conversion loses integer precision: 'const VIDEO_ENGINE_EVENT_ID' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  175 |     videoRecord.event_id = pRecord->event_id;
+      |                          ~ ~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:177:34: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  177 |     videoRecord.seqno = pRecord->seq_no;
+      |                       ~ ~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:583:29: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  583 |                 eventMask = ~0;
+      |                           ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:639:24: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  639 |     pBind->eventMask = eventMask;
+      |                      ~ ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:616:72: warning: variable 'targetUser' may be uninitialized when used here [-Wconditional-uninitialized]
+  616 |     if (NULL == multimapFindSubmap(&pGpu->videoEventBufferBindingsUid, targetUser))
+      |                                                                        ^~~~~~~~~~
+inc/libraries/containers/multimap.h:160:69: note: expanded from macro 'multimapFindSubmap'
+  160 |                    multimapFindSubmap_IMPL(&(pMultimap)->real.base, submapKey), multimapIsValid_IMPL)
+      |                                                                     ^~~~~~~~~
+inc/libraries/containers/type_safety.h:174:72: note: expanded from macro 'CONT_CAST_ELEM'
+  174 | #define CONT_CAST_ELEM(pCont, ret, validfunc) ((typeof((pCont)->elem))(ret))
+      |                                                                        ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpuvideo/videoeventlist.c:556:21: note: initialize the variable 'targetUser' to silence this warning
+  556 |     NvU64 targetUser;
+      |                     ^
+      |                      = 0
+13 warnings generated.

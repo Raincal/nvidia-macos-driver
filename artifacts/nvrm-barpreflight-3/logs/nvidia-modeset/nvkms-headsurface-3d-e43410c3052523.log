@@ -1,0 +1,485 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:24:
+In file included from include/nvkms-types.h:31:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+In file included from ../common/unix/common/inc/nv_dpy_id.h:35:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:24:
+In file included from include/nvkms-types.h:31:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+../common/unix/common/inc/nv_dpy_id.h:272:12: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  272 |     return nvPopCount32(dpyIdList.opaqueDpyIdList);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:310:33: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  310 |     dpyIdList.opaqueDpyIdList = val;
+      |                               ~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:320:55: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  320 |     dpyId.opaqueDpyId = (val == 0) ? 0 : 1 << (nv_ffs(val)-1);
+      |                                                ~~~~~~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:344:38: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../common/unix/common/inc/nv_dpy_id.h:344:25: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |            ~~~~~~ ~~~~~~^~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:356:23: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  356 |         1U << (nv_ffs(~excludeList.opaqueDpyIdList) - 1);
+      |                ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:24:
+In file included from include/nvkms-types.h:45:
+In file included from interface/nvkms-api.h:201:
+../common/unix/common/inc/nv_mode_timings.h:154:23: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  154 |     return (hz + 500) / 1000;
+      |     ~~~~~~ ~~~~~~~~~~~^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:24:
+include/nvkms-types.h:1565:44: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1565 |     viewPortOut.x = pViewPort->out.xAdjust +
+      |                   ~ ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1566 |                    (hVisible - pViewPort->out.width) / 2;
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:1567:45: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1567 |     viewPortOut.y = (pViewPort->out.yAdjust +
+      |                   ~  ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1568 |                    (vVisible - pViewPort->out.height) / 2);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:3403:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 3402 |     pApiHeadState->attributes.numberOfHardwareHeadsUsed =
+      |                                                         ~
+ 3403 |         nvPopCount32(hwHeadsMask);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:25:
+In file included from include/nvkms-headsurface-3d.h:29:
+In file included from include/nvkms-headsurface-priv.h:29:
+In file included from include/nvkms-headsurface-config.h:29:
+In file included from ../common/unix/nvidia-headsurface/nvidia-headsurface-types.h:28:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d-types.h:30:
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:102:58: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  102 |     nvDmaMoveDWORDS(p->main.buffer, (const NvU32 *)data, dwords);
+      |     ~~~~~~~~~~~~~~~                                      ^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:25:
+In file included from include/nvkms-headsurface-3d.h:29:
+In file included from include/nvkms-headsurface-priv.h:31:
+include/nvkms-utils.h:101:45: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  101 |     return (a << 24) | (b << 16) | (c << 8) | d;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:25:
+In file included from include/nvkms-headsurface-3d.h:29:
+include/nvkms-headsurface-priv.h:421:9: warning: implicit conversion loses integer precision: 'unsigned long' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  420 |     const NvU16 semBase =
+      |                 ~~~~~~~
+  421 |         offsetof(NVHsNotifiersOneSdRec, semaphore[pHsChannel->apiHead]);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/Kernel.framework/Headers/stddef.h:67:24: note: expanded from macro 'offsetof'
+   67 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:33:
+../common/unix/nvidia-push/interface/nvidia-push-utils.h:124:32: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  124 |         return notifierIndex & ~NV_PUSH_NOTIFIER_INTERNAL_BIT;
+      |                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:38:
+../common/unix/nvidia-3d/interface/nvidia-3d-color-targets.h:43:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   43 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D, NV9097_SET_CT_SELECT,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   44 |         NV3D_V(9097, SET_CT_SELECT, TARGET_COUNT, 1)           |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   45 |         NV3D_V(9097, SET_CT_SELECT, TARGET0, colorTargetIndex) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   46 |         NV3D_V(9097, SET_CT_SELECT, TARGET1, 0)                |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   47 |         NV3D_V(9097, SET_CT_SELECT, TARGET2, 0)                |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   48 |         NV3D_V(9097, SET_CT_SELECT, TARGET3, 0)                |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   49 |         NV3D_V(9097, SET_CT_SELECT, TARGET4, 0)                |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   50 |         NV3D_V(9097, SET_CT_SELECT, TARGET5, 0)                |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   51 |         NV3D_V(9097, SET_CT_SELECT, TARGET6, 0)                |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   52 |         NV3D_V(9097, SET_CT_SELECT, TARGET7, 0));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:38:
+../common/unix/nvidia-3d/interface/nvidia-3d-color-targets.h:77:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   77 |         nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |             NV9097_SET_COLOR_TARGET_FORMAT(colorTargetIndex),
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   79 |             NV9097_SET_COLOR_TARGET_FORMAT_V_DISABLED);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:39:
+../common/unix/nvidia-3d/interface/nvidia-3d-utils.h:74:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   74 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D, NV9097_CLEAR_SURFACE,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   75 |         NV3D_C(9097, CLEAR_SURFACE, R_ENABLE, TRUE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   76 |         NV3D_C(9097, CLEAR_SURFACE, G_ENABLE, TRUE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |         NV3D_C(9097, CLEAR_SURFACE, B_ENABLE, TRUE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |         NV3D_C(9097, CLEAR_SURFACE, A_ENABLE, TRUE));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:39:
+../common/unix/nvidia-3d/interface/nvidia-3d-utils.h:90:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   90 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D, NV9097_BEGIN, mode);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:39:
+../common/unix/nvidia-3d/interface/nvidia-3d-utils.h:100:40: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  100 |     p3dChannel->currentPrimitiveMode = ~0;
+      |                                      ~ ^~
+../common/unix/nvidia-3d/interface/nvidia-3d-utils.h:101:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  101 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D, NV9097_END, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:64:53: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+   64 |         nv3dGetConstantBufferGpuAddress(p3dChannel, constantBufferIndex);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~             ^~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:82:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   82 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   83 |         NV9097_BIND_GROUP_CONSTANT_BUFFER(bindGroup),
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   84 |         NV3D_V(9097, BIND_GROUP_CONSTANT_BUFFER, VALID, !!valid) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   85 |         NV3D_V(9097, BIND_GROUP_CONSTANT_BUFFER, SHADER_SLOT, slot));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:232:59: note: expanded from macro 'nvPushImmedValSegment'
+  232 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:242:36: note: expanded from macro 'DRF_NUM'
+  242 | #define DRF_NUM(d,r,f,n)        (((n)&DRF_MASK(NV ## d ## r ## f))<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                    ^ ~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:82:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   82 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   83 |         NV9097_BIND_GROUP_CONSTANT_BUFFER(bindGroup),
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   84 |         NV3D_V(9097, BIND_GROUP_CONSTANT_BUFFER, VALID, !!valid) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   85 |         NV3D_V(9097, BIND_GROUP_CONSTANT_BUFFER, SHADER_SLOT, slot));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:112:5: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  112 |     nvPushMethodOneIncr(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  113 |         NV9097_LOAD_CONSTANT_BUFFER_OFFSET, dwords + 1);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:248:5: note: expanded from macro 'nvPushMethodOneIncr'
+  248 |     __nvPushStart(_push_buffer, main, _subch, _offset, _count, _ONE_INC)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:215:9: note: expanded from macro '__nvPushStart'
+  214 |     nvPushHeader((_push_buffer), _segment, (_count),                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  215 |         DRF_DEF(C46F, _DMA, _SEC_OP,               _opcode)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |         DRF_NUM(C46F, _DMA, _METHOD_COUNT,         _count)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  217 |         DRF_NUM(C46F, _DMA, _METHOD_SUBCHANNEL,    _subch)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  218 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                                          ^
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:200:48: note: expanded from macro 'nvPushHeader'
+  200 |     __nvPushSetMethodDataSegment((_pSegment), (_header));             \
+      |                                                ^~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:112:5: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  112 |     nvPushMethodOneIncr(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  113 |         NV9097_LOAD_CONSTANT_BUFFER_OFFSET, dwords + 1);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:248:5: note: expanded from macro 'nvPushMethodOneIncr'
+  248 |     __nvPushStart(_push_buffer, main, _subch, _offset, _count, _ONE_INC)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:214:5: note: expanded from macro '__nvPushStart'
+  214 |     nvPushHeader((_push_buffer), _segment, (_count),                  \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  215 |         DRF_DEF(C46F, _DMA, _SEC_OP,               _opcode)  |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |         DRF_NUM(C46F, _DMA, _METHOD_COUNT,         _count)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  217 |         DRF_NUM(C46F, _DMA, _METHOD_SUBCHANNEL,    _subch)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  218 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:199:51: note: expanded from macro 'nvPushHeader'
+  199 |         __nvPushMakeRoom((_push_buffer), (_count) + 1);               \
+      |         ~~~~~~~~~~~~~~~~                 ~~~~~~~~~^~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:112:5: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  112 |     nvPushMethodOneIncr(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  113 |         NV9097_LOAD_CONSTANT_BUFFER_OFFSET, dwords + 1);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:248:5: note: expanded from macro 'nvPushMethodOneIncr'
+  248 |     __nvPushStart(_push_buffer, main, _subch, _offset, _count, _ONE_INC)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:217:62: note: expanded from macro '__nvPushStart'
+  214 |     nvPushHeader((_push_buffer), _segment, (_count),                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  215 |         DRF_DEF(C46F, _DMA, _SEC_OP,               _opcode)  |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |         DRF_NUM(C46F, _DMA, _METHOD_COUNT,         _count)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  217 |         DRF_NUM(C46F, _DMA, _METHOD_SUBCHANNEL,    _subch)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+  218 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:200:48: note: expanded from macro 'nvPushHeader'
+  200 |     __nvPushSetMethodDataSegment((_pSegment), (_header));             \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~               ^~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:147:37: warning: implicit conversion loses integer precision: 'const size_t' (aka 'const unsigned long') to 'int' [-Wshorten-64-to-32]
+  147 |     nvDmaMoveDWORDS(buffer, values, dwords);
+      |     ~~~~~~~~~~~~~~~                 ^~~~~~
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:178:5: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  178 |     nvPushMethodNoIncr(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  179 |         NV9097_LOAD_CONSTANT_BUFFER(0), dwords);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:246:5: note: expanded from macro 'nvPushMethodNoIncr'
+  246 |     __nvPushStart(_push_buffer, main, _subch, _offset, _count, _NON_INC_METHOD)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:214:5: note: expanded from macro '__nvPushStart'
+  214 |     nvPushHeader((_push_buffer), _segment, (_count),                  \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  215 |         DRF_DEF(C46F, _DMA, _SEC_OP,               _opcode)  |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |         DRF_NUM(C46F, _DMA, _METHOD_COUNT,         _count)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  217 |         DRF_NUM(C46F, _DMA, _METHOD_SUBCHANNEL,    _subch)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  218 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:199:51: note: expanded from macro 'nvPushHeader'
+  199 |         __nvPushMakeRoom((_push_buffer), (_count) + 1);               \
+      |         ~~~~~~~~~~~~~~~~                 ~~~~~~~~~^~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:40:
+../common/unix/nvidia-3d/interface/nvidia-3d-constant-buffers.h:178:5: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  178 |     nvPushMethodNoIncr(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  179 |         NV9097_LOAD_CONSTANT_BUFFER(0), dwords);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:246:5: note: expanded from macro 'nvPushMethodNoIncr'
+  246 |     __nvPushStart(_push_buffer, main, _subch, _offset, _count, _NON_INC_METHOD)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:217:62: note: expanded from macro '__nvPushStart'
+  214 |     nvPushHeader((_push_buffer), _segment, (_count),                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  215 |         DRF_DEF(C46F, _DMA, _SEC_OP,               _opcode)  |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |         DRF_NUM(C46F, _DMA, _METHOD_COUNT,         _count)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  217 |         DRF_NUM(C46F, _DMA, _METHOD_SUBCHANNEL,    _subch)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+  218 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:200:48: note: expanded from macro 'nvPushHeader'
+  200 |     __nvPushSetMethodDataSegment((_pSegment), (_header));             \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~               ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:86:21: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   86 |     nvkms_memset(s, c, size);
+      |     ~~~~~~~~~~~~    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:481:43: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+  481 |     pTexInfo->pitch = pSurface->planes[0].pitch;
+      |                     ~ ~~~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:482:33: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+  482 |     pTexInfo->width = pSurface->widthInPixels;
+      |                     ~ ~~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:483:34: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+  483 |     pTexInfo->height = pSurface->heightInPixels;
+      |                      ~ ~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:610:32: warning: implicit conversion changes signedness: 'const NvU16' (aka 'const unsigned short') to 'NvS16' (aka 'short') [-Wsign-conversion]
+  610 |     nv3dSetSurfaceClip(p3d, x, y, w, h);
+      |     ~~~~~~~~~~~~~~~~~~         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:610:29: warning: implicit conversion changes signedness: 'const NvU16' (aka 'const unsigned short') to 'NvS16' (aka 'short') [-Wsign-conversion]
+  610 |     nv3dSetSurfaceClip(p3d, x, y, w, h);
+      |     ~~~~~~~~~~~~~~~~~~      ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:660:56: warning: implicit conversion changes signedness: 'int' to 'ProgramName' [-Wsign-conversion]
+  660 |             return PROGRAM_NVIDIA_HEADSURFACE_FRAGMENT + i;
+      |             ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:743:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  743 |         nvPushImmed(p, NVA06F_SUBCHANNEL_2D,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  744 |             NV902D_SET_SRC_MEMORY_LAYOUT, PITCH);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:240:5: note: expanded from macro 'nvPushImmed'
+  240 |     nvPushImmedVal(_push_buffer, _subch, _offset, _offset##_V_##_val)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:755:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  755 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_2D, NV902D_SET_SRC_FORMAT, colorFormat);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:788:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  788 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_2D, NV902D_SET_DST_FORMAT, colorFormat);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:801:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  801 |     nvPushImmed(p, NVA06F_SUBCHANNEL_2D, NV902D_SET_OPERATION, SRCCOPY);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:240:5: note: expanded from macro 'nvPushImmed'
+  240 |     nvPushImmedVal(_push_buffer, _subch, _offset, _offset##_V_##_val)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:890:32: warning: operand of ? changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  890 |     const NvU32 a = NV_MAX(dvc + 1024, 0);
+      |                 ~          ~~~~^~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:770:45: note: expanded from macro 'NV_MAX'
+  770 | #define NV_MAX(a, b)        (((a) > (b)) ? (a) : (b))
+      |                                             ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:962:61: warning: implicit conversion changes signedness: 'const enum NvKmsResamplingMethod' to 'int' [-Wsign-conversion]
+  962 |         fragmentUniforms.resamplingMethod = pChannelConfig->resamplingMethod;
+      |                                           ~ ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1004:70: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 1004 |         fragmentUniforms.cursorPosition.x = pChannelConfig->cursor.x +
+      |                                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1005 |                                             fragmentUniforms.primaryTextureBias.x;
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1004:68: warning: implicit conversion changes signedness: 'const NvS16' (aka 'const short') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1004 |         fragmentUniforms.cursorPosition.x = pChannelConfig->cursor.x +
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~^ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1006:70: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 1006 |         fragmentUniforms.cursorPosition.y = pChannelConfig->cursor.y +
+      |                                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1007 |                                             fragmentUniforms.primaryTextureBias.y;
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1006:68: warning: implicit conversion changes signedness: 'const NvS16' (aka 'const short') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1006 |         fragmentUniforms.cursorPosition.y = pChannelConfig->cursor.y +
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~^ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1119:58: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 1119 |     uniforms.cursorPosition.x = pChannelConfig->cursor.x +
+      |                               ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1120 |                                 uniforms.primaryTextureBias.x;
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1119:56: warning: implicit conversion changes signedness: 'const NvS16' (aka 'const short') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1119 |     uniforms.cursorPosition.x = pChannelConfig->cursor.x +
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~^ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1121:58: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 1121 |     uniforms.cursorPosition.y = pChannelConfig->cursor.y +
+      |                               ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1122 |                                 uniforms.primaryTextureBias.y;
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1121:56: warning: implicit conversion changes signedness: 'const NvS16' (aka 'const short') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1121 |     uniforms.cursorPosition.y = pChannelConfig->cursor.y +
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~^ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1167:43: warning: implicit conversion changes signedness: 'const enum NVHsChannelTexInfoEnum' to 'int' [-Wsign-conversion]
+ 1167 |             textures[i] = textureTable[i].texture;
+      |                         ~ ~~~~~~~~~~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1233:28: warning: implicit conversion changes signedness: 'NvS16' (aka 'short') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1233 |     nvPushSetMethodData(p, x);
+      |     ~~~~~~~~~~~~~~~~~~~    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1234:28: warning: implicit conversion changes signedness: 'NvS16' (aka 'short') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1234 |     nvPushSetMethodData(p, y);
+      |     ~~~~~~~~~~~~~~~~~~~    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1969:56: warning: implicit conversion changes signedness: 'const NvU16' (aka 'const unsigned short') to 'NvS16' (aka 'short') [-Wsign-conversion]
+ 1969 |     HsSetWindowOffset(pHsChannel, destRect.x, destRect.y);
+      |     ~~~~~~~~~~~~~~~~~                         ~~~~~~~~~^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1969:44: warning: implicit conversion changes signedness: 'const NvU16' (aka 'const unsigned short') to 'NvS16' (aka 'short') [-Wsign-conversion]
+ 1969 |     HsSetWindowOffset(pHsChannel, destRect.x, destRect.y);
+      |     ~~~~~~~~~~~~~~~~~             ~~~~~~~~~^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface-3d.c:1975:26: warning: implicit conversion changes signedness: 'ProgramName' to 'int' [-Wsign-conversion]
+ 1975 |     nv3dLoadProgram(p3d, fragmentProgram);
+      |     ~~~~~~~~~~~~~~~      ^~~~~~~~~~~~~~~
+58 warnings generated.

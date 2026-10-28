@@ -1,0 +1,164 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:31:
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/edid.h:31:
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvtiming_pvt.h:34:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+In file included from ../common/unix/common/inc/nv_dpy_id.h:35:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:31:
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/edid.h:31:
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvtiming_pvt.h:34:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+../common/unix/common/inc/nv_dpy_id.h:272:12: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  272 |     return nvPopCount32(dpyIdList.opaqueDpyIdList);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:310:33: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  310 |     dpyIdList.opaqueDpyIdList = val;
+      |                               ~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:320:55: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  320 |     dpyId.opaqueDpyId = (val == 0) ? 0 : 1 << (nv_ffs(val)-1);
+      |                                                ~~~~~~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:344:38: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../common/unix/common/inc/nv_dpy_id.h:344:25: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |            ~~~~~~ ~~~~~~^~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:356:23: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  356 |         1U << (nv_ffs(~excludeList.opaqueDpyIdList) - 1);
+      |                ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:619:65: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  618 |         pT->etc.aspect = (pDTD->bDTHorizVertImage & 0xF0) << 20 | pDTD->bDTHorizontalImage << 16 |
+      |                        ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  619 |                          (pDTD->bDTHorizVertImage & 0x0F) << 8  | pDTD->bDTVerticalImage;
+      |                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:746:51: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  745 |                     p->u.range_limit.u.gtf2.M     = (pRangeLimit->u.gtf2.M_MSB << 8)
+      |                                                   ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  746 |                                                   +  pRangeLimit->u.gtf2.M_LSB;      // 0 <= M <= 65535
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:756:141: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  756 |                     p->u.range_limit.u.cvt.max_active_pixels_per_line = (pRangeLimit->u.cvt.pixel_clock & NVT_PVT_EDID_CVT_ACTIVE_MSB_MASK) << NVT_PVT_EDID_CVT_ACTIVE_MSB_SHIFT;
+      |                                                                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:778:61: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  778 |                 p->u.color_point.wp1_x = pColorPoint->wp1_x << 2;
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:780:61: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  780 |                 p->u.color_point.wp1_y = pColorPoint->wp1_y << 2;
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:785:61: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  785 |                 p->u.color_point.wp2_x = pColorPoint->wp2_x << 2;
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:787:61: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  787 |                 p->u.color_point.wp2_y = pColorPoint->wp2_y << 2;
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:808:63: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  808 |                 p->u.color_man.red_a3 = pColorMan->red_a3_lsb | (pColorMan->red_a3_msb << 8);
+      |                                       ~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:809:63: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  809 |                 p->u.color_man.red_a2 = pColorMan->red_a2_lsb | (pColorMan->red_a2_msb << 8);
+      |                                       ~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:811:67: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  811 |                 p->u.color_man.green_a3 = pColorMan->green_a3_lsb | (pColorMan->green_a3_msb << 8);
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:812:67: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  812 |                 p->u.color_man.green_a2 = pColorMan->green_a2_lsb | (pColorMan->green_a2_msb << 8);
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:814:65: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  814 |                 p->u.color_man.blue_a3 = pColorMan->blue_a3_lsb | (pColorMan->blue_a3_msb << 8);
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:815:65: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  815 |                 p->u.color_man.blue_a2 = pColorMan->blue_a2_lsb | (pColorMan->blue_a2_msb << 8);
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:972:43: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  972 |     pInfo->cc_red_x =  p->Chromaticity[2] << 2;
+      |                     ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:974:43: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  974 |     pInfo->cc_red_y =  p->Chromaticity[3] << 2;
+      |                     ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:977:45: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  977 |     pInfo->cc_green_x =  p->Chromaticity[4] << 2;
+      |                       ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:979:45: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  979 |     pInfo->cc_green_y =  p->Chromaticity[5] << 2;
+      |                       ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:982:44: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  982 |     pInfo->cc_blue_x =  p->Chromaticity[6] << 2;
+      |                      ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:984:44: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  984 |     pInfo->cc_blue_y =  p->Chromaticity[7] << 2;
+      |                      ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:987:45: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  987 |     pInfo->cc_white_x =  p->Chromaticity[8] << 2;
+      |                       ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:989:45: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  989 |     pInfo->cc_white_y =  p->Chromaticity[9] << 2;
+      |                       ~  ~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:993:70: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  993 |     pInfo->established_timings_1_2  = (NvU16)p->bEstablishedTimings1 << 8;
+      |                                     ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:1305:17: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1305 |                 NVT_SET_CEA_FORMAT(pInfo->timing[i].etc.status, data);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvtiming.h:248:53: note: expanded from macro 'NVT_SET_CEA_FORMAT'
+  248 | #define NVT_SET_CEA_FORMAT(n,index)           {(n)&=~NVT_STATUS_TIMING_CEA_FORMAT_MASK;(n)|=(index)<<NVT_STATUS_TIMING_CEA_FORMAT_SHIFT;}
+      |                                                   ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:1729:21: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1729 |         minHeight = ~0;
+      |                   ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:1891:15: warning: variable 'cvtTiming' may be uninitialized when used here [-Wconditional-uninitialized]
+ 1891 |         *pT = cvtTiming;
+      |               ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:1453:5: note: variable 'cvtTiming' is declared here
+ 1453 |     NVT_TIMING cvtTiming;
+      |     ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:1942:19: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1942 |     flag = flag & ~(NVT_FLAG_MAX_EDID_TIMING);
+      |                 ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2202:43: warning: implicit conversion changes signedness: 'long' to 'unsigned long' [-Wsign-conversion]
+ 2202 |                            (((NvU8 *)pDTD - pExt + sizeof(DETAILEDTIMINGDESCRIPTOR)) < ((NvU8)sizeof(EIA861EXTENSION))))
+      |                              ~~~~~~~~~~~~~^~~~~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2306:47: warning: declaration shadows a local variable [-Wshadow]
+ 2306 |                     DETAILEDTIMINGDESCRIPTOR *pDTD = (DETAILEDTIMINGDESCRIPTOR *)&p->DetailedTimingDesc[i];
+      |                                               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2257:42: note: previous declaration is here
+ 2257 |     DETAILEDTIMINGDESCRIPTOR            *pDTD;
+      |                                          ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2307:82: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2307 |                     NvU16 hDTDImageSize =  (pDTD->bDTHorizVertImage & 0xF0) << 4 | pDTD->bDTHorizontalImage;
+      |                           ~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2308:82: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2308 |                     NvU16 vDTDImageSize =  (pDTD->bDTHorizVertImage & 0x0F) << 8 | pDTD->bDTVerticalImage;
+      |                           ~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2453:39: warning: implicit conversion changes signedness: 'long' to 'unsigned long' [-Wsign-conversion]
+ 2453 |                        (((NvU8 *)pDTD - pExt + sizeof(DETAILEDTIMINGDESCRIPTOR)) < ((NvU8)sizeof(EIA861EXTENSION))))
+      |                          ~~~~~~~~~~~~~^~~~~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2462:90: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2462 |                             NvU16 hDTDImageSize =  (pDTD->bDTHorizVertImage & 0xF0) << 4 | pDTD->bDTHorizontalImage;
+      |                                   ~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2463:90: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2463 |                             NvU16 vDTDImageSize =  (pDTD->bDTHorizVertImage & 0x0F) << 8 | pDTD->bDTVerticalImage;
+      |                                   ~~~~~~~~~~~~~    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:2929:44: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 2929 |     RemoveTrailingWhiteSpace(pProductName, m);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:3040:32: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 3040 |     pLimit->min_v_rate_hzx1k = ~0;
+      |                              ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:3042:29: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 3042 |     pLimit->min_h_rate_hz = ~0;
+      |                           ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/modeset/timing/nvt_edid.c:3215:44: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 3215 |     RemoveTrailingWhiteSpace(monitor_name, j);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~               ^
+45 warnings generated.

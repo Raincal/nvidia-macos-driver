@@ -1,0 +1,99 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:24:
+In file included from inc/kernel/gpu/fifo/kernel_channel_group_api.h:2:
+In file included from generated/g_kernel_channel_group_api_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:27:
+In file included from inc/kernel/gpu/fifo/kernel_channel_group.h:2:
+In file included from generated/g_kernel_channel_group_nvoc.h:57:
+In file included from inc/kernel/gpu/fifo/kernel_channel.h:2:
+In file included from generated/g_kernel_channel_nvoc.h:56:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:29:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:30:
+In file included from inc/kernel/gpu/gr/kernel_graphics.h:2:
+generated/g_kernel_graphics_nvoc.h:1136:37: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1136 |     return pKernelGraphics_PRIVATE->bOverrideContextBuffersPteKind;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:460:9: warning: declaration shadows a local variable [-Wshadow]
+  460 |         NV_RM_RPC_ALLOC_OBJECT(pGpu,
+      |         ^
+inc/kernel/vgpu/rpc.h:276:25: note: expanded from macro 'NV_RM_RPC_ALLOC_OBJECT'
+  276 |                 RM_API *pRmApi = GPU_GET_PHYSICAL_RMAPI(pGpu);                          \
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:76:45: note: previous declaration is here
+   76 |     RM_API                                 *pRmApi              = rmapiGetInterface(RMAPI_GPU_LOCK_INTERNAL);
+      |                                             ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:399:40: warning: variable 'ctxBufferSize' may be uninitialized when used here [-Wconditional-uninitialized]
+  399 |                 bufInfoList[0].size  = ctxBufferSize;
+      |                                        ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:377:32: note: initialize the variable 'ctxBufferSize' to silence this warning
+  377 |             NvU32 ctxBufferSize;
+      |                                ^
+      |                                 = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:347:108: warning: variable 'ref' may be uninitialized when used here [-Wconditional-uninitialized]
+  347 |         (!bMIGInUse || kmigmgrIsEngineInInstance(pGpu, pKernelMIGManager, pKernelChannelGroup->engineType, ref)))
+      |                                                                                                            ^~~
+generated/g_kernel_mig_manager_nvoc.h:993:138: note: expanded from macro 'kmigmgrIsEngineInInstance'
+  993 | #define kmigmgrIsEngineInInstance(arg1, arg_this, globalRmEngType, arg4) kmigmgrIsEngineInInstance_IMPL(arg1, arg_this, globalRmEngType, arg4)
+      |                                                                                                                                          ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:75:5: note: variable 'ref' is declared here
+   75 |     MIG_INSTANCE_REF                        ref;
+      |     ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:789:9: warning: declaration shadows a local variable [-Wshadow]
+  789 |         NV_RM_RPC_DUP_OBJECT(pGpu, pDstClient->hClient, pDstRef->pParentRef->hResource, pDstRef->hResource,
+      |         ^
+inc/kernel/vgpu/rpc.h:399:25: note: expanded from macro 'NV_RM_RPC_DUP_OBJECT'
+  399 |                 RM_API *pRmApi = GPU_GET_PHYSICAL_RMAPI(pGpu);                  \
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:707:13: note: previous declaration is here
+  707 |     RM_API *pRmApi = rmapiGetInterface(RMAPI_GPU_LOCK_INTERNAL);
+      |             ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:1209:9: warning: declaration shadows a local variable [-Wshadow]
+ 1209 |         NV_RM_RPC_CONTROL(pGpu,
+      |         ^
+inc/kernel/vgpu/rpc.h:228:25: note: expanded from macro 'NV_RM_RPC_CONTROL'
+  228 |                 RM_API *pRmApi = GPU_GET_PHYSICAL_RMAPI(pGpu);                      \
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:1106:26: note: previous declaration is here
+ 1106 |     RM_API              *pRmApi       = GPU_GET_PHYSICAL_RMAPI(pGpu);
+      |                          ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:1354:9: warning: declaration shadows a local variable [-Wshadow]
+ 1354 |         NV_RM_RPC_CONTROL(pGpu,
+      |         ^
+inc/kernel/vgpu/rpc.h:228:25: note: expanded from macro 'NV_RM_RPC_CONTROL'
+  228 |                 RM_API *pRmApi = GPU_GET_PHYSICAL_RMAPI(pGpu);                      \
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/fifo/kernel_channel_group_api.c:1333:25: note: previous declaration is here
+ 1333 |     RM_API             *pRmApi              = GPU_GET_PHYSICAL_RMAPI(pGpu);
+      |                         ^
+15 warnings generated.

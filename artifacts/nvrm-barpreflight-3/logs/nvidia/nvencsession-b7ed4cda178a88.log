@@ -1,0 +1,48 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvenc/nvencsession.c:24:
+In file included from inc/kernel/core/core.h:26:
+In file included from inc/kernel/core/prelude.h:41:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvenc/nvencsession.c:30:
+In file included from inc/kernel/vgpu/rpc.h:42:
+In file included from inc/kernel/vgpu/vgpu_events.h:46:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvenc/nvencsession.c:375:44: warning: implicit conversion changes signedness: 'NvU64' (aka 'unsigned long long') to 'NvS64' (aka 'long long') [-Wsign-conversion]
+  375 |         timeDiffFrameTS = latestFrameEndTS - pNvencSession->lastProcessedFrameTS;
+      |                         ~ ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvenc/nvencsession.c:379:111: warning: implicit conversion changes signedness: 'NvS64' (aka 'long long') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  379 |             pNvencSession->nvencSessionEntry.averageEncodeFps = ((processedFrameCount * 1000 * 1000 * 1000) / timeDiffFrameTS);
+      |                                                                                                             ~ ^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvenc/nvencsession.c:369:80: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  368 |         pNvencSession->nvencSessionEntry.averageEncodeLatency =
+      |                                                               ~
+  369 |             ((timeTakenToEncodeNs / 1000) < 0xFFFFFFFF) ? (timeTakenToEncodeNs / 1000) : 0xFFFFFFFF;
+      |                                                            ~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvenc/nvencsession.c:379:109: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  379 |             pNvencSession->nvencSessionEntry.averageEncodeFps = ((processedFrameCount * 1000 * 1000 * 1000) / timeDiffFrameTS);
+      |                                                               ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+11 warnings generated.

@@ -1,0 +1,79 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:30:
+In file included from inc/kernel/gpu/gpu.h:2:
+In file included from generated/g_gpu_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:74:
+inc/lib/protobuf/prb_util.h:90:88: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 | static NV_FORCEINLINE NvU8 prbEncNestingLevel(PRB_ENCODER *pPrbEnc)  { return pPrbEnc->depth; }
+      |                                                                        ~~~~~~ ~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+generated/g_kernel_nvlink_nvoc.h:2458:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2458 |     pKernelNvlink_PRIVATE->maxRbmLinks = maxRbmLinks;
+      |                                        ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:227:55: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  227 |     gpuSetTimeout(pGpu, (linkStateChangeTimeMs*1000U) + 1000000U, &timeout, 0U);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+inc/kernel/gpu/gpu_timeout.h:144:71: note: expanded from macro 'gpuSetTimeout'
+  144 | #define gpuSetTimeout(g,a,t,c)       timeoutSet(&(g)->timeoutData, t, a, c)
+      |                                      ~~~~~~~~~~                       ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:381:57: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  381 |         gpuSetTimeout(pGpu, linkStateChangeTimeMs*1000U + 1000000U, &pCallbackData->timeout, 0U);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/kernel/gpu/gpu_timeout.h:144:71: note: expanded from macro 'gpuSetTimeout'
+  144 | #define gpuSetTimeout(g,a,t,c)       timeoutSet(&(g)->timeoutData, t, a, c)
+      |                                      ~~~~~~~~~~                       ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:2079:49: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2079 |             pGpuFabricProbeInfoKernel->bwMode = knvlinkGetBWMode(pGpu, pKernelNvlink);
+      |                                               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:2105:9: warning: declaration shadows a local variable [-Wshadow]
+ 2105 |         NV_RM_RPC_CONTROL(pGpu, NV01_NULL_OBJECT, NV01_NULL_OBJECT,
+      |         ^
+inc/kernel/vgpu/rpc.h:228:25: note: expanded from macro 'NV_RM_RPC_CONTROL'
+  228 |                 RM_API *pRmApi = GPU_GET_PHYSICAL_RMAPI(pGpu);                      \
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gpu_fabric_probe.c:2047:13: note: previous declaration is here
+ 2047 |     RM_API *pRmApi = GPU_GET_PHYSICAL_RMAPI(pGpu);
+      |             ^
+14 warnings generated.

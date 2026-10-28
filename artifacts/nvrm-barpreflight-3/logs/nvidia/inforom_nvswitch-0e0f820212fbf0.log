@@ -1,0 +1,25 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/inforom_nvswitch.c:169:48: warning: operand of ? changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  169 |                     field |= ((field & 0x80) ? ~0xff : 0);
+      |                           ~~                   ^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/inforom_nvswitch.c:272:40: warning: implicit conversion changes signedness: 'NvS8' (aka 'signed char') to 'NvU8' (aka 'unsigned char') [-Wsign-conversion]
+  272 |                     *pPackedObject++ = (NvS8)field;
+      |                                      ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/inforom_nvswitch.c:411:16: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  411 |     fileSize = INFOROM_FS_FILE_SIZE(pPackedObject);
+      |              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/inforom/inforom_nvswitch.h:35:63: note: expanded from macro 'INFOROM_FS_FILE_SIZE'
+   35 |     (((pPackedFile)[INFOROM_OBJECT_HEADER_V1_00_SIZE_OFFSET]) | \
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+   36 |      ((pPackedFile)[INFOROM_OBJECT_HEADER_V1_00_SIZE_OFFSET + 1] << 8))
+      |      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/inforom_nvswitch.c:497:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  497 |     status = flcnQueueCmdPostBlocking(device, pFlcn, (PRM_FLCN_CMD)&soeCmd, NULL, NULL,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  498 |                                           SOE_RM_CMDQ_LOG_ID, &cmdSeqDesc, &timeout);
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/inforom_nvswitch.c:597:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  597 |     status = flcnQueueCmdPostBlocking(device, pFlcn, (PRM_FLCN_CMD)&soeCmd, NULL, NULL,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  598 |                                           SOE_RM_CMDQ_LOG_ID, &cmdSeqDesc, &timeout);
+      |                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.

@@ -1,0 +1,7 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/flcn_ls10.c:193:16: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  193 |         return -NVL_BAD_ARGS;
+      |         ~~~~~~ ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/flcn_ls10.c:201:16: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  201 |         return -NVL_BAD_ARGS;
+      |         ~~~~~~ ^~~~~~~~~~~~~
+2 warnings generated.

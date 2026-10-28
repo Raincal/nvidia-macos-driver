@@ -1,0 +1,72 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:330:93: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  309 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _REMAPTAB_ECC_LIMIT_ERR, _ENABLE)   |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  310 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _RIDTAB_ECC_LIMIT_ERR, _ENABLE)     |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  311 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _RLANTAB_ECC_LIMIT_ERR, _ENABLE)    |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  312 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _ADDRTYPEERR, _ENABLE)              |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  313 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTAREMAPTAB_INDEX_ERR, _ENABLE)   |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  314 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTBREMAPTAB_INDEX_ERR, _ENABLE)   |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  315 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _MCREMAPTAB_INDEX_ERR, _ENABLE)     |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  316 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTAREMAPTAB_REQCONTEXTMISMATCHERR, _ENABLE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  317 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTBREMAPTAB_REQCONTEXTMISMATCHERR, _ENABLE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  318 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _MCREMAPTAB_REQCONTEXTMISMATCHERR, _ENABLE)   |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  319 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTAREMAPTAB_ACLFAIL, _ENABLE)     |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  320 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTBREMAPTAB_ACLFAIL, _ENABLE)     |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  321 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _MCREMAPTAB_ACLFAIL, _ENABLE)       |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  322 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTAREMAPTAB_ADDRBOUNDSERR, _ENABLE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  323 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _EXTBREMAPTAB_ADDRBOUNDSERR, _ENABLE) |
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  324 |         DRF_DEF(_INGRESS, _ERR_NON_FATAL_REPORT_EN_0, _MCREMAPTAB_ADDRBOUNDSERR, _ENABLE);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:5059:42: warning: variable 'bit' may be uninitialized when used here [-Wconditional-uninitialized]
+ 5059 |         if (nvswitch_test_flags(pending, bit))
+      |                                          ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:5023:29: note: initialize the variable 'bit' to silence this warning
+ 5023 |     NvU32 pending, mask, bit, unhandled;
+      |                             ^
+      |                              = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:5156:42: warning: variable 'bit' may be uninitialized when used here [-Wconditional-uninitialized]
+ 5156 |         if (nvswitch_test_flags(pending, bit))
+      |                                          ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:5120:29: note: initialize the variable 'bit' to silence this warning
+ 5120 |     NvU32 pending, mask, bit, unhandled;
+      |                             ^
+      |                              = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:5212:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 5212 |         link = nvswitch_get_link(device, i);
+      |                ~~~~~~~~~~~~~~~~~         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:5936:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 5936 |         link = nvswitch_get_link(device, i);
+      |                ~~~~~~~~~~~~~~~~~         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:6416:53: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 6416 |     nvlink_link *nvlink = nvswitch_get_link(device, link);
+      |                           ~~~~~~~~~~~~~~~~~         ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:6568:57: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 6568 |         nvlink_link *nvlink = nvswitch_get_link(device, link);
+      |                               ~~~~~~~~~~~~~~~~~         ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:7026:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 7026 |         link = nvswitch_get_link(device, i);
+      |                ~~~~~~~~~~~~~~~~~         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:7700:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 7700 |         link = nvswitch_get_link(device, i);
+      |                ~~~~~~~~~~~~~~~~~         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:7779:38: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 7779 |     link = nvswitch_get_link(device, link_id);
+      |            ~~~~~~~~~~~~~~~~~         ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/intr_ls10.c:7795:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 7795 |         link = nvswitch_get_link(device, link_id);
+      |                ~~~~~~~~~~~~~~~~~         ^~~~~~~
+11 warnings generated.

@@ -1,0 +1,137 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:25:
+In file included from inc/kernel/gpu/gpu.h:2:
+In file included from generated/g_gpu_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:27:
+In file included from inc/kernel/gpu/ce/kernel_ce_private.h:29:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:28:
+In file included from inc/kernel/gpu/bif/kernel_bif.h:2:
+generated/g_kernel_bif_nvoc.h:1920:13: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1920 |     return (REF_VAL(BIF_DMA_CAPS_SNOOP, kbifGetDmaCaps(pGpu, pKernelBif)));
+      |     ~~~~~~  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:342:57: note: expanded from macro 'REF_VAL'
+  342 | #define REF_VAL(drf,v)            (((v)>>DRF_SHIFT(drf))&DRF_MASK(drf))
+      |                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:30:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:30:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:74:
+inc/lib/protobuf/prb_util.h:90:88: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 | static NV_FORCEINLINE NvU8 prbEncNestingLevel(PRB_ENCODER *pPrbEnc)  { return pPrbEnc->depth; }
+      |                                                                        ~~~~~~ ~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:30:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+generated/g_kernel_nvlink_nvoc.h:2458:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2458 |     pKernelNvlink_PRIVATE->maxRbmLinks = maxRbmLinks;
+      |                                        ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:633:13: warning: declaration shadows a local variable [-Wshadow]
+  633 |             FOR_EACH_INDEX_IN_MASK(32, pceIndex, localDecompPceMask)
+      |             ^
+../common/sdk/nvidia/inc/nvmisc.h:710:20: note: expanded from macro 'FOR_EACH_INDEX_IN_MASK'
+  710 |     NvU##maskWidth lclMsk = (NvU##maskWidth)(mask);         \
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:619:9: note: previous declaration is here
+  619 |         FOR_EACH_INDEX_IN_MASK(32, hshubIndex, pKCeIter->shimConnectingHubMask)
+      |         ^
+../common/sdk/nvidia/inc/nvmisc.h:710:20: note: expanded from macro 'FOR_EACH_INDEX_IN_MASK'
+  710 |     NvU##maskWidth lclMsk = (NvU##maskWidth)(mask);         \
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:988:25: warning: declaration shadows a local variable [-Wshadow]
+  988 |                         FOR_EACH_INDEX_IN_MASK(32, pceIndex, pAvailablePceMaskForConnectingHub[connectingHubIndex] & supportedPceMask)
+      |                         ^
+../common/sdk/nvidia/inc/nvmisc.h:710:20: note: expanded from macro 'FOR_EACH_INDEX_IN_MASK'
+  710 |     NvU##maskWidth lclMsk = (NvU##maskWidth)(mask);         \
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:976:21: note: previous declaration is here
+  976 |                     FOR_EACH_INDEX_IN_MASK(32, connectingHubIndex, pKCeIter->shimConnectingHubMask)
+      |                     ^
+../common/sdk/nvidia/inc/nvmisc.h:710:20: note: expanded from macro 'FOR_EACH_INDEX_IN_MASK'
+  710 |     NvU##maskWidth lclMsk = (NvU##maskWidth)(mask);         \
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:884:31: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  884 |             params.linkMask = peerLinkMask;
+      |                             ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:1776:13: warning: declaration shadows a local variable [-Wshadow]
+ 1776 |             FOR_EACH_INDEX_IN_MASK(32, pceIndex, availablePceMask)
+      |             ^
+../common/sdk/nvidia/inc/nvmisc.h:710:20: note: expanded from macro 'FOR_EACH_INDEX_IN_MASK'
+  710 |     NvU##maskWidth lclMsk = (NvU##maskWidth)(mask);         \
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:1773:9: note: previous declaration is here
+ 1773 |         FOR_EACH_INDEX_IN_MASK(32, hshubIndex, pKCeIter->shimConnectingHubMask)
+      |         ^
+../common/sdk/nvidia/inc/nvmisc.h:710:20: note: expanded from macro 'FOR_EACH_INDEX_IN_MASK'
+  710 |     NvU##maskWidth lclMsk = (NvU##maskWidth)(mask);         \
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:2050:9: warning: declaration shadows a local variable [-Wshadow]
+ 2050 |         KCE_ITER_BEGIN(pGpu, pKCeShimIter, pKCeIter, 0)
+      |         ^
+generated/g_kernel_ce_nvoc.h:1165:5: note: expanded from macro 'KCE_ITER_BEGIN'
+ 1165 |     KCE_ITER_ALL_BEGIN(pGpu, pKCeIter, si)                          \
+      |     ^
+generated/g_kernel_ce_nvoc.h:1153:15: note: expanded from macro 'KCE_ITER_ALL_BEGIN'
+ 1153 |         NvU32 maxCe = gpuGetNumCEs(pGpu);                    \
+      |               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:2048:5: note: previous declaration is here
+ 2048 |     KCE_ITER_SHIM_BEGIN(pGpu, pKCeShimIter)
+      |     ^
+generated/g_kernel_ce_nvoc.h:1173:5: note: expanded from macro 'KCE_ITER_SHIM_BEGIN'
+ 1173 |     KCE_ITER_ALL_BEGIN(pGpu, pKCeIter, 0)                    \
+      |     ^
+generated/g_kernel_ce_nvoc.h:1153:15: note: expanded from macro 'KCE_ITER_ALL_BEGIN'
+ 1153 |         NvU32 maxCe = gpuGetNumCEs(pGpu);                    \
+      |               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:2050:9: warning: declaration shadows a local variable [-Wshadow]
+ 2050 |         KCE_ITER_BEGIN(pGpu, pKCeShimIter, pKCeIter, 0)
+      |         ^
+generated/g_kernel_ce_nvoc.h:1165:5: note: expanded from macro 'KCE_ITER_BEGIN'
+ 1165 |     KCE_ITER_ALL_BEGIN(pGpu, pKCeIter, si)                          \
+      |     ^
+generated/g_kernel_ce_nvoc.h:1154:15: note: expanded from macro 'KCE_ITER_ALL_BEGIN'
+ 1154 |         NvU32 kceInst;                                       \
+      |               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/ce/arch/blackwell/kernel_ce_gb100.c:2048:5: note: previous declaration is here
+ 2048 |     KCE_ITER_SHIM_BEGIN(pGpu, pKCeShimIter)
+      |     ^
+generated/g_kernel_ce_nvoc.h:1173:5: note: expanded from macro 'KCE_ITER_SHIM_BEGIN'
+ 1173 |     KCE_ITER_ALL_BEGIN(pGpu, pKCeIter, 0)                    \
+      |     ^
+generated/g_kernel_ce_nvoc.h:1154:15: note: expanded from macro 'KCE_ITER_ALL_BEGIN'
+ 1154 |         NvU32 kceInst;                                       \
+      |               ^
+17 warnings generated.

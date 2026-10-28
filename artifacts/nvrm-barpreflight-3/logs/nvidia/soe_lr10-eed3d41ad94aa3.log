@@ -1,0 +1,77 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1916:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1916 |     status = nvswitch_os_alloc_contig_memory(device->os_handle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1917 |                  (void**)&pReadBuffer, bufferSize, (device->dma_addr_width == 32));
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1922:16: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 1922 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1925:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1925 |     status = nvswitch_os_map_dma_region(device->os_handle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1926 |                                         pReadBuffer,
+      |                                         ~~~~~~~~~~~~
+ 1927 |                                         &dmaHandle,
+      |                                         ~~~~~~~~~~~
+ 1928 |                                         bufferSize,
+      |                                         ~~~~~~~~~~~
+ 1929 |                                         NVSWITCH_DMA_DIR_TO_SYSMEM);
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1934:16: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 1934 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1952:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1952 |     status = nvswitch_os_sync_dma_region_for_device(device->os_handle, dmaHandle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1953 |         bufferSize, NVSWITCH_DMA_DIR_TO_SYSMEM);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1976:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1976 |         status = -NVL_ERR_INVALID_STATE;
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1980:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1980 |     status = nvswitch_os_sync_dma_region_for_cpu(device->os_handle, dmaHandle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1981 |         bufferSize, NVSWITCH_DMA_DIR_TO_SYSMEM);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:1995:12: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 1995 |     return status;
+      |     ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/soe_lr10.c:2057:18: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2057 |     *pRegValue = NVSWITCH_SOE_RD32_LR10(device, 0, _SOE, _MAILBOX(0));
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/lr10/soe_lr10.h:55:6: note: expanded from macro 'NVSWITCH_SOE_RD32_LR10'
+   55 |      NVSWITCH_ENG_RD32_LR10(_d, SOE, _instance, _dev, _reg)
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/lr10/lr10.h:71:5: note: expanded from macro 'NVSWITCH_ENG_RD32_LR10'
+   71 |     NVSWITCH_ENG_RD32(_d, _eng, , _engidx, _dev, _reg)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/io_nvswitch.h:225:5: note: expanded from macro 'NVSWITCH_ENG_RD32'
+  218 |         NVSWITCH_PRINT(_d, MMIO,                                    \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  219 |             "%s: MEM_RD %s[%d]: %s, %s (%06x+%04x)\n",              \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  220 |             __FUNCTION__,                                           \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  221 |             #_eng#_bcast, _engidx,                                  \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  222 |             #_dev, #_reg,                                           \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |             NVSWITCH_GET_ENG(_d, _eng, _bcast, _engidx),            \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  224 |             NV ## _dev ## _reg)                                     \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  225 |     ,                                                               \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  226 |         ((_d)->hal.nvswitch_eng_rd(                                 \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  227 |             _d,                                                     \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  228 |             NVSWITCH_ENGINE_ID_##_eng,                              \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  229 |             NVSWITCH_GET_ENG_DESC_TYPE##_bcast,                     \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  230 |             _engidx,                                                \
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  231 |             NV ## _dev ## _reg))                                    \
+      |             ~~~~~~~~~~~~~~~~~~~~
+9 warnings generated.

@@ -1,0 +1,55 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:107:38: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  107 |     __HI(x) = (__HI(x) & 0x7fffffff) | (__HI(y) & 0x80000000);
+      |             ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:107:41: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  107 |     __HI(x) = (__HI(x) & 0x7fffffff) | (__HI(y) & 0x80000000);
+      |                                         ^~~~~~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:95:17: note: expanded from macro '__HI'
+   95 | #define __HI(x) *(1+(int*)&x)
+      |                 ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:143:37: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  143 |         __HI(x) = (hx & 0x800fffff) | (k << 20);
+      |                 ~ ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:143:42: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  143 |         __HI(x) = (hx & 0x800fffff) | (k << 20);
+      |                                     ~  ~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:143:20: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  143 |         __HI(x) = (hx & 0x800fffff) | (k << 20);
+      |                    ^~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:154:33: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  154 |     __HI(x) = (hx & 0x800fffff) | (k << 20);
+      |             ~ ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:154:38: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  154 |     __HI(x) = (hx & 0x800fffff) | (k << 20);
+      |                                 ~  ~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:154:16: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  154 |     __HI(x) = (hx & 0x800fffff) | (k << 20);
+      |                ^~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:214:10: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  214 |     lx = __LO(x);
+      |        ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:96:17: note: expanded from macro '__LO'
+   96 | #define __LO(x) *(int*)&x
+      |                 ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:217:10: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  217 |     ly = __LO(y);
+      |        ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:96:17: note: expanded from macro '__LO'
+   96 | #define __LO(x) *(int*)&x
+      |                 ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:223:10: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  223 |     if ((iy | ly) == 0) {
+      |          ^~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:246:24: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  246 |                 j = ly >> (52 - k);
+      |                   ~ ~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:262:22: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  262 |             if (((ix - 0x3ff00000) | lx) == 0) { // inf**+-1 is NaN
+      |                   ~~~^~~~~~~~~~~~  ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:425:33: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  425 |         if (((j - 0xc090cc00) | i) != 0) { // z < -1075
+      |                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-pow.c:425:15: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  425 |         if (((j - 0xc090cc00) | i) != 0) { // z < -1075
+      |               ^ ~
+15 warnings generated.

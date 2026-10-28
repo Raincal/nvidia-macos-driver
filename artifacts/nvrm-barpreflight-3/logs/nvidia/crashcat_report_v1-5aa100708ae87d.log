@@ -1,0 +1,50 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:25:
+In file included from inc/libraries/crashcat/crashcat_report.h:2:
+In file included from generated/g_crashcat_report_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:255:31: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  255 |     const NvU32 payloadSize = crashcatPacketHeaderPayloadSize(hdr);
+      |                 ~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:336:31: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  336 |     const NvU32 payloadSize = crashcatPacketHeaderPayloadSize(hdr);
+      |                 ~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:430:71: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  430 |     NvU16 entries = crashcatPacketHeaderPayloadSize(pTraceV1->header) >> 3;
+      |           ~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:506:75: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  506 |     NvU16 entries = crashcatPacketHeaderPayloadSize(pIo32StateV1->header) >> 3;
+      |           ~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:676:79: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  676 |         NvU16 entries = crashcatPacketHeaderPayloadSize(pIo32StateV1->header) >> 3;
+      |               ~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:693:85: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  693 |         NvU16 entries = crashcatPacketHeaderPayloadSize(pRiscv64StackTrace->header) >> 3;
+      |               ~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:707:82: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  707 |         NvU16 entries = crashcatPacketHeaderPayloadSize(pRiscv64PcTrace->header) >> 3;
+      |               ~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:755:100: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  755 |         NvU16 numEntries = crashcatPacketHeaderPayloadSize(pReport->v1.pRiscv64StackTrace->header) >> 3;
+      |               ~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:770:97: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  770 |         NvU16 numEntries = crashcatPacketHeaderPayloadSize(pReport->v1.pRiscv64PcTrace->header) >> 3;
+      |               ~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/crashcat/v1/crashcat_report_v1.c:785:92: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  785 |         NvU16 numEntries = crashcatPacketHeaderPayloadSize(pReport->v1.pIo32State->header) >> 3;
+      |               ~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+14 warnings generated.

@@ -1,0 +1,35 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/protobuf/prbenc.c:33:
+In file included from inc/kernel/os/os.h:2:
+In file included from generated/g_os_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/protobuf/prbenc.c:723:40: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  723 |             wire_value.varint = value->int32;
+      |                               ~ ~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/protobuf/prbenc.c:736:40: warning: implicit conversion changes signedness: 'NvS64' (aka 'long long') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  736 |             wire_value.varint = value->int64;
+      |                               ~ ~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/protobuf/prbenc.c:757:39: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  757 |             wire_value.int32 = value->int32;
+      |                              ~ ~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/protobuf/prbenc.c:761:39: warning: implicit conversion changes signedness: 'NvS64' (aka 'long long') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  761 |             wire_value.int64 = value->int64;
+      |                              ~ ~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/lib/protobuf/prbenc.c:769:40: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  769 |             wire_value.varint = value->enum_;
+      |                               ~ ~~~~~~~^~~~~
+9 warnings generated.

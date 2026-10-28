@@ -1,0 +1,143 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:29:
+In file included from inc/kernel/os/os.h:2:
+In file included from generated/g_os_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:35:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:35:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:35:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:74:
+inc/lib/protobuf/prb_util.h:90:88: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 | static NV_FORCEINLINE NvU8 prbEncNestingLevel(PRB_ENCODER *pPrbEnc)  { return pPrbEnc->depth; }
+      |                                                                        ~~~~~~ ~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:35:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+generated/g_kernel_nvlink_nvoc.h:2458:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2458 |     pKernelNvlink_PRIVATE->maxRbmLinks = maxRbmLinks;
+      |                                        ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:318:5: warning: implicit conversion loses integer precision: 'NV_STATUS' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  318 |     NV_ASSERT_OK_OR_RETURN(status);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvassert.h:561:20: note: expanded from macro 'NV_ASSERT_OK_OR_RETURN'
+  561 |             return rm_pvt_status);                                             \
+      |             ~~~~~~ ^~~~~~~~~~~~~
+inc/libraries/utils/nvassert.h:588:13: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  588 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:321:5: warning: implicit conversion loses integer precision: 'NV_STATUS' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  321 |     NV_ASSERT_OK_OR_RETURN(status);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvassert.h:561:20: note: expanded from macro 'NV_ASSERT_OK_OR_RETURN'
+  561 |             return rm_pvt_status);                                             \
+      |             ~~~~~~ ^~~~~~~~~~~~~
+inc/libraries/utils/nvassert.h:588:13: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  588 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:825:63: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  824 |     pKernelNvlink->gpuAmapUpdateStatus = (readyForTraffic << 0) |
+      |                                        ~ ~~~~~~~~~~~~~~~~~~~~~~~~
+  825 |                                          (pendingForAbm << 2) |
+      |                                          ~~~~~~~~~~~~~~~~~~~~~^
+  826 |                                          (amapRequestFailed << 4);
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1358:25: warning: declaration shadows a local variable [-Wshadow]
+ 1358 |                 OBJGPU *pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1202:16: note: previous declaration is here
+ 1202 |     OBJGPU    *pRemoteGpu;
+      |                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1361:94: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1358 |                 OBJGPU *pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~
+ 1359 |                                             pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.domain,
+ 1360 |                                             pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus,
+ 1361 |                                             pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.device);
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1360:94: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1358 |                 OBJGPU *pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~
+ 1359 |                                             pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.domain,
+ 1360 |                                             pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus,
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1684:34: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1684 |     params.connectedLinksMask  = KNVLINK_BITVECTOR_TO_MASK(pKernelNvlink, connectedLinksMask, 64);
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:236:9: note: expanded from macro 'KNVLINK_BITVECTOR_TO_MASK'
+  236 |         (NvU##bits)((bits == 32) ? ( NvU64_LO32(kNvlinkGetLinkMaskAsPrimitve(&pNvlink->mask))) : kNvlinkGetLinkMaskAsPrimitve(&pNvlink->mask))
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1767:73: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1767 |     params.remoteBus = pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus;
+      |                      ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1768:76: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1768 |     params.remoteDevice = pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.device;
+      |                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:1769:78: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1769 |     params.remoteFunction = pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.function;
+      |                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:2899:102: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2896 |                     tlbInvalidateParams.regVal = DRF_DEF(_VIRTUAL_FUNCTION_PRIV, _MMU_INVALIDATE, _ALL_VA, _TRUE) |
+      |                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2897 |                                 DRF_DEF(_VIRTUAL_FUNCTION_PRIV, _MMU_INVALIDATE, _ALL_PDB, _TRUE) |
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2898 |                                 DRF_DEF(_VIRTUAL_FUNCTION_PRIV, _MMU_INVALIDATE, _ACK, _GLOBALLY) |
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2899 |                                 DRF_DEF(_VIRTUAL_FUNCTION_PRIV, _MMU_INVALIDATE, _SYS_MEMBAR, _TRUE) |
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 2900 |                                 DRF_DEF(_VIRTUAL_FUNCTION_PRIV, _MMU_INVALIDATE, _TRIGGER, _TRUE);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlink.c:3256:17: warning: passing 'int *' to parameter of type 'NvU32 *' (aka 'unsigned int *') converts between pointers to integer types with different sign [-Wpointer-sign]
+ 3256 |             if (portAtomicCompareAndSwapU32(&pResiliencyInfo->bPendingLfmTrafficQuiesce, 1, 0) == 0)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/atomic_c11.h:122:42: note: expanded from macro 'portAtomicCompareAndSwapU32'
+  122 | #define portAtomicCompareAndSwapU32(...) portAtomicCompareAndSwap(__VA_ARGS__)
+      |                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/atomic_c11.h:119:135: note: expanded from macro 'portAtomicCompareAndSwap'
+  119 | #define portAtomicCompareAndSwap(pObj, desired, expected, ...) _ATOMIC_CHOOSE_VARIANT_2(, ##__VA_ARGS__, _ATOMIC_CAS_EXPLICIT, ERROR, _ATOMIC_CAS_DEFAULT)(pObj, desired, expected, __VA_ARGS__)
+      |                                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/atomic_c11.h:67:55: note: expanded from macro '_ATOMIC_CHOOSE_VARIANT_2'
+   67 | #define _ATOMIC_CHOOSE_VARIANT_2(_0, _1, _2, FN, ...) FN
+      |                                                       ^
+inc/libraries/nvport/inline/atomic_c11.h:116:59: note: expanded from macro '_ATOMIC_CAS_DEFAULT'
+  116 | #define _ATOMIC_CAS_DEFAULT(pObj, desired, expected, ...) _ATOMIC_CAS_EXPLICIT(pObj, desired, expected, NVPORT_ATOMIC_MEMORY_ORDER_DEFAULT, NVPORT_ATOMIC_MEMORY_ORDER_DEFAULT)
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/atomic_c11.h:117:144: note: expanded from macro '_ATOMIC_CAS_EXPLICIT'
+  117 | #define _ATOMIC_CAS_EXPLICIT(pObj, desired, expected, ...) ({ __auto_type _lexpected = expected; atomic_compare_exchange_strong_explicit(pObj, &_lexpected, desired, __VA_ARGS__); })
+      |                                                                                                                                                ^~~~~~~~~~~
+22 warnings generated.

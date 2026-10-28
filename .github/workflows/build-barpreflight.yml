@@ -56,13 +56,32 @@ jobs:
       - name: Build kexts
         run: python3 ci/build-macos-kexts.py --vendor .deps/open-gpu-kernel-modules --output build-out --jobs 4
 
+      - name: Package — replace only NVRM in the official package
+        run: python3 ci/package-experiment.py --output build-out
+
+      - name: Summarise
+        if: always()
+        run: |
+          ls -la build-out/*.tar.gz build-out/SHA256SUMS.txt 2>/dev/null || true
+          cat build-out/SHA256SUMS.txt 2>/dev/null || true
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: nvrm-barpreflight-${{ github.run_number }}
+          name: nullmoth-2.6.3-barpreflight-${{ github.run_number }}
+          path: |
+            build-out/nullmoth-*.tar.gz
+            build-out/SHA256SUMS.txt
+            build-out/build-proof.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kexts-and-logs-${{ github.run_number }}
           path: |
             build-out/kexts/
-            build-out/build-proof.json
             build-out/logs/
           if-no-files-found: warn
           retention-days: 14

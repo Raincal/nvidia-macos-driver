@@ -1,0 +1,28 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/smbpbi_nvswitch.c:51:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   51 |         status = -NVL_NO_MEM;
+      |                ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/smbpbi_nvswitch.c:56:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   56 |     status = device->hal.nvswitch_smbpbi_send_init_data(device);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/smbpbi_nvswitch.c:65:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   65 |     status = device->hal.nvswitch_smbpbi_alloc(device);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/smbpbi_nvswitch.c:73:12: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+   73 |     return status;
+      |     ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/smbpbi_nvswitch.c:198:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  198 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  199 |                                  (PRM_FLCN_CMD)&cmd,
+      |                                  ~~~~~~~~~~~~~~~~~~~
+  200 |                                  NULL,   // pMsg            - not used for now
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  201 |                                  NULL,   // pPayload        - not used for now
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  202 |                                  SOE_RM_CMDQ_LOG_ID,
+      |                                  ~~~~~~~~~~~~~~~~~~~
+  203 |                                  &cmdSeqDesc,
+      |                                  ~~~~~~~~~~~~
+  204 |                                  &timeout);
+      |                                  ~~~~~~~~~
+5 warnings generated.

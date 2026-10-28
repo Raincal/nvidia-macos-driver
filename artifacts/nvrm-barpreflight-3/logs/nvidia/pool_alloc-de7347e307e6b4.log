@@ -1,0 +1,38 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:33:
+In file included from inc/kernel/mem_mgr/pool_alloc.h:40:
+In file included from inc/kernel/core/core.h:26:
+In file included from inc/kernel/core/prelude.h:41:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:243:19: warning: declaration shadows a local variable [-Wshadow]
+  243 |         NV_STATUS status = NV_OK;
+      |                   ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:217:15: note: previous declaration is here
+  217 |     NV_STATUS status;
+      |               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:523:56: warning: implicit conversion changes signedness: 'unsigned int' to 'NvS32' (aka 'int') [-Wsign-conversion]
+  523 |     for (poolIndex = pMemReserveInfo->topmostPoolIndex + 1; poolIndex < NUM_POOLS; poolIndex++)
+      |                    ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:485:41: warning: implicit conversion loses integer precision: 'const NvU64' (aka 'const unsigned long long') to 'POOL_IDX' [-Wshorten-64-to-32]
+  485 |     pMemReserveInfo->topmostPoolIndex = poolConfig[configMode][POOL_CONFIG_POOL_IDX];
+      |                                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:638:32: warning: implicit conversion changes signedness: 'POOL_IDX' to 'NvS32' (aka 'int') [-Wsign-conversion]
+  638 |     topPool = pMemReserveInfo->topmostPoolIndex;
+      |             ~ ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/mem_mgr/pool_alloc.c:870:21: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+  870 |         poolIndex = topPool;
+      |                   ~ ^~~~~~~
+9 warnings generated.

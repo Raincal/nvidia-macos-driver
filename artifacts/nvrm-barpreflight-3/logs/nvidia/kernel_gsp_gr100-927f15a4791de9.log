@@ -1,0 +1,39 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gsp/arch/rubin/kernel_gsp_gr100.c:30:
+In file included from inc/kernel/gpu/gsp/kernel_gsp.h:2:
+In file included from generated/g_kernel_gsp_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gsp/arch/rubin/kernel_gsp_gr100.c:86:32: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+   84 |     status = objCreate(ppAperture, pGpu, IoAperture,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   85 |                       pGpu->pIOApertures[DEVICE_INDEX_GPU], NULL, 0, 0,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   86 |                       NULL, 0, baseAddr, size);
+      |                       ~~~~~~~~~^~~~~~~~~~~~~~~
+inc/libraries/nvoc/prelude.h:131:93: note: expanded from macro 'objCreate'
+  131 |     NVOC_PP_CALL(__objCreate_##NAME, (ppNewObj), (pParent), (NVOC_OBJ_CREATE_FLAGS_NONE), ##__VA_ARGS__)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+inc/libraries/nvoc/prelude.h:37:61: note: expanded from macro 'NVOC_PP_CALL'
+   37 | #define NVOC_PP_CALL(func, ...) NV_EXPAND(func NV_EXPAND() (__VA_ARGS__))
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+inc/libraries/utils/nvmacro.h:43:24: note: expanded from macro 'NV_EXPAND'
+   43 | #define NV_EXPAND(...) __VA_ARGS__
+      |                        ^~~~~~~~~~~
+generated/g_gpu_access_nvoc.h:499:193: note: expanded from macro '__objCreate_IoAperture'
+  499 |     __nvoc_objCreate_IoAperture((__nvoc_ppNewObj), staticCast((__nvoc_pParent), Dynamic), (__nvoc_createFlags), pParentAperture, pGpu, deviceIndex, deviceInstance, pMapping, mappingStartAddr, offset, length)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                                                                                                                 ^~~~~~
+5 warnings generated.

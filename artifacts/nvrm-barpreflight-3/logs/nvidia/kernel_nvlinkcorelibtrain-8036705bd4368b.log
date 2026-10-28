@@ -1,0 +1,292 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:26:
+In file included from inc/kernel/os/os.h:2:
+In file included from generated/g_os_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:74:
+inc/lib/protobuf/prb_util.h:90:88: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 | static NV_FORCEINLINE NvU8 prbEncNestingLevel(PRB_ENCODER *pPrbEnc)  { return pPrbEnc->depth; }
+      |                                                                        ~~~~~~ ~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:34:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+generated/g_kernel_nvlink_nvoc.h:2458:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2458 |     pKernelNvlink_PRIVATE->maxRbmLinks = maxRbmLinks;
+      |                                        ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:469:67: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  469 |         FOR_EACH_IN_BITVECTOR(&pKernelNvlink0->postRxDetLinkMask, i)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+inc/libraries/utils/nvbitvector.h:284:40: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  284 |              bitVectorClr(&localMask, (index)),                             \
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+inc/libraries/utils/nvbitvector.h:123:57: note: expanded from macro 'bitVectorClr'
+  122 |     bitVectorClr_IMPL(&((pBitVector)->real),                                \
+      |     ~~~~~~~~~~~~~~~~~
+  123 |                       sizeof(((pBitVector)->last->_)), (idx))
+      |                                                         ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:488:67: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  488 |         FOR_EACH_IN_BITVECTOR(&pKernelNvlink0->postRxDetLinkMask, i)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+inc/libraries/utils/nvbitvector.h:284:40: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  284 |              bitVectorClr(&localMask, (index)),                             \
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+inc/libraries/utils/nvbitvector.h:123:57: note: expanded from macro 'bitVectorClr'
+  122 |     bitVectorClr_IMPL(&((pBitVector)->real),                                \
+      |     ~~~~~~~~~~~~~~~~~
+  123 |                       sizeof(((pBitVector)->last->_)), (idx))
+      |                                                         ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:493:29: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  493 |             params.linkId = i;
+      |                           ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:524:71: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  524 |             FOR_EACH_IN_BITVECTOR(&pKernelNvlink1->postRxDetLinkMask, i)
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+inc/libraries/utils/nvbitvector.h:284:40: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  284 |              bitVectorClr(&localMask, (index)),                             \
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+inc/libraries/utils/nvbitvector.h:123:57: note: expanded from macro 'bitVectorClr'
+  122 |     bitVectorClr_IMPL(&((pBitVector)->real),                                \
+      |     ~~~~~~~~~~~~~~~~~
+  123 |                       sizeof(((pBitVector)->last->_)), (idx))
+      |                                                         ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:543:71: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  543 |             FOR_EACH_IN_BITVECTOR(&pKernelNvlink1->postRxDetLinkMask, i)
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+inc/libraries/utils/nvbitvector.h:284:40: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  284 |              bitVectorClr(&localMask, (index)),                             \
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+inc/libraries/utils/nvbitvector.h:123:57: note: expanded from macro 'bitVectorClr'
+  122 |     bitVectorClr_IMPL(&((pBitVector)->real),                                \
+      |     ~~~~~~~~~~~~~~~~~
+  123 |                       sizeof(((pBitVector)->last->_)), (idx))
+      |                                                         ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:548:33: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  548 |                 params.linkId = i;
+      |                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1117:70: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1114 |                 OBJGPU* pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~
+ 1115 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.domain,
+ 1116 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus,
+ 1117 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.device);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1116:70: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1114 |                 OBJGPU* pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~
+ 1115 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.domain,
+ 1116 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1218:70: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1215 |                 OBJGPU* pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~
+ 1216 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.domain,
+ 1217 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus,
+ 1218 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.device);
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1217:70: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1215 |                 OBJGPU* pRemoteGpu = gpumgrGetGpuFromBusInfo(
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~
+ 1216 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.domain,
+ 1217 |                     pKernelNvlink->nvlinkLinks[linkId].remoteEndInfo.bus,
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1803:35: warning: declaration shadows a local variable [-Wshadow]
+ 1803 |                 NVLINK_BIT_VECTOR tempPeerLinkMask;
+      |                                   ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1745:31: note: previous declaration is here
+ 1745 |             NVLINK_BIT_VECTOR tempPeerLinkMask;
+      |                               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1986:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 1986 |     status = knvlinkExecGspRmRpc(pGpu, pKernelNvlink,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1987 |                                  NV2080_CTRL_CMD_INTERNAL_NVLINK_PROGRAM_BUFFERREADY,
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1988 |                                  (void *)&programBufferRdyParams,
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1989 |                                  sizeof(programBufferRdyParams));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1991:16: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1991 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:1999:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 1999 |     status = knvlinkExecGspRmRpc(pGpu, pKernelNvlink,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2000 |                                  NV2080_CTRL_CMD_INTERNAL_NVLINK_SAVE_RESTORE_HSHUB_STATE,
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2001 |                                  (void *)&saveRestoreHshubStateParams,
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2002 |                                  sizeof(saveRestoreHshubStateParams));
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2004:16: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2004 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2027:22: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2027 |             status = knvlinkExecGspRmRpc(pGpu, pKernelNvlink,
+      |                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2028 |                                          NV2080_CTRL_CMD_INTERNAL_NVLINK_CORE_CALLBACK,
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2029 |                                          (void *)&params, sizeof(params));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2109:15: warning: declaration shadows a local variable [-Wshadow]
+ 2109 |         NvU32 linkId;
+      |               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2088:16: note: previous declaration is here
+ 2088 |     NvU32      linkId;
+      |                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2119:22: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2119 |             status = knvlinkExecGspRmRpc(pGpu, pKernelNvlink,
+      |                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2120 |                                             NV2080_CTRL_CMD_INTERNAL_NVLINK_CORE_CALLBACK,
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2121 |                                             (void *)&params, sizeof(params));
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2125:29: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2125 |                 retStatus = status;
+      |                           ~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2146:22: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2146 |             status = knvlinkTrainLinksToActiveAli(pGpu, pKernelNvlink, &linkMaskVec, NV_FALSE);
+      |                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1317:71: note: expanded from macro 'knvlinkTrainLinksToActiveAli'
+ 1317 | #define knvlinkTrainLinksToActiveAli(pGpu, pKernelNvlink, arg3, arg4) knvlinkTrainLinksToActiveAli_IMPL(pGpu, pKernelNvlink, arg3, arg4)
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2169:26: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2169 |                 status = gpuCheckTimeout(pGpu, &timeout);
+      |                        ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/kernel/gpu/gpu_timeout.h:145:38: note: expanded from macro 'gpuCheckTimeout'
+  145 | #define gpuCheckTimeout(g,t)         timeoutCheck(&(g)->timeoutData, t, __LINE__)
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2170:34: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2170 |                 trainingStatus = knvlinkCheckTrainingIsComplete(pGpu, pGpu, pKernelNvlink);
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1107:69: note: expanded from macro 'knvlinkCheckTrainingIsComplete'
+ 1107 | #define knvlinkCheckTrainingIsComplete(pGpu0, pGpu1, pKernelNvlink) knvlinkCheckTrainingIsComplete_IMPL(pGpu0, pGpu1, pKernelNvlink)
+      |                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2200:22: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2200 |             status = knvlinkEnableLinksPostTopology_HAL(pGpu, pKernelNvlink, NVBIT(linkId));
+      |                    ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1661:71: note: expanded from macro 'knvlinkEnableLinksPostTopology_HAL'
+ 1661 | #define knvlinkEnableLinksPostTopology_HAL(pGpu, pKernelNvlink, arg3) knvlinkEnableLinksPostTopology_DISPATCH(pGpu, pKernelNvlink, arg3)
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2203:24: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2203 |                 return status;
+      |                 ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2230:34: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2230 |                         status = knvlinkEnableLinksPostTopology_HAL(pGpu1, pKernelNvlink1, NVBIT(remoteLinkId));
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1661:71: note: expanded from macro 'knvlinkEnableLinksPostTopology_HAL'
+ 1661 | #define knvlinkEnableLinksPostTopology_HAL(pGpu, pKernelNvlink, arg3) knvlinkEnableLinksPostTopology_DISPATCH(pGpu, pKernelNvlink, arg3)
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2233:36: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2233 |                             return status;
+      |                             ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2259:18: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2259 |         status = knvlinkExecGspRmRpc(pGpu, pKernelNvlink,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2260 |                                      NV2080_CTRL_CMD_INTERNAL_NVLINK_SAVE_RESTORE_HSHUB_STATE,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2261 |                                      (void *)&saveRestoreHshubStateParams,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2262 |                                      sizeof(saveRestoreHshubStateParams));
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2264:20: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2264 |             return status;
+      |             ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2276:18: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2276 |         status = knvlinkExecGspRmRpc(pGpu, pKernelNvlink,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2277 |                                      NV2080_CTRL_CMD_INTERNAL_NVLINK_PROGRAM_BUFFERREADY,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2278 |                                      (void *)&programBufferRdyParams,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2279 |                                      sizeof(programBufferRdyParams));
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2281:20: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2281 |             return status;
+      |             ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2312:34: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2312 |                         status = knvlinkExecGspRmRpc(pGpu1, pKernelNvlink1,
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2313 |                                                      NV2080_CTRL_CMD_INTERNAL_NVLINK_SAVE_RESTORE_HSHUB_STATE,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2314 |                                                      (void *)&saveRestoreHshubStateParams,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2315 |                                                      sizeof(saveRestoreHshubStateParams));
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2317:36: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2317 |                             return status;
+      |                             ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2330:34: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+ 2330 |                         status = knvlinkExecGspRmRpc(pGpu1, pKernelNvlink1,
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2331 |                                                      NV2080_CTRL_CMD_INTERNAL_NVLINK_PROGRAM_BUFFERREADY,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2332 |                                                      (void *)&programBufferRdyParams,
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2333 |                                                      sizeof(programBufferRdyParams));
+      |                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_nvlink_nvoc.h:1386:68: note: expanded from macro 'knvlinkExecGspRmRpc'
+ 1386 | #define knvlinkExecGspRmRpc(pGpu, pKernelNvlink, arg3, arg4, arg5) knvlinkExecGspRmRpc_IMPL(pGpu, pKernelNvlink, arg3, arg4, arg5)
+      |                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/kernel_nvlinkcorelibtrain.c:2335:36: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 2335 |                             return status;
+      |                             ~~~~~~ ^~~~~~
+44 warnings generated.

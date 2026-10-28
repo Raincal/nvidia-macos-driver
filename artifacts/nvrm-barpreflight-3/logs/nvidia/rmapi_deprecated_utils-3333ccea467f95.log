@@ -1,0 +1,25 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/deprecated/rmapi_deprecated_utils.c:412:20: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  412 |             attr = FLD_SET_DRF(OS32, _ATTR, _COHERENCY, _WRITE_PROTECT, attr);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/deprecated/rmapi_deprecated_utils.c:417:20: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  417 |             attr = FLD_SET_DRF(OS32, _ATTR, _COHERENCY, _WRITE_BACK, attr);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/deprecated/rmapi_deprecated_utils.c:447:18: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  447 |         attr2 |= DRF_DEF(OS32, _ATTR2, _REGISTER_MEMDESC_TO_PHYS_RM, _TRUE);
+      |               ~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+3 warnings generated.

@@ -1,0 +1,4 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_error.c:262:16: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvBool' (aka 'unsigned char') [-Wsign-conversion]
+  262 |         return -NVL_ERR_NOT_SUPPORTED;
+      |         ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.

@@ -1,0 +1,16 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_to_f16.c:69:19: warning: implicit conversion loses integer precision: 'int' to 'uint_fast16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   69 |             uiZ = packToF16UI( sign, 0x1F, 0 );
+      |                 ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/softfloat/source/include/internals.h:76:89: note: expanded from macro 'packToF16UI'
+   76 | #define packToF16UI( sign, exp, sig ) (((uint16_t) (sign)<<15) + ((uint16_t) (exp)<<10) + (sig))
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_to_f16.c:75:22: warning: implicit conversion loses integer precision: 'uint_fast32_t' (aka 'unsigned int') to 'uint_fast16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   75 |     frac16 = frac>>9 | ((frac & 0x1FF) != 0);
+      |            ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_to_f16.c:77:15: warning: implicit conversion loses integer precision: 'int' to 'uint_fast16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   77 |         uiZ = packToF16UI( sign, 0, 0 );
+      |             ~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+../common/softfloat/source/include/internals.h:76:89: note: expanded from macro 'packToF16UI'
+   76 | #define packToF16UI( sign, exp, sig ) (((uint16_t) (sign)<<15) + ((uint16_t) (exp)<<10) + (sig))
+      |                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+3 warnings generated.

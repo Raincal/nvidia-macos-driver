@@ -1,0 +1,45 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:30:
+In file included from inc/kernel/platform/chipset/chipset_info.h:34:
+In file included from inc/kernel/platform/chipset/chipset.h:2:
+In file included from generated/g_chipset_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:144:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  144 |     baseAddress &= ( ~ 0x0fffffff);
+      |                 ~~   ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:174:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  174 |     baseAddress &= ( ~ 0x000fffff);
+      |                 ~~   ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:230:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  230 |     baseAddress &= ( ~ 0x000fffff);
+      |                 ~~   ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:320:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  320 |     baseAddress &= ( ~ 0x000fffff);
+      |                 ~~   ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:366:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  366 |     baseAddress &= ( ~ 0x0fffffff);
+      |                 ~~   ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:392:22: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  392 |     baseAddress &= ( ~ 0x0fffffff);
+      |                 ~~   ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:523:44: warning: implicit conversion loses integer precision: 'NvS32' (aka 'int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  523 |         void *pHandle = osPciInitHandle(0, bus, 0, 1, &vendorId, &deviceId);
+      |                         ~~~~~~~~~~~~~~~    ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/chipset/chipset_info.c:1410:55: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1410 |     NvU32 szUnknownLen = portStringLength(pszUnknown) + 1;
+      |           ~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+12 warnings generated.

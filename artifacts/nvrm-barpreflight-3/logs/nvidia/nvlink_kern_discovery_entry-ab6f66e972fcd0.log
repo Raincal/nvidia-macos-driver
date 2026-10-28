@@ -1,0 +1,13 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/interface/nvlink_kern_discovery_entry.c:131:51: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  131 |     status = nvlink_lib_link_locks_acquire(links, numLinks);
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/interface/nvlink_kern_discovery_entry.c:157:42: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  157 |     nvlink_lib_link_locks_release(links, numLinks); 
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/interface/nvlink_kern_discovery_entry.c:244:51: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  244 |     status = nvlink_lib_link_locks_acquire(links, numLinks);
+      |              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/interface/nvlink_kern_discovery_entry.c:273:42: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  273 |     nvlink_lib_link_locks_release(links, numLinks);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~~
+4 warnings generated.

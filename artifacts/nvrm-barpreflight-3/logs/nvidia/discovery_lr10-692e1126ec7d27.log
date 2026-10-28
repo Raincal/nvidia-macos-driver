@@ -1,0 +1,109 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:275:29: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  275 |             entry_id      = ~0;
+      |                           ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:276:29: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  276 |             entry_version = ~0;
+      |                           ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1467:32: warning: declaration shadows a local variable [-Wshadow]
+ 1467 |     NVSWITCH_LIST_LR10_ENGINES(NVSWITCH_PROCESS_COMMON)
+      |                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/discovery_lr10.c:1403:17: note: previous declaration is here
+ 1403 |     NvU32       i, j;
+      |                 ^
+19 warnings generated.

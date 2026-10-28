@@ -1,0 +1,7 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/nvlink_lock.c:287:24: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  287 |     _sort_links(links, numLinks, _compare);
+      |     ~~~~~~~~~~~        ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvlink/kernel/nvlink/nvlink_lock.c:349:24: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  349 |     _sort_links(links, numLinks, _compare);
+      |     ~~~~~~~~~~~        ^~~~~~~~
+2 warnings generated.

@@ -1,0 +1,111 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:82:16: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   82 |     metadata = FLD_SET_DRF_NUM(_INFOROM_NVL_OBJECT_V3, _ERROR_METADATA,
+      |              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   83 |                                _NVLIPT_INSTANCE_ID, pErrorEvent->nvliptInstance, metadata);
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:86:20: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   86 |         metadata = FLD_SET_DRF_NUM(_INFOROM_NVL_OBJECT_V3, _ERROR_METADATA, _BLOCK_ID,
+      |                  ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   87 |                 NV_INFOROM_NVL_OBJECT_V3_ERROR_METADATA_BLOCK_ID_DL(pErrorEvent->localLinkIdx),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   88 |                 metadata);
+      |                 ~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:92:20: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+   92 |         metadata = FLD_SET_DRF_NUM(_INFOROM_NVL_OBJECT_V3, _ERROR_METADATA, _BLOCK_ID,
+      |                  ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   93 |                 NV_INFOROM_NVL_OBJECT_V3_ERROR_METADATA_BLOCK_ID_TLC(pErrorEvent->localLinkIdx),
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   94 |                 metadata);
+      |                 ~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:127:9: warning: variable 'pErrorEntry' may be uninitialized when used here [-Wconditional-uninitialized]
+  127 |     if (pErrorEntry->header == INFOROM_NVL_ERROR_TYPE_INVALID)
+      |         ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:48:51: note: initialize the variable 'pErrorEntry' to silence this warning
+   48 |     INFOROM_NVL_OBJECT_V3_ERROR_ENTRY *pErrorEntry;
+      |                                                   ^
+      |                                                    = NULL
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:669:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  669 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  670 |                                 (PRM_FLCN_CMD)&bbxCmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~
+  671 |                                 NULL,   // pMsg
+      |                                 ~~~~~~~~~~~~~~~
+  672 |                                 NULL,   // pPayload
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  673 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  674 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  675 |                                 &timeout);
+      |                                 ~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:705:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  705 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  706 |                                 (PRM_FLCN_CMD)&bbxCmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~
+  707 |                                 NULL,   // pMsg
+      |                                 ~~~~~~~~~~~~~~~
+  708 |                                 NULL,   // pPayload
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  709 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  710 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  711 |                                 &timeout);
+      |                                 ~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:749:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  749 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  750 |                                 (PRM_FLCN_CMD)&bbxCmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~
+  751 |                                 NULL,   // pMsg
+      |                                 ~~~~~~~~~~~~~~~
+  752 |                                 NULL,   // pPayload
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  753 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  754 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  755 |                                 &timeout);
+      |                                 ~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:823:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  823 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  824 |                                 (PRM_FLCN_CMD)&bbxCmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~
+  825 |                                 NULL,   // pMsg
+      |                                 ~~~~~~~~~~~~~~~
+  826 |                                 NULL,   // pPayload
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  827 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  828 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  829 |                                 &timeout);
+      |                                 ~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/inforom_ls10.c:948:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  948 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  949 |                                 (PRM_FLCN_CMD)&bbxCmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~
+  950 |                                 NULL,   // pMsg
+      |                                 ~~~~~~~~~~~~~~~
+  951 |                                 NULL,   // pPayload
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  952 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  953 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  954 |                                 &timeout);
+      |                                 ~~~~~~~~~
+9 warnings generated.

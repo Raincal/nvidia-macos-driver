@@ -1,0 +1,34 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:517:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  517 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &p);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:598:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  598 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &params);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:652:13: warning: declaration shadows a local variable [-Wshadow]
+  652 |             NVSWITCH_NSEC_DELAY(2 * NVSWITCH_INTERVAL_1USEC_IN_NS);
+      |             ^
+../common/nvswitch/kernel/inc/common_nvswitch.h:587:26: note: expanded from macro 'NVSWITCH_NSEC_DELAY'
+  587 |         NVSWITCH_TIMEOUT timeout;                               \
+      |                          ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:584:25: note: previous declaration is here
+  584 |     NVSWITCH_TIMEOUT    timeout;
+      |                         ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:702:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  702 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &params);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:781:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  781 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &params);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:866:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  866 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &params);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:952:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+  952 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &params);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:969:28: warning: implicit conversion from enumeration type 'NVSWITCH_ENGINE_ID' (aka 'enum nvswitch_engine_id') to different enumeration type 'RM_SOE_ENGINE_ID' (aka 'enum rm_soe_engine_id') [-Wenum-conversion]
+  969 |     pEngineWrite->eng_id = eng_id;
+      |                          ~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ls10/soe_ls10.c:1820:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+ 1820 |     status = device->hal.nvswitch_ctrl_get_bios_info(device, &params);
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+9 warnings generated.

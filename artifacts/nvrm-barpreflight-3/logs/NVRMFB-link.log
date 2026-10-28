@@ -1,0 +1,4 @@
+ld: warning: object file (/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/libkmodc++.a(cplus_start.o)) was built for newer macOS version (15.5) than being linked (15.0)
+ld: warning: object file (/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/libkmod.a(c_start.o)) was built for newer macOS version (15.5) than being linked (15.0)
+ld: warning: object file (/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/libkmodc++.a(cplus_stop.o)) was built for newer macOS version (15.5) than being linked (15.0)
+ld: warning: object file (/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/usr/lib/libkmod.a(c_stop.o)) was built for newer macOS version (15.5) than being linked (15.0)

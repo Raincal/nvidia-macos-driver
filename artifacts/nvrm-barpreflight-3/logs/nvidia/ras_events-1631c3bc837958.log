@@ -1,0 +1,282 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:24:
+In file included from interface/events/gpu/ras/ras_events.h:2:
+In file included from generated/g_ras_events_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:651:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  645 |     pEvent->xid63.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  646 |         nvDbgSnprintf(pEvent->xid63.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  647 |                       sizeof(pEvent->xid63.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  648 |                       pEvent->context.source == GPU_OPERATIONAL_EVENT_REPORTING_SOURCE_INTERRUPT ?
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  649 |                           ECC_ROW_REMAP_PENDING_INTR_XID_MESSAGE_FMT :
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  650 |                           ECC_ROW_REMAP_PENDING_CTRL_CALL_XID_MESSAGE_FMT,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  651 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:675:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  671 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  672 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  673 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  674 |                       ECC_ROW_REMAPPING_FAILURE_TABLE_FULL_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  675 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:699:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  695 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  696 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  697 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  698 |                       ECC_ROW_REMAPPING_FAILURE_BANK_FULL_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  699 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:732:52: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  727 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  728 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  729 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  730 |                       ECC_ROW_REMAPPING_FAILURE_INTERNAL_ERROR_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  731 |                       pEvent->context.physicalAddress,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  732 |                       pEvent->context.errorString) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:759:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  755 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  756 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  757 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  758 |                       _eccDramRetirementFailureInternalErrorXidMessageFmt(errorReason),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  759 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:783:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  779 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  780 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  781 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  782 |                       ECC_DRAM_RETIREMENT_FAILURE_INFOROM_FULL_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  783 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:807:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  803 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  804 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  805 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  806 |                       ECC_DRAM_RETIREMENT_FAILURE_HW_LIMIT_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  807 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:831:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  827 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  828 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  829 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  830 |                       ECC_DRAM_RETIREMENT_FAILURE_NO_SPARE_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  831 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:855:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  851 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  852 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  853 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  854 |                       ECC_ROW_REMAPPING_FAILURE_RESERVED_ROW_ERROR_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  855 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:879:56: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  875 |     pEvent->xid64.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  876 |         nvDbgSnprintf(pEvent->xid64.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  877 |                       sizeof(pEvent->xid64.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  878 |                       ECC_ROW_REMAPPING_FAILURE_PAGE_OFFLINE_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  879 |                       pEvent->context.physicalAddress) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:902:63: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  899 |     pEvent->xid177.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  900 |         nvDbgSnprintf(pEvent->xid177.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  901 |                       sizeof(pEvent->xid177.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  902 |                       ECC_BANK_REMAP_PENDING_XID_MESSAGE_FMT) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:942:52: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  936 |     pEvent->xid160.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  937 |         nvDbgSnprintf(pEvent->xid160.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  938 |                       sizeof(pEvent->xid160.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  939 |                       ECC_LTS_REPAIR_PENDING_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  940 |                       pEvent->context.sublocation,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  941 |                       pEvent->context.location,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+  942 |                       pEvent->context.errorString) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:982:52: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  976 |     pEvent->xid160.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  977 |         nvDbgSnprintf(pEvent->xid160.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  978 |                       sizeof(pEvent->xid160.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  979 |                       ECC_CHANNEL_REPAIR_PENDING_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  980 |                       pEvent->context.sublocation,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  981 |                       pEvent->context.location,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+  982 |                       pEvent->context.errorString) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1003:63: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1000 |     pEvent->xid161.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1001 |         nvDbgSnprintf(pEvent->xid161.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1002 |                       sizeof(pEvent->xid161.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1003 |                       ECC_LTS_REPAIR_FAILURE_XID_MESSAGE_FMT) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1024:67: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1021 |     pEvent->xid161.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1022 |         nvDbgSnprintf(pEvent->xid161.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1023 |                       sizeof(pEvent->xid161.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1024 |                       ECC_CHANNEL_REPAIR_FAILURE_XID_MESSAGE_FMT) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1052:49: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1047 |     pEvent->xid156.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1048 |         nvDbgSnprintf(pEvent->xid156.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1049 |                       sizeof(pEvent->xid156.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1050 |                       ECC_TPC_REPAIR_PENDING_SAME_GPC_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1051 |                       pEvent->context.sublocation,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1052 |                       pEvent->context.location) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1080:49: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1075 |     pEvent->xid156.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1076 |         nvDbgSnprintf(pEvent->xid156.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1077 |                       sizeof(pEvent->xid156.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1078 |                       ECC_TPC_REPAIR_PENDING_DIFFERENT_GPC_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1079 |                       pEvent->context.sublocation,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1080 |                       pEvent->context.location) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1108:49: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1103 |     pEvent->xid157.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1104 |         nvDbgSnprintf(pEvent->xid157.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1105 |                       sizeof(pEvent->xid157.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1106 |                       ECC_TPC_REPAIR_FAILURE_NO_SPARE_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1107 |                       pEvent->context.sublocation,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1108 |                       pEvent->context.location) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1136:49: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1131 |     pEvent->xid157.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1132 |         nvDbgSnprintf(pEvent->xid157.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1133 |                       sizeof(pEvent->xid157.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1134 |                       ECC_TPC_REPAIR_FAILURE_NO_SPARE_MIG_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1135 |                       pEvent->context.sublocation,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1136 |                       pEvent->context.location) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1160:54: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1156 |     pEvent->xid92.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1157 |         nvDbgSnprintf(pEvent->xid92.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1158 |                       sizeof(pEvent->xid92.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1159 |                       ECC_DRAM_ECC_INTR_STORM_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1160 |                       pEvent->context.fbpaIndexVirt) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1181:62: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1178 |     pEvent->xid92.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1179 |         nvDbgSnprintf(pEvent->xid92.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1180 |                       sizeof(pEvent->xid92.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1181 |                       ECC_SM_ECC_INTR_STORM_XID_MESSAGE_FMT) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/events/gpu/ras/ras_events.c:1218:50: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+ 1211 |     pEvent->xid140.header.dataSize = (NvU32)GPU_OPERATIONAL_EVENT_CTX_GPU_LEGACY_XID_SIZE(
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1212 |         nvDbgSnprintf(pEvent->xid140.data.message,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1213 |                       sizeof(pEvent->xid140.data.message),
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1214 |                       ECC_RESIDUAL_UNCORRECTABLE_ERROR_XID_MESSAGE_FMT,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1215 |                       pEvent->context.dramCount,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1216 |                       pEvent->context.ltcCount,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1217 |                       pEvent->context.mmuCount,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1218 |                       pEvent->context.pcieCount) + 1);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+26 warnings generated.

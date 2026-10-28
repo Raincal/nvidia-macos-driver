@@ -1,0 +1,102 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:23:
+In file included from inc/libraries/utils/nvbitvector.h:26:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:80:22: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+   80 |     NvU32 qwordIdx = NV_BITVECTOR_IDX(idx);
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:167:22: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  167 |     NvU32 qwordIdx = NV_BITVECTOR_IDX(idx);
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:231:22: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  231 |     NvU32 qwordIdx = NV_BITVECTOR_IDX(idx);
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:478:22: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  478 |     NvU32 qwordIdx = NV_BITVECTOR_IDX(idx);
+      |                      ^~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:896:8: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  896 |     if(NV_BITVECTOR_IDX(range.lo) == NV_BITVECTOR_IDX(range.hi))
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:896:38: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  896 |     if(NV_BITVECTOR_IDX(range.lo) == NV_BITVECTOR_IDX(range.hi))
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:899:24: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  899 |         temp   = qword[NV_BITVECTOR_IDX(range.lo)];
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:907:29: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  907 |         NV_ASSERT_OR_RETURN(NV_BITVECTOR_IDX(range.lo) == NV_BITVECTOR_IDX(range.hi) - 1,
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+inc/libraries/utils/nvassert.h:388:27: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                           ^~~~
+inc/libraries/utils/nvassert.h:417:27: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  417 |         if (NV_UNLIKELY(!(expr)))                                              \
+      |                           ^~~~
+inc/libraries/utils/nvassert.h:75:46: note: expanded from macro 'NV_UNLIKELY'
+   75 | #define NV_UNLIKELY(expr) __builtin_expect(((expr) != 0), 0)
+      |                                              ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:907:59: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  907 |         NV_ASSERT_OR_RETURN(NV_BITVECTOR_IDX(range.lo) == NV_BITVECTOR_IDX(range.hi) - 1,
+      |                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+inc/libraries/utils/nvassert.h:388:27: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                           ^~~~
+inc/libraries/utils/nvassert.h:417:27: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  417 |         if (NV_UNLIKELY(!(expr)))                                              \
+      |                           ^~~~
+inc/libraries/utils/nvassert.h:75:46: note: expanded from macro 'NV_UNLIKELY'
+   75 | #define NV_UNLIKELY(expr) __builtin_expect(((expr) != 0), 0)
+      |                                              ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:910:24: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  910 |         temp   = qword[NV_BITVECTOR_IDX(range.lo)];
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/nvbitvector/nvbitvector.c:915:24: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  915 |         temp   = qword[NV_BITVECTOR_IDX(range.hi)];
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:41:53: note: expanded from macro 'NV_BITVECTOR_IDX'
+   41 | #define NV_BITVECTOR_IDX(index)         (((index) & ~(0x3F)) >> 6)
+      |                                                   ~ ^~~~~~~
+15 warnings generated.

@@ -1,0 +1,19 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF32.c:77:24: warning: implicit conversion changes signedness: 'uint_fast32_t' (aka 'unsigned int') to 'int_fast32_t' (aka 'int') [-Wsign-conversion]
+   77 |         sigDiff = sigA - sigB;
+      |                 ~ ~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF32.c:90:52: warning: implicit conversion changes signedness: 'int_fast32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   90 |         shiftDist = softfloat_countLeadingZeros32( sigDiff ) - 8;
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF32.c:93:25: warning: implicit conversion loses integer precision: 'int_fast16_t' (aka 'short') to 'int_fast8_t' (aka 'signed char') [-Wimplicit-int-conversion]
+   93 |             shiftDist = expA;
+      |                       ~ ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF32.c:96:48: warning: implicit conversion changes signedness: 'int_fast32_t' (aka 'int') to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   96 |         uiZ = packToF32UI( signZ, expZ, sigDiff<<shiftDist );
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../common/softfloat/source/include/internals.h:87:92: note: expanded from macro 'packToF32UI'
+   87 | #define packToF32UI( sign, exp, sig ) (((uint32_t) (sign)<<31) + ((uint32_t) (exp)<<23) + (sig))
+      |                                                                                         ~  ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_subMagsF32.c:131:70: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast16_t' (aka 'unsigned short') [-Wsign-conversion]
+  131 |                 signZ, expZ, sigX - softfloat_shiftRightJam32( sigY, expDiff )
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~        ^~~~~~~
+5 warnings generated.

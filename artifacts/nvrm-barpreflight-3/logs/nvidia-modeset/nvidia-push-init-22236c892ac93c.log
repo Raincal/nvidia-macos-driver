@@ -1,0 +1,69 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:26:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-init.h:33:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-types.h:40:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:27:
+../common/unix/nvidia-push/interface/nvidia-push-utils.h:124:32: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  124 |         return notifierIndex & ~NV_PUSH_NOTIFIER_INTERNAL_BIT;
+      |                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:28:
+../common/unix/nvidia-push/include/nvidia-push-priv.h:83:25: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+   83 |         return pDevice->numSubDevices;
+      |         ~~~~~~ ~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:106:42: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  106 |         for (sd = pDevice->numSubDevices - 1; sd >= 0; sd--) {
+      |                 ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:122:38: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  122 |     for (sd = pDevice->numSubDevices - 1; sd >= 0; sd--) {
+      |             ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:156:65: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  156 |         const int deviceIndex = __nvPushGetDeviceIndex(pDevice, sd);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~          ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:185:65: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  185 |         const int deviceIndex = __nvPushGetDeviceIndex(pDevice, sd);
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~          ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:301:72: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  301 |         notifParams.index = NV_CHANNELGPFIFO_NOTIFICATION_TYPE__SIZE_1 + deviceIndex;
+      |                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:338:11: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  338 |     ret = nvPushImportRmApiControl(pDevice,
+      |         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  339 |                                    channelHandle,
+      |                                    ~~~~~~~~~~~~~~
+  340 |                                    NVA06F_CTRL_CMD_BIND,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~
+  341 |                                    &bindParams,
+      |                                    ~~~~~~~~~~~~
+  342 |                                    sizeof(bindParams));
+      |                                    ~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:350:11: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  350 |     ret = nvPushImportRmApiControl(pDevice,
+      |         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  351 |                                    channelHandle,
+      |                                    ~~~~~~~~~~~~~~
+  352 |                                    NVA06F_CTRL_CMD_GPFIFO_SCHEDULE,
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  353 |                                    &scheduleParams,
+      |                                    ~~~~~~~~~~~~~~~~
+  354 |                                    sizeof(scheduleParams));
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:460:55: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  460 |         deviceIndex = __nvPushGetDeviceIndex(pDevice, sd);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~          ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:580:24: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  580 |                 return i;
+      |                 ~~~~~~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:586:20: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  586 |             return i;
+      |             ~~~~~~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push-init.c:1387:55: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1387 |         deviceIndex = __nvPushGetDeviceIndex(pDevice, sd);
+      |                       ~~~~~~~~~~~~~~~~~~~~~~          ^~
+15 warnings generated.

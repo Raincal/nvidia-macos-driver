@@ -1,0 +1,37 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:59:25: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+   59 |                         CLEAR_FLAG(F_IF);
+      |                         ^~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/regs.h:209:49: note: expanded from macro 'CLEAR_FLAG'
+  209 | #define CLEAR_FLAG(flag)        (M.x86.R_FLG &= ~(flag))
+      |                                              ~~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:60:25: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+   60 |                         CLEAR_FLAG(F_TF);
+      |                         ^~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/regs.h:209:49: note: expanded from macro 'CLEAR_FLAG'
+  209 | #define CLEAR_FLAG(flag)        (M.x86.R_FLG &= ~(flag))
+      |                                              ~~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:938:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  938 |                 return M.x86.R_EAX + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:941:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  941 |                 return M.x86.R_ECX + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:944:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  944 |                 return M.x86.R_EDX + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:947:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  947 |                 return M.x86.R_EBX + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:952:53: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  952 |                 return decode_sib_address(sib, 1) + displacement;
+      |                                                   ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:955:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  955 |                 return M.x86.R_EBP + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:958:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  958 |                 return M.x86.R_ESI + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/decode.c:961:38: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  961 |                 return M.x86.R_EDI + displacement;
+      |                                    ~ ^~~~~~~~~~~~
+10 warnings generated.

@@ -1,0 +1,68 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/uvm/arch/volta/uvm_gv100.c:29:
+In file included from inc/kernel/core/core.h:26:
+In file included from inc/kernel/core/prelude.h:41:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/uvm/arch/volta/uvm_gv100.c:32:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/uvm/arch/volta/uvm_gv100.c:36:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/uvm/arch/volta/uvm_gv100.c:150:50: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  150 |             NvU32 maxEntryCount = pMemDesc->Size / NVC365_NOTIFY_BUF_SIZE;
+      |                   ~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/uvm/arch/volta/uvm_gv100.c:387:17: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  387 |                 GPU_FLD_WR_DRF_DEF(pGpu, _PFB_NISO, _ACCESS_COUNTER_CONFIG, _MOMC_USE_LIMIT, _HALF);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_gpu_access_nvoc.h:329:148: note: expanded from macro 'GPU_FLD_WR_DRF_DEF'
+  329 | #define GPU_FLD_WR_DRF_DEF(g,d,r,f,c) GPU_REG_WR32(g, NV##d##r,(GPU_REG_RD32(g,NV##d##r)&~(GPU_DRF_MASK(NV##d##r##f)<<GPU_DRF_SHIFT(NV##d##r##f)))|GPU_DRF_DEF(d,r,f,c))
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+generated/g_gpu_access_nvoc.h:213:62: note: expanded from macro 'GPU_DRF_DEF'
+  213 | #define GPU_DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<GPU_DRF_SHIFT(NV ## d ## r ## f))
+      |                                                              ^
+generated/g_gpu_access_nvoc.h:259:56: note: expanded from macro 'GPU_REG_WR32'
+  259 | #define GPU_REG_WR32(g,a,v)    REG_INST_WR32(g,GPU,0,a,v)
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~
+generated/g_gpu_access_nvoc.h:229:112: note: expanded from macro 'REG_INST_WR32'
+  229 | #define REG_INST_WR32(g,dev,inst,a,v)     regWrite032(GPU_GET_REGISTER_ACCESS(g), DEVICE_INDEX_##dev, inst, a, v, NULL)
+      |                                                                                                                ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/uvm/arch/volta/uvm_gv100.c:390:17: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  390 |                 GPU_FLD_WR_DRF_DEF(pGpu, _PFB_NISO, _ACCESS_COUNTER_CONFIG, _MOMC_USE_LIMIT, _FULL);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_gpu_access_nvoc.h:329:148: note: expanded from macro 'GPU_FLD_WR_DRF_DEF'
+  329 | #define GPU_FLD_WR_DRF_DEF(g,d,r,f,c) GPU_REG_WR32(g, NV##d##r,(GPU_REG_RD32(g,NV##d##r)&~(GPU_DRF_MASK(NV##d##r##f)<<GPU_DRF_SHIFT(NV##d##r##f)))|GPU_DRF_DEF(d,r,f,c))
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+generated/g_gpu_access_nvoc.h:213:62: note: expanded from macro 'GPU_DRF_DEF'
+  213 | #define GPU_DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<GPU_DRF_SHIFT(NV ## d ## r ## f))
+      |                                                              ^
+generated/g_gpu_access_nvoc.h:259:56: note: expanded from macro 'GPU_REG_WR32'
+  259 | #define GPU_REG_WR32(g,a,v)    REG_INST_WR32(g,GPU,0,a,v)
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~
+generated/g_gpu_access_nvoc.h:229:112: note: expanded from macro 'REG_INST_WR32'
+  229 | #define REG_INST_WR32(g,dev,inst,a,v)     regWrite032(GPU_GET_REGISTER_ACCESS(g), DEVICE_INDEX_##dev, inst, a, v, NULL)
+      |                                                                                                                ^
+11 warnings generated.

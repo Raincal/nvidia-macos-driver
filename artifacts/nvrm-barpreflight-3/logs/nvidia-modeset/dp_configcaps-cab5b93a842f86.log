@@ -1,0 +1,191 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:32:
+In file included from ../common/displayport/inc/dp_configcaps.h:34:
+In file included from ../common/displayport/inc/dp_connector.h:35:
+In file included from ../common/displayport/inc/dp_mainlink.h:33:
+../common/displayport/inc/dp_linkconfig.h:588:36: warning: declaration shadows a field of 'DisplayPort::LinkConfiguration' [-Wshadow]
+  588 |         void setChannelCoding(bool bIs128b132bChannelCoding)
+      |                                    ^
+../common/displayport/inc/dp_linkconfig.h:284:18: note: previous declaration is here
+  284 |         bool     bIs128b132bChannelCoding;
+      |                  ^
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:32:
+In file included from ../common/displayport/inc/dp_configcaps.h:34:
+In file included from ../common/displayport/inc/dp_connector.h:37:
+../common/displayport/inc/dp_address.h:276:48: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  276 |                 buffer[i/4] |= ((NvU8) hop[i]) << (i % 4) * 8;
+      |                             ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:32:
+In file included from ../common/displayport/inc/dp_configcaps.h:34:
+In file included from ../common/displayport/inc/dp_connector.h:41:
+In file included from ../common/displayport/inc/dp_auxretry.h:35:
+../common/displayport/inc/dp_timeout.h:48:83: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+   48 |             : timer(_timer), timeoutTime(_timer->getTimeUs() + timeoutMilliseconds*1000 + 1 /* counter could be about to roll */)
+      |                                                              ~ ~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:32:
+../common/displayport/inc/dp_configcaps.h:843:41: warning: declaration shadows a field of 'DisplayPort::DPCDHALImpl' [-Wshadow]
+  843 |         virtual void setAuxBus(AuxBus * bus)
+      |                                         ^
+../common/displayport/inc/dp_configcaps.h:603:19: note: previous declaration is here
+  603 |         AuxRetry  bus;
+      |                   ^
+../common/displayport/inc/dp_configcaps.h:1199:31: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1199 |             return interrupts.sinkCount;
+      |             ~~~~~~ ~~~~~~~~~~~^~~~~~~~~
+../common/displayport/inc/dp_configcaps.h:1209:36: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1209 |             interrupts.sinkCount = sinkCount;
+      |                                  ~ ^~~~~~~~~
+../common/displayport/inc/dp_configcaps.h:1383:51: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 1383 |             return bus.read(NV_DPCD_MBOX_DOWN_REP + offset, data, (unsigned)length);
+      |                        ~~~~ ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../common/displayport/inc/dp_configcaps.h:1398:49: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 1398 |             return bus.read(NV_DPCD_MBOX_UP_REQ + offset, data, (unsigned)length);
+      |                        ~~~~ ~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+../common/displayport/inc/dp_configcaps.h:1494:59: warning: declaration shadows a field of 'DisplayPort::DPCDHALImpl' [-Wshadow]
+ 1494 |         virtual void readPsrCapabilities(vesaPsrSinkCaps *caps)
+      |                                                           ^
+../common/displayport/inc/dp_configcaps.h:716:11: note: previous declaration is here
+  716 |         } caps;
+      |           ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:268:34: warning: declaration shadows a local variable [-Wshadow]
+  268 |                 AuxRetry::status status;
+      |                                  ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:179:22: note: previous declaration is here
+  179 |     AuxRetry::status status;
+      |                      ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:432:85: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  432 |                 if (AuxRetry::ack != bus.read(NV_DPCD14_LT_TUNABLE_PHY_REPEATER_REV + chunkOffset[chunk],
+      |                                          ~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:583:47: warning: implicit conversion loses integer precision: 'int' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  583 |                 xGranular = (xGranular << 8U) | byte;
+      |                           ~ ~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:777:26: warning: implicit conversion changes signedness: 'const char' to 'NvU8' (aka 'unsigned char') [-Wsign-conversion]
+  777 |         ouiBuffer[3+i] = *model;
+      |                        ~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:814:48: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  814 |     ouiId = ouiBuffer[2] | (ouiBuffer[1] << 8) | (ouiBuffer[0] << 16);
+      |           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:819:24: warning: implicit conversion changes signedness: 'NvU8' (aka 'unsigned char') to 'char' [-Wsign-conversion]
+  819 |         modelName[i] = ouiBuffer[3+i];
+      |                      ~ ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:865:48: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  865 |     ouiId = ouiBuffer[0] | (ouiBuffer[1] << 8) | (ouiBuffer[2] << 16);
+      |           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1227:39: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1227 |             trainingCtrl[laneIndex] = FLD_SET_DRF_NUM(_DPCD, _TRAINING_LANE_SET,
+      |                                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1228 |                                                     _VOLTAGE_SWING, voltSwingSet[laneIndex],
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1229 |                                                     trainingCtrl[laneIndex]);
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1245:39: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1245 |             trainingCtrl[laneIndex] = FLD_SET_DRF_NUM(_DPCD, _TRAINING_LANE_SET,
+      |                                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1246 |                                                     _PREEMPHASIS, preEmphasisSet[laneIndex],
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1247 |                                                     trainingCtrl[laneIndex]);
+      |                                                     ~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1262:39: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1262 |     return(AuxRetry::ack == bus.write(writeAddress, trainingCtrl, (unsigned)numLanes));
+      |                                 ~~~~~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1374:22: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1374 |     return bus.write(writeAddress, &linkQuality, sizeof linkQuality);
+      |                ~~~~~ ^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1559:14: warning: declaration shadows a local variable [-Wshadow]
+ 1559 |         NvU8 buffer[NV_DPCD_TEST_80BIT_CUSTOM_PATTERN__SIZE] = {0};
+      |              ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1523:10: note: previous declaration is here
+ 1523 |     NvU8 buffer = 0;
+      |          ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1743:40: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1743 |     bus.read(addrLane01Status, buffer, bytesToRead);
+      |         ~~~~                           ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1775:25: warning: implicit conversion changes signedness: 'unsigned int' to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 1775 |     for (rxIndex = caps.phyRepeaterCount; rxIndex >= (NvS32) NV0073_CTRL_DP_DATA_TARGET_SINK; rxIndex--)
+      |                  ~ ~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1783:64: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1783 |             bus.read(NV_DPCD_LANE0_1_STATUS_ESI, &buffer[0xC], bytesToRead);
+      |                 ~~~~                                           ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1830:25: warning: implicit conversion changes signedness: 'unsigned int' to 'NvS32' (aka 'int') [-Wsign-conversion]
+ 1830 |     for (rxIndex = caps.phyRepeaterCount; rxIndex >= (NvS32) NV0073_CTRL_DP_DATA_TARGET_SINK; rxIndex--)
+      |                  ~ ~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1841:58: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1841 |             bus.read(NV_DPCD_LANE0_1_STATUS, &buffer[2], bytesToRead);
+      |                 ~~~~                                     ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:1949:26: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1949 |         timeoutMs = caps.extendedSleepWakeTimeoutRequestMs;
+      |                   ~ ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2191:35: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 2191 |     if (AuxRetry::ack == bus.read(addr, data, sizeof(NvU8)))
+      |                              ~~~~ ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2361:66: warning: declaration shadows a variable in the global namespace [-Wshadow]
+ 2361 | void DPCDHALImpl::applyRegkeyOverrides(const DP_REGKEY_DATABASE& dpRegkeyDatabase)
+      |                                                                  ^
+../common/displayport/inc/dp_regkeydatabase.h:225:34: note: previous declaration is here
+  225 | extern struct DP_REGKEY_DATABASE dpRegkeyDatabase;
+      |                                  ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2621:16: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2621 |         data = linkBwMask;
+      |              ~ ^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2658:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2658 |     data = FLD_SET_DRF_NUM(_DPCD14, _PCON_FRL_LINK_CONFIG_1, _MAX_LINK_BW,
+      |          ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2659 |                         targetBw, data);
+      |                         ~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2792:17: warning: declaration shadows a local variable [-Wshadow]
+ 2792 |         Timeout timeout(this->timer, NV_PCON_FRL_LT_TIMEOUT_INTERVAL_MS);
+      |                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2753:13: note: previous declaration is here
+ 2753 |     Timeout timeout(timer, 500 /* 500ms */);
+      |             ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2930:14: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2930 |     config = FLD_SET_DRF_NUM(_DPCD_PANEL_SELF_REFRESH,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2931 |         _ERR_STATUS,
+      |         ~~~~~~~~~~~~
+ 2932 |         _LINK_CRC_ERR,
+      |         ~~~~~~~~~~~~~~
+ 2933 |         psrErr.linkCrcError,
+      |         ~~~~~~~~~~~~~~~~~~~~
+ 2934 |         config);
+      |         ~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2935:14: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2935 |     config = FLD_SET_DRF_NUM(_DPCD_PANEL_SELF_REFRESH,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2936 |         _ERR_STATUS,
+      |         ~~~~~~~~~~~~
+ 2937 |         _RFB_ERR,
+      |         ~~~~~~~~~
+ 2938 |         psrErr.rfbStoreError,
+      |         ~~~~~~~~~~~~~~~~~~~~~
+ 2939 |         config);
+      |         ~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_configcaps.cpp:2940:14: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 2940 |     config = FLD_SET_DRF_NUM(_DPCD_PANEL_SELF_REFRESH,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2941 |         _ERR_STATUS,
+      |         ~~~~~~~~~~~~
+ 2942 |         _VSC_SDP_ERR,
+      |         ~~~~~~~~~~~~~
+ 2943 |         psrErr.vscSdpError,
+      |         ~~~~~~~~~~~~~~~~~~~
+ 2944 |         config);
+      |         ~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
+  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
+      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+35 warnings generated.

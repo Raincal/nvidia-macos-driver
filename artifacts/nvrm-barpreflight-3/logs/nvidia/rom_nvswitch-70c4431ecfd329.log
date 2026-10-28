@@ -1,0 +1,55 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:470:44: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  470 |     NVSWITCH_ELEMENT_CHECK(&nvlink_config, link_speed_mask, nvlink_config_size, 0x0);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/rom_nvswitch.h:58:37: note: expanded from macro 'NVSWITCH_ELEMENT_CHECK'
+   58 |     NVSWITCH_ELEMENT_VALIDATE(_ptr, _element, _size, _default, _default)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/rom_nvswitch.h:48:50: note: expanded from macro 'NVSWITCH_ELEMENT_VALIDATE'
+   48 |         NvU32 data = NVSWITCH_ELEMENT_READ(_ptr, _element, _size, _default);    \
+      |               ~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/rom_nvswitch.h:43:18: note: expanded from macro 'NVSWITCH_ELEMENT_READ'
+   43 |         ((_ptr)->_element) : (_default))
+      |          ~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:471:44: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  471 |     NVSWITCH_ELEMENT_CHECK(&nvlink_config, link_refclk_mask, nvlink_config_size, 0x0);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/rom_nvswitch.h:58:37: note: expanded from macro 'NVSWITCH_ELEMENT_CHECK'
+   58 |     NVSWITCH_ELEMENT_VALIDATE(_ptr, _element, _size, _default, _default)
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/rom_nvswitch.h:48:50: note: expanded from macro 'NVSWITCH_ELEMENT_VALIDATE'
+   48 |         NvU32 data = NVSWITCH_ELEMENT_READ(_ptr, _element, _size, _default);    \
+      |               ~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/nvswitch/kernel/inc/rom_nvswitch.h:43:18: note: expanded from macro 'NVSWITCH_ELEMENT_READ'
+   43 |         ((_ptr)->_element) : (_default))
+      |          ~~~~~~~~^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:511:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  511 |     retval = _nvswitch_read_rom_bytes(device, eeprom, ccb_block_offset,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  512 |         (NvU8 *) &ccb, sizeof(ccb));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:543:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  543 |         retval = _nvswitch_read_rom_bytes(device, eeprom, ccb_entry_offset,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  544 |             (NvU8 *) &ccb_entry, sizeof(ccb_entry));
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:605:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  605 |     retval = _nvswitch_read_rom_bytes(device, eeprom, gpio_table_offset,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  606 |         (NvU8 *) &gpio, sizeof(gpio));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:656:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  656 |         retval = _nvswitch_read_rom_bytes(device, eeprom, gpio_entry_offset,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  657 |             (NvU8 *) &gpio_entry, sizeof(gpio_entry));
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:703:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  703 |     retval = _nvswitch_read_rom_bytes(device, eeprom, i2c_devices_offset,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  704 |         (NvU8 *) &i2c, sizeof(i2c));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/rom_nvswitch.c:746:18: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  746 |         retval = _nvswitch_read_rom_bytes(device, eeprom, i2c_entry_offset,
+      |                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  747 |             (NvU8 *) &i2c_entry, sizeof(i2c_entry));
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+8 warnings generated.

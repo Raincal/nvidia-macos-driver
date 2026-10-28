@@ -1,0 +1,182 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:29:
+In file included from inc/kernel/core/core.h:26:
+In file included from inc/kernel/core/prelude.h:41:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:384:46: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  383 |             snprintf(
+      |             ~~~~~~~~
+  384 |                 decodedLine, decodedLineSize - 1, "%s+%lld (%s%s%s:%lld)",
+      |                              ~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:392:51: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  392 |             snprintf(decodedLine, decodedLineSize - 1, "??? (%s:%lld)", filename, outputLine);
+      |             ~~~~~~~~              ~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:397:47: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  397 |         snprintf(decodedLine, decodedLineSize - 1, "%s+%lld", name, offset);
+      |         ~~~~~~~~              ~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:436:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  436 |     if (fl & (LEFT_ADJ | ZERO_PAD) || l >= w)
+      |         ^~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:450:34: warning: implicit conversion loses integer precision: 'int' to 'char' [-Wimplicit-int-conversion]
+  450 |         *--s = xdigits[(x & 15)] | lower;
+      |              ~ ~~~~~~~~~~~~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:570:27: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  570 |                 remain -= len;
+      |                        ~~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:738:27: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+  738 |                 remain -= len;
+      |                        ~~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:911:29: warning: implicit conversion changes signedness: 'NvS64' (aka 'long long') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  911 |                     arg.i = -(NvS64)arg.i;
+      |                           ~ ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:936:38: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'char' [-Wimplicit-int-conversion]
+  936 |             *(a = z - (p = 1)) = arg.i;
+      |                                ~ ~~~~^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:967:41: warning: implicit conversion changes signedness: 'int' to 'NvLength' (aka 'unsigned long long') [-Wsign-conversion]
+  967 |             p = portStringLengthSafe(a, p);
+      |                 ~~~~~~~~~~~~~~~~~~~~    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:972:25: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'char' [-Wimplicit-int-conversion]
+  972 |             wc[0] = arg.i;
+      |                   ~ ~~~~^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:981:29: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  981 |         pad(' ', w, pl + p, fl, logDecode);
+      |         ~~~                 ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:983:32: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  983 |         pad('0', w, pl + p, fl ^ ZERO_PAD, logDecode);
+      |         ~~~                 ~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1039:32: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 1039 |         pad(' ', w, pl + p, fl ^ LEFT_ADJ, logDecode);
+      |         ~~~                 ~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:554:43: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  553 |             len = snprintf(
+      |                   ~~~~~~~~
+  554 |                 logDecode->curLineBufPtr, remain,
+      |                                           ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:679:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  678 |                     len = snprintf(
+      |                           ~~~~~~~~
+  679 |                         logDecode->curLineBufPtr, remain,
+      |                                                   ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:692:30: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NV_STATUS' (aka 'unsigned int') [-Wshorten-64-to-32]
+  692 |                     status = args[arg_index++];
+      |                            ~ ^~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:694:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  693 |                     len = snprintf(
+      |                           ~~~~~~~~
+  694 |                         logDecode->curLineBufPtr, remain,
+      |                                                   ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:704:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  703 |                     len = snprintf(
+      |                           ~~~~~~~~
+  704 |                         logDecode->curLineBufPtr, remain,
+      |                                                   ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:717:30: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NV_STATUS' (aka 'unsigned int') [-Wshorten-64-to-32]
+  717 |                     status = args[arg_index++];
+      |                            ~ ^~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:719:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  718 |                     len = snprintf(
+      |                           ~~~~~~~~
+  719 |                         logDecode->curLineBufPtr, remain,
+      |                                                   ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:778:15: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  778 |         l = z - a;
+      |           ~ ~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:799:43: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'int' [-Wshorten-64-to-32]
+  799 |                 w    = nl_arg[s[1] - '0'].i;
+      |                      ~ ~~~~~~~~~~~~~~~~~~~^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:806:21: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'int' [-Wshorten-64-to-32]
+  806 |                 w = args[arg_index++];
+      |                   ~ ^~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:821:40: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'int' [-Wshorten-64-to-32]
+  821 |                 p = nl_arg[s[2] - '0'].i;
+      |                   ~ ~~~~~~~~~~~~~~~~~~~^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:828:21: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'int' [-Wshorten-64-to-32]
+  828 |                 p = args[arg_index++];
+      |                   ~ ^~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:967:17: warning: implicit conversion loses integer precision: 'NvLength' (aka 'unsigned long long') to 'int' [-Wshorten-64-to-32]
+  967 |             p = portStringLengthSafe(a, p);
+      |               ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:978:19: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  978 |             p = z - a;
+      |               ~ ~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:984:23: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  984 |         pad('0', p, z - a, 0, logDecode);
+      |         ~~~         ~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:985:26: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+  985 |         emit_string(a, z - a, logDecode);
+      |         ~~~~~~~~~~~    ~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1036:30: warning: implicit conversion loses integer precision: 'long' to 'int' [-Wshorten-64-to-32]
+ 1036 |             emit_string(a, z - a, logDecode);
+      |             ~~~~~~~~~~~    ~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1547:73: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1547 |     pNvLogBuffer->pos            = putOffset + pLog->preservedNoWrapPos - sizeof(NvU64);
+      |                                  ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1591:67: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1591 |     pNvLogBuffer->pos = NV_OFFSETOF(LIBOS_LOG_NVLOG_BUFFER, data) + putOffset;
+      |                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1606:67: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1606 |     pNvLogBuffer->pos = NV_OFFSETOF(LIBOS_LOG_NVLOG_BUFFER, data) + putOffset;
+      |                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1666:58: warning: variable 'numLogEntries' may be uninitialized when used here [-Wconditional-uninitialized]
+ 1666 |         NvU64 lastEntryMetaIndex = (pLog->putIter - 2) % numLogEntries + 1;
+      |                                                          ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1630:28: note: initialize the variable 'numLogEntries' to silence this warning
+ 1630 |         NvU64 numLogEntries;
+      |                            ^
+      |                             = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1683:30: warning: variable 'previousPut' may be uninitialized when used here [-Wconditional-uninitialized]
+ 1683 |         if (pLog->putIter <= previousPut)
+      |                              ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1629:26: note: initialize the variable 'previousPut' to silence this warning
+ 1629 |         NvU64 previousPut;
+      |                          ^
+      |                           = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:1890:28: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NVLOG_BUFFER_HANDLE' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1890 |                 *pHandle = i;
+      |                          ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:2094:13: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 2093 |         status = nvlogAllocBuffer(
+      |                  ~~~~~~~~~~~~~~~~
+ 2094 |             LIBOS_LOG_NVLOG_BUFFER_SIZE(mergedBufferSize), libosNoWrapBufferFlags,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/uproc/os/common/include/liblogdecode.h:146:90: note: expanded from macro 'LIBOS_LOG_NVLOG_BUFFER_SIZE'
+  146 | #define LIBOS_LOG_NVLOG_BUFFER_SIZE(dataSize) (NV_OFFSETOF(LIBOS_LOG_NVLOG_BUFFER, data) + (dataSize))
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:2125:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 2124 |     status = nvlogAllocBuffer(
+      |              ~~~~~~~~~~~~~~~~
+ 2125 |         LIBOS_LOG_NVLOG_BUFFER_SIZE(mergedBufferSize), libosWrapBufferFlags,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/uproc/os/common/include/liblogdecode.h:146:90: note: expanded from macro 'LIBOS_LOG_NVLOG_BUFFER_SIZE'
+  146 | #define LIBOS_LOG_NVLOG_BUFFER_SIZE(dataSize) (NV_OFFSETOF(LIBOS_LOG_NVLOG_BUFFER, data) + (dataSize))
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:2233:13: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 2232 |         status = nvlogAllocBuffer(
+      |                  ~~~~~~~~~~~~~~~~
+ 2233 |             LIBOS_LOG_NVLOG_BUFFER_SIZE(bufferSize), libosNoWrapBufferFlags,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/uproc/os/common/include/liblogdecode.h:146:90: note: expanded from macro 'LIBOS_LOG_NVLOG_BUFFER_SIZE'
+  146 | #define LIBOS_LOG_NVLOG_BUFFER_SIZE(dataSize) (NV_OFFSETOF(LIBOS_LOG_NVLOG_BUFFER, data) + (dataSize))
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:2266:20: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 2265 |     status = nvlogAllocBuffer(
+      |              ~~~~~~~~~~~~~~~~
+ 2266 |         bufferSize + NV_OFFSETOF(LIBOS_LOG_NVLOG_BUFFER, data), libosWrapBufferFlags,
+      |         ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/uproc/os/libos-v3.1.0/lib/liblogdecode.c:2355:66: warning: implicit conversion changes signedness: 'long' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+ 2355 |         _libosLogInitLogBuffer(pLog, sectionData, sectionDataEnd - sectionData);
+      |         ~~~~~~~~~~~~~~~~~~~~~~                    ~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+46 warnings generated.

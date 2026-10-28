@@ -1,0 +1,103 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:27:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-init.h:33:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-types.h:40:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:28:
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:102:58: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  102 |     nvDmaMoveDWORDS(p->main.buffer, (const NvU32 *)data, dwords);
+      |     ~~~~~~~~~~~~~~~                                      ^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:29:
+../common/unix/nvidia-push/interface/nvidia-push-utils.h:124:32: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  124 |         return notifierIndex & ~NV_PUSH_NOTIFIER_INTERNAL_BIT;
+      |                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:30:
+../common/unix/nvidia-push/include/nvidia-push-priv.h:83:25: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+   83 |         return pDevice->numSubDevices;
+      |         ~~~~~~ ~~~~~~~~~^~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:35:
+In file included from ../common/inc/nvSemaphoreCommon.h:28:
+../common/inc/nvCpuIntrinsics.h:365:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  365 |     __BitScanForward(pindex, maskInit);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:315:57: note: expanded from macro '__BitScanForward'
+  315 | #define __BitScanForward(_pindex, _mask) *((_pindex)) = __NV_ctz((_mask))
+      |                                                       ~ ^~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:376:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  376 |     __BitScanForward(pindex, mask);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:315:57: note: expanded from macro '__BitScanForward'
+  315 | #define __BitScanForward(_pindex, _mask) *((_pindex)) = __NV_ctz((_mask))
+      |                                                       ~ ^~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:373:19: warning: implicit conversion loses integer precision: 'unsigned long' to 'unsigned int' [-Wshorten-64-to-32]
+  373 |     mask = *pmask ^ (1ul << index);
+      |          ~ ~~~~~~~^~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:382:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  382 |     __BitScanReverse(pindex, maskInit);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:316:60: note: expanded from macro '__BitScanReverse'
+  316 | #define __BitScanReverse(_pindex, _mask) *((_pindex)) = 31 - __NV_clz((_mask))
+      |                                                       ~ ~~~^~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:393:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  393 |     __BitScanReverse(pindex, mask);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:316:60: note: expanded from macro '__BitScanReverse'
+  316 | #define __BitScanReverse(_pindex, _mask) *((_pindex)) = 31 - __NV_clz((_mask))
+      |                                                       ~ ~~~^~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:390:19: warning: implicit conversion loses integer precision: 'unsigned long' to 'unsigned int' [-Wshorten-64-to-32]
+  390 |     mask = *pmask ^ (1ul << index);
+      |          ~ ~~~~~~~^~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:400:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  400 |     __BitScanForward64(pindex, maskInit);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:317:59: note: expanded from macro '__BitScanForward64'
+  317 | #define __BitScanForward64(_pindex, _mask) *((_pindex)) = __NV_ctzll((_mask))
+      |                                                         ~ ^~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:412:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  412 |     __BitScanForward64(pindex, mask);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:317:59: note: expanded from macro '__BitScanForward64'
+  317 | #define __BitScanForward64(_pindex, _mask) *((_pindex)) = __NV_ctzll((_mask))
+      |                                                         ~ ^~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:418:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  418 |     __BitScanReverse64(pindex, maskInit);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:318:62: note: expanded from macro '__BitScanReverse64'
+  318 | #define __BitScanReverse64(_pindex, _mask) *((_pindex)) = 63 - __NV_clzll((_mask))
+      |                                                         ~ ~~~^~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:430:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  430 |     __BitScanReverse64(pindex, mask);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/inc/nvCpuIntrinsics.h:318:62: note: expanded from macro '__BitScanReverse64'
+  318 | #define __BitScanReverse64(_pindex, _mask) *((_pindex)) = 63 - __NV_clzll((_mask))
+      |                                                         ~ ~~~^~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:173:54: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  173 |             NvU32 get = GpFifoReadGpGet(push_buffer, i);
+      |                         ~~~~~~~~~~~~~~~              ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:176:54: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+  176 |             distanceToPut = push_buffer->gpPutOffset - get;
+      |                           ~ ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:492:41: warning: operand of ? changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+  491 |     NvS32 distanceToPut, minmaxDistanceToPut =
+      |                          ~~~~~~~~~~~~~~~~~~~
+  492 |         minimum ? 0 : push_buffer->main.sizeInBytes;
+      |                       ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:499:42: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  499 |         get = GpFifoReadGet(push_buffer, i);
+      |               ~~~~~~~~~~~~~              ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:502:53: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NvS32' (aka 'int') [-Wsign-conversion]
+  502 |         distanceToPut = push_buffer->main.putOffset - get;
+      |                       ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:797:63: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  797 |                 if (nvPushImportWaitForEvent(pDevice, pEvent, timeout)) {
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~                  ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-push/src/nvidia-push.c:821:46: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  821 |                 getOffset = GpFifoReadGet(p, sd);
+      |                             ~~~~~~~~~~~~~    ^~
+22 warnings generated.

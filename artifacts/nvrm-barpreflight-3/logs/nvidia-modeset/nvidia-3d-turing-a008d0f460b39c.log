@@ -1,0 +1,316 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:24:
+In file included from ../common/unix/nvidia-3d/include/nvidia-3d-turing.h:27:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d-types.h:30:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-methods.h:32:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-types.h:40:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:24:
+In file included from ../common/unix/nvidia-3d/include/nvidia-3d-turing.h:27:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d-types.h:30:
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:102:58: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  102 |     nvDmaMoveDWORDS(p->main.buffer, (const NvU32 *)data, dwords);
+      |     ~~~~~~~~~~~~~~~                                      ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:36:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   36 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_3D,
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |         NVC597_SET_SHADER_EXCEPTIONS,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   38 |         NV3D_C(C597, SET_SHADER_EXCEPTIONS, ENABLE, FALSE));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:104:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  104 |         nvPushMethodOneIncr(p, NVA06F_SUBCHANNEL_3D, NVC597_LAUNCH_DMA,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  105 |                             1 + dwordsThisChunk);
+      |                             ~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:248:5: note: expanded from macro 'nvPushMethodOneIncr'
+  248 |     __nvPushStart(_push_buffer, main, _subch, _offset, _count, _ONE_INC)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:215:9: note: expanded from macro '__nvPushStart'
+  214 |     nvPushHeader((_push_buffer), _segment, (_count),                  \
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  215 |         DRF_DEF(C46F, _DMA, _SEC_OP,               _opcode)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  216 |         DRF_NUM(C46F, _DMA, _METHOD_COUNT,         _count)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  217 |         DRF_NUM(C46F, _DMA, _METHOD_SUBCHANNEL,    _subch)   |        \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  218 |         DRF_NUM(C46F, _DMA, _METHOD_ADDRESS,    (_offset) >> 2));     \
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                                          ^
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:200:48: note: expanded from macro 'nvPushHeader'
+  200 |     __nvPushSetMethodDataSegment((_pSegment), (_header));             \
+      |                                                ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:95:51: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+   95 |         const NvU32 bytesThisChunk = NV_MIN(bytes - bytesSoFar, chunkSize);
+      |                     ~~~~~~~~~~~~~~          ~~~~~~^~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:766:45: note: expanded from macro 'NV_MIN'
+  766 | #define NV_MIN(a, b)        (((a) < (b)) ? (a) : (b))
+      |                                             ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:368:39: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  367 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_PITCH, _PITCH_BIT21,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  368 |                            info.pitch >> 21, tex->head);
+      |                            ~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:373:39: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  372 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_PITCH, _WIDTH_MINUS_ONE,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  373 |                            info.width - 1, tex->head);
+      |                            ~~~~~~~~~~~^~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:375:46: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  374 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_PITCH, _HEIGHT_MINUS_ONE_BIT16,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  375 |                            (info.height - 1) >> 16, tex->head);
+      |                            ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:376:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  376 |         FLD_SET_DRF_DEF_MW(C597, _TEXHEAD_PITCH, _BORDER_SIZE,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  377 |                            _BORDER_SAMPLER_COLOR, tex->head);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:419:75: note: expanded from macro 'FLD_SET_DRF_DEF_MW'
+  419 | #define FLD_SET_DRF_DEF_MW(d,r,f,c,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_DEF_MW(d,r,f,c), v)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:376:54: note: expanded from macro 'DRF_DEF_MW'
+  376 | #define DRF_DEF_MW(d,r,f,c)        ((NV##d##r##f##c) << DRF_SHIFT_MW(NV##d##r##f))
+      |                                                      ^
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:380:40: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  379 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_PITCH, _HEIGHT_MINUS_ONE,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  380 |                            info.height - 1, tex->head);
+      |                            ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:409:39: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  408 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_BL, _WIDTH_MINUS_ONE,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  409 |                            info.width - 1, tex->head);
+      |                            ~~~~~~~~~~~^~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:410:9: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  410 |         FLD_SET_DRF_DEF_MW(C597, _TEXHEAD_BL, _BORDER_SIZE,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  411 |                            _BORDER_SAMPLER_COLOR, tex->head);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:419:75: note: expanded from macro 'FLD_SET_DRF_DEF_MW'
+  419 | #define FLD_SET_DRF_DEF_MW(d,r,f,c,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_DEF_MW(d,r,f,c), v)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:376:54: note: expanded from macro 'DRF_DEF_MW'
+  376 | #define DRF_DEF_MW(d,r,f,c)        ((NV##d##r##f##c) << DRF_SHIFT_MW(NV##d##r##f))
+      |                                                      ^
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:414:40: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  413 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_BL, _HEIGHT_MINUS_ONE,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  414 |                            info.height - 1, tex->head);
+      |                            ~~~~~~~~~~~~^~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:416:46: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  415 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_BL, _HEIGHT_MINUS_ONE_BIT16,
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  416 |                            (info.height - 1) >> 16, tex->head);
+      |                            ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:92: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                                           ~~~~~~~~~~~~~~~~~^~
+../common/sdk/nvidia/inc/nvmisc.h:377:39: note: expanded from macro 'DRF_NUM_MW'
+  377 | #define DRF_NUM_MW(d,r,f,n)        (((n)&DRF_MASK_MW(NV##d##r##f))<<DRF_SHIFT_MW(NV##d##r##f))
+      |                                       ^ ~
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                                        ^
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                                 ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:464:13: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  464 |             FLD_SET_DRF_DEF_MW(C597, _TEXHEAD_BL, _ANISO_FINE_SPREAD_MODIFIER,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  465 |                                _SPREAD_MODIFIER_CONST_TWO, tex->head);
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:419:75: note: expanded from macro 'FLD_SET_DRF_DEF_MW'
+  419 | #define FLD_SET_DRF_DEF_MW(d,r,f,c,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_DEF_MW(d,r,f,c), v)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:376:54: note: expanded from macro 'DRF_DEF_MW'
+  376 | #define DRF_DEF_MW(d,r,f,c)        ((NV##d##r##f##c) << DRF_SHIFT_MW(NV##d##r##f))
+      |                                                      ^
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:476:13: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  476 |             FLD_SET_DRF_DEF_MW(C597, _TEXHEAD_BL, _ANISO_FINE_SPREAD_MODIFIER,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  477 |                                _SPREAD_MODIFIER_CONST_TWO, tex->head);
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:419:75: note: expanded from macro 'FLD_SET_DRF_DEF_MW'
+  419 | #define FLD_SET_DRF_DEF_MW(d,r,f,c,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_DEF_MW(d,r,f,c), v)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:376:54: note: expanded from macro 'DRF_DEF_MW'
+  376 | #define DRF_DEF_MW(d,r,f,c)        ((NV##d##r##f##c) << DRF_SHIFT_MW(NV##d##r##f))
+      |                                                      ^
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:487:13: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  487 |             FLD_SET_DRF_DEF_MW(C597, _TEXHEAD_BL, _ANISO_FINE_SPREAD_MODIFIER,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  488 |                                _SPREAD_MODIFIER_CONST_TWO, tex->head);
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:419:75: note: expanded from macro 'FLD_SET_DRF_DEF_MW'
+  419 | #define FLD_SET_DRF_DEF_MW(d,r,f,c,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_DEF_MW(d,r,f,c), v)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:376:54: note: expanded from macro 'DRF_DEF_MW'
+  376 | #define DRF_DEF_MW(d,r,f,c)        ((NV##d##r##f##c) << DRF_SHIFT_MW(NV##d##r##f))
+      |                                                      ^
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:499:13: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  499 |             FLD_SET_DRF_DEF_MW(C597, _TEXHEAD_BL, _ANISO_FINE_SPREAD_MODIFIER,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  500 |                                _SPREAD_MODIFIER_CONST_TWO, tex->head);
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:419:75: note: expanded from macro 'FLD_SET_DRF_DEF_MW'
+  419 | #define FLD_SET_DRF_DEF_MW(d,r,f,c,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_DEF_MW(d,r,f,c), v)
+      |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:376:54: note: expanded from macro 'DRF_DEF_MW'
+  376 | #define DRF_DEF_MW(d,r,f,c)        ((NV##d##r##f##c) << DRF_SHIFT_MW(NV##d##r##f))
+      |                                                      ^
+../common/sdk/nvidia/inc/nvmisc.h:413:88: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                      ~~~~~~~~~~~~~~~~~~^~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:97: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                                                                               ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:357:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  357 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_PITCH, _ADDRESS_BITS31TO5,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  358 |                            info.offset >> 5, tex->head);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:48: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:413:70: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                    ~ ^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:95: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-turing.c:393:9: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  393 |         FLD_SET_DRF_NUM_MW(C597, _TEXHEAD_BL, _ADDRESS_BITS31TO9,
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  394 |                            info.offset >> 9, tex->head);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:418:48: note: expanded from macro 'FLD_SET_DRF_NUM_MW'
+  418 | #define FLD_SET_DRF_NUM_MW(d,r,f,n,v)          FLD_ASSIGN_MW(NV##d##r##f, DRF_NUM_MW(d,r,f,n), v)
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:413:70: note: expanded from macro 'FLD_ASSIGN_MW'
+  413 | #define FLD_ASSIGN_MW(drf,n,v)              ((v)[DRF_WORD_MW(drf)] = FLD_MERGE_MW(drf, n, v))
+      |                                                                    ~ ^~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:412:95: note: expanded from macro 'FLD_MERGE_MW'
+  412 | #define FLD_MERGE_MW(drf,n,v)               (((v)[DRF_WORD_MW(drf)] & ~DRF_SHIFTMASK_MW(drf)) | n)
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+21 warnings generated.

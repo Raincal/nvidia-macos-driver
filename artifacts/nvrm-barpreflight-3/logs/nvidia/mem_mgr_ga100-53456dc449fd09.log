@@ -1,0 +1,61 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/ampere/mem_mgr_ga100.c:24:
+In file included from inc/kernel/core/core.h:26:
+In file included from inc/kernel/core/prelude.h:41:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/ampere/mem_mgr_ga100.c:26:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/ampere/mem_mgr_ga100.c:27:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+In file included from generated/g_kern_mem_sys_nvoc.h:52:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/ampere/mem_mgr_ga100.c:27:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1239:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1239 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/ampere/mem_mgr_ga100.c:27:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1247:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1247 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+10 warnings generated.

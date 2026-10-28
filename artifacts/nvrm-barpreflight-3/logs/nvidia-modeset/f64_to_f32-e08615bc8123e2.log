@@ -1,0 +1,7 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f64_to_f32.c:76:13: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
+   76 |     if ( ! (exp | frac32) ) {
+      |             ^~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f64_to_f32.c:75:14: warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint_fast32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
+   75 |     frac32 = softfloat_shortShiftRightJam64( frac, 22 );
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.

@@ -1,0 +1,59 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:32:
+In file included from ../common/displayport/inc/dp_auxretry.h:35:
+../common/displayport/inc/dp_timeout.h:48:83: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+   48 |             : timer(_timer), timeoutTime(_timer->getTimeUs() + timeoutMilliseconds*1000 + 1 /* counter could be about to roll */)
+      |                                                              ~ ~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:33:
+In file included from ../common/displayport/inc/dp_messageheader.h:39:
+../common/displayport/inc/dp_address.h:276:48: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  276 |                 buffer[i/4] |= ((NvU8) hop[i]) << (i % 4) * 8;
+      |                             ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:235:32: warning: operand of ? changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  235 |         int todo = DP_MIN(size - i, aux->transactionSize());
+      |             ~~~~          ~~~~~^~~
+../common/displayport/inc/dp_internal.h:96:31: note: expanded from macro 'DP_MIN'
+   96 | #define DP_MIN(x,y) ((x)<(y)?(x):(y))
+      |                               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:235:42: warning: operand of ? changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  235 |         int todo = DP_MIN(size - i, aux->transactionSize());
+      |             ~~~~                    ~~~~~^~~~~~~~~~~~~~~~~
+../common/displayport/inc/dp_internal.h:96:35: note: expanded from macro 'DP_MIN'
+   96 | #define DP_MIN(x,y) ((x)<(y)?(x):(y))
+      |                                   ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:236:57: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  236 |         status s = readTransaction(address+i, buffer+i, todo, retries);
+      |                    ~~~~~~~~~~~~~~~                      ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:236:43: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  236 |         status s = readTransaction(address+i, buffer+i, todo, retries);
+      |                    ~~~~~~~~~~~~~~~ ~~~~~~~^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:236:36: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  236 |         status s = readTransaction(address+i, buffer+i, todo, retries);
+      |                                    ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:243:14: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  243 |         i += todo;
+      |           ~~ ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:262:32: warning: operand of ? changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  262 |         int todo = DP_MIN(size - i, aux->transactionSize());
+      |             ~~~~          ~~~~~^~~
+../common/displayport/inc/dp_internal.h:96:31: note: expanded from macro 'DP_MIN'
+   96 | #define DP_MIN(x,y) ((x)<(y)?(x):(y))
+      |                               ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:262:42: warning: operand of ? changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  262 |         int todo = DP_MIN(size - i, aux->transactionSize());
+      |             ~~~~                    ~~~~~^~~~~~~~~~~~~~~~~
+../common/displayport/inc/dp_internal.h:96:35: note: expanded from macro 'DP_MIN'
+   96 | #define DP_MIN(x,y) ((x)<(y)?(x):(y))
+      |                                   ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:263:58: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  263 |         status s = writeTransaction(address+i, buffer+i, todo, retries);
+      |                    ~~~~~~~~~~~~~~~~                      ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:263:44: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+  263 |         status s = writeTransaction(address+i, buffer+i, todo, retries);
+      |                    ~~~~~~~~~~~~~~~~ ~~~~~~~^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:263:37: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  263 |         status s = writeTransaction(address+i, buffer+i, todo, retries);
+      |                                     ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_auxretry.cpp:270:14: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  270 |         i += todo;
+      |           ~~ ^~~~
+14 warnings generated.

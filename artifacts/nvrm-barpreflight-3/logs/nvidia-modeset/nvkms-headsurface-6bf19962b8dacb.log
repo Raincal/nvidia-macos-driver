@@ -1,0 +1,138 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:24:
+In file included from include/nvkms-types.h:31:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+In file included from ../common/unix/common/inc/nv_dpy_id.h:35:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:24:
+In file included from include/nvkms-types.h:31:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+../common/unix/common/inc/nv_dpy_id.h:272:12: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  272 |     return nvPopCount32(dpyIdList.opaqueDpyIdList);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:310:33: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  310 |     dpyIdList.opaqueDpyIdList = val;
+      |                               ~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:320:55: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  320 |     dpyId.opaqueDpyId = (val == 0) ? 0 : 1 << (nv_ffs(val)-1);
+      |                                                ~~~~~~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:344:38: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../common/unix/common/inc/nv_dpy_id.h:344:25: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |            ~~~~~~ ~~~~~~^~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:356:23: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  356 |         1U << (nv_ffs(~excludeList.opaqueDpyIdList) - 1);
+      |                ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:24:
+In file included from include/nvkms-types.h:45:
+In file included from interface/nvkms-api.h:201:
+../common/unix/common/inc/nv_mode_timings.h:154:23: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  154 |     return (hz + 500) / 1000;
+      |     ~~~~~~ ~~~~~~~~~~~^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:24:
+include/nvkms-types.h:1565:44: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1565 |     viewPortOut.x = pViewPort->out.xAdjust +
+      |                   ~ ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1566 |                    (hVisible - pViewPort->out.width) / 2;
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:1567:45: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1567 |     viewPortOut.y = (pViewPort->out.yAdjust +
+      |                   ~  ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1568 |                    (vVisible - pViewPort->out.height) / 2);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:3403:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 3402 |     pApiHeadState->attributes.numberOfHardwareHeadsUsed =
+      |                                                         ~
+ 3403 |         nvPopCount32(hwHeadsMask);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:26:
+In file included from include/nvkms-headsurface-3d.h:29:
+In file included from include/nvkms-headsurface-priv.h:29:
+In file included from include/nvkms-headsurface-config.h:29:
+In file included from ../common/unix/nvidia-headsurface/nvidia-headsurface-types.h:28:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d-types.h:30:
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:102:58: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  102 |     nvDmaMoveDWORDS(p->main.buffer, (const NvU32 *)data, dwords);
+      |     ~~~~~~~~~~~~~~~                                      ^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:26:
+In file included from include/nvkms-headsurface-3d.h:29:
+In file included from include/nvkms-headsurface-priv.h:31:
+include/nvkms-utils.h:101:45: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  101 |     return (a << 24) | (b << 16) | (c << 8) | d;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:26:
+In file included from include/nvkms-headsurface-3d.h:29:
+include/nvkms-headsurface-priv.h:421:9: warning: implicit conversion loses integer precision: 'unsigned long' to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  420 |     const NvU16 semBase =
+      |                 ~~~~~~~
+  421 |         offsetof(NVHsNotifiersOneSdRec, semaphore[pHsChannel->apiHead]);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode_16.4.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.5.sdk/System/Library/Frameworks/Kernel.framework/Headers/stddef.h:67:24: note: expanded from macro 'offsetof'
+   67 | #define offsetof(t, d) __builtin_offsetof(t, d)
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1172:57: warning: implicit conversion loses integer precision: 'long' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1171 |     const NvU8 offsetInBytes =
+      |                ~~~~~~~~~~~~~
+ 1172 |         (headBase - ((const NvU8 *) pHsNotifiersOneSd)) +
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+ 1173 |         (notifierSize * nextSlot);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1296:26: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 1295 |         pParamsOneHead->layer[NVKMS_MAIN_LAYER].sizeIn.val.width =
+      |                                                                  ~
+ 1296 |             pSurfaceEvo->widthInPixels;
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1298:26: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 1297 |         pParamsOneHead->layer[NVKMS_MAIN_LAYER].sizeIn.val.height =
+      |                                                                   ~
+ 1298 |             pSurfaceEvo->heightInPixels;
+      |             ~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1535:17: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1534 |             workArea.honorSwapGroupClipListBufferMask =
+      |                                                       ~
+ 1535 |                 ~NVBIT(pHsChannel->nextIndex);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1623:5: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1623 |     nvPushImmedVal(p, NVA06F_SUBCHANNEL_2D, NVC46F_WFI, 0);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:237:5: note: expanded from macro 'nvPushImmedVal'
+  237 |     nvPushImmedValSegment(_push_buffer, main, _subch, _offset, _data)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:229:9: note: expanded from macro 'nvPushImmedValSegment'
+  229 |         DRF_DEF(C46F, _DMA, _SEC_OP,     _IMMD_DATA_METHOD)  |        \
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  ~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1626:28: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1626 |     nvPushSetMethodData(p, DRF_DEF(C46F, _MEM_OP_D, _OPERATION, _L2_FLUSH_DIRTY));
+      |     ~~~~~~~~~~~~~~~~~~~    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1718:31: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1718 |                 thisEyeMask = NVBIT(dstEye);
+      |                             ~ ^~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:40:29: note: expanded from macro 'NVBIT'
+   40 | #define NVBIT(b)         (1U<<(b))
+      |                           ~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-headsurface.c:1825:53: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 1824 |                 HsFlipViewPortIn(pHsChannel, 0 /* x */,
+      |                 ~~~~~~~~~~~~~~~~
+ 1825 |                                  lastRenderedOffset *
+      |                                  ~~~~~~~~~~~~~~~~~~~^
+ 1826 |                                  pHsChannel->config.frameSize.height);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23 warnings generated.

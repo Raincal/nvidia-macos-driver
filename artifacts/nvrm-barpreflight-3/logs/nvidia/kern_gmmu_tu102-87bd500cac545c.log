@@ -1,0 +1,65 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_tu102.c:32:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+In file included from generated/g_kern_gmmu_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_tu102.c:32:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_tu102.c:35:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1239:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1239 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_tu102.c:35:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1247:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1247 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_tu102.c:372:20: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+  372 |         getValue = FLD_SET_DRF(_VIRTUAL_FUNCTION_PRIV, _MMU_FAULT_BUFFER_GET, _OVERFLOW, _CLEAR, getValue);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:326:88: note: expanded from macro 'FLD_SET_DRF'
+  326 | #define FLD_SET_DRF(d,r,f,c,v)                  (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_DEF(d,r,f,c))
+      |                                                                                      ~ ^~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mmu/arch/turing/kern_gmmu_tu102.c:429:20: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  429 |     return pending & NVBIT(bit);
+      |     ~~~~~~ ~~~~~~~~^~~~~~~~~~~~
+11 warnings generated.

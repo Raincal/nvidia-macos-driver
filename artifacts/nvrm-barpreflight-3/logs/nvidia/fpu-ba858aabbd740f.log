@@ -1,0 +1,49 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:49:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+   49 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:296:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  296 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:389:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  389 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:511:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  511 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:628:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  628 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:731:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  731 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:853:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  853 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/arch/nvalloc/unix/x86emu/fpu.c:963:5: warning: implicit conversion changes signedness: 'int' to 'x86emuu32' (aka 'unsigned int') [-Wsign-conversion]
+  963 |     DECODE_CLEAR_SEGOVR();
+      |     ^~~~~~~~~~~~~~~~~~~~~
+arch/nvalloc/unix/include/x86emu/decode.h:50:55: note: expanded from macro 'DECODE_CLEAR_SEGOVR'
+   50 | #define DECODE_CLEAR_SEGOVR()           M.x86.mode &= ~SYSMODE_CLRMASK
+      |                                                    ~~ ^~~~~~~~~~~~~~~~
+8 warnings generated.

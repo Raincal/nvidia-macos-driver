@@ -1,0 +1,15 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_messageheader.cpp:34:
+In file included from ../common/displayport/inc/dp_messageheader.h:36:
+In file included from ../common/displayport/inc/dp_auxretry.h:35:
+../common/displayport/inc/dp_timeout.h:48:83: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+   48 |             : timer(_timer), timeoutTime(_timer->getTimeUs() + timeoutMilliseconds*1000 + 1 /* counter could be about to roll */)
+      |                                                              ~ ~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_messageheader.cpp:34:
+In file included from ../common/displayport/inc/dp_messageheader.h:39:
+../common/displayport/inc/dp_address.h:276:48: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  276 |                 buffer[i/4] |= ((NvU8) hop[i]) << (i % 4) * 8;
+      |                             ~~ ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_messageheader.cpp:46:19: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+   46 |     LCT = reader->readOrDefault( 4, 0);
+      |         ~ ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+3 warnings generated.

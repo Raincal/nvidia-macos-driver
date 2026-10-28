@@ -1,0 +1,126 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:83:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   83 |     status = nvswitch_os_alloc_contig_memory(device->os_handle, &cpuAddr,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   84 |                                         sizeof(SOE_SMBPBI_SHARED_SURFACE),
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   85 |                                         (device->dma_addr_width == 32));
+      |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:90:16: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+   90 |         return status;
+      |         ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:95:14: warning: implicit conversion changes signedness: 'NvlStatus' (aka 'int') to 'NV_STATUS' (aka 'unsigned int') [-Wsign-conversion]
+   95 |     status = nvswitch_os_map_dma_region(device->os_handle, cpuAddr, &dmaHandle,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |                         sizeof(SOE_SMBPBI_SHARED_SURFACE),
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   97 |                         NVSWITCH_DMA_DIR_BIDIRECTIONAL);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:111:12: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  111 |     return status;
+      |     ~~~~~~ ^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:154:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  154 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  155 |                                 (PRM_FLCN_CMD)&cmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  156 |                                 NULL,   // pMsg             - not used for now
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  157 |                                 NULL,   // pPayload         - not used for now
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  158 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  159 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  160 |                                 &timeout);
+      |                                 ~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:337:19: warning: implicit conversion changes signedness: 'int' to 'NvU8' (aka 'unsigned char') [-Wsign-conversion]
+  337 |         msgLeft = ~0;
+      |                 ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:353:21: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  353 |     bytesOccupied = DEM_BYTES_OCCUPIED(pFifo);
+      |                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:39:32: note: expanded from macro 'DEM_BYTES_OCCUPIED'
+   39 | #define DEM_BYTES_OCCUPIED(pf) DEM_PTR_DIFF((pf)->readOffset, (pf)->writeOffset)
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:37:61: note: expanded from macro 'DEM_PTR_DIFF'
+   37 | #define DEM_PTR_DIFF(cur, next) (((next) > (cur)) ? ((next) - (cur)) :      \
+      |                                                      ~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:353:21: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  353 |     bytesOccupied = DEM_BYTES_OCCUPIED(pFifo);
+      |                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:39:32: note: expanded from macro 'DEM_BYTES_OCCUPIED'
+   39 | #define DEM_BYTES_OCCUPIED(pf) DEM_PTR_DIFF((pf)->readOffset, (pf)->writeOffset)
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:38:36: note: expanded from macro 'DEM_PTR_DIFF'
+   38 |                     (DEM_FIFO_SIZE - ((cur) - (next))))
+      |                      ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:356:5: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  356 |     FIFO_REC_LOOP_START(pFifo, bytesSeen < bytesOccupied)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:58:41: note: expanded from macro 'FIFO_REC_LOOP_START'
+   58 |     for (FIFO_REC_LOOP_ITERATOR = (pf)->readOffset; cond; FIFO_REC_LOOP_ITERATOR = _nextPtr)    \
+      |                                 ~ ~~~~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:376:5: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  376 |     FIFO_REC_LOOP_START(pFifo, recordsHeld > msgLeft)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:58:41: note: expanded from macro 'FIFO_REC_LOOP_START'
+   58 |     for (FIFO_REC_LOOP_ITERATOR = (pf)->readOffset; cond; FIFO_REC_LOOP_ITERATOR = _nextPtr)    \
+      |                                 ~ ~~~~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:430:27: warning: implicit conversion loses integer precision: 'unsigned long' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  430 |     pNewRec->recordSize = NV_UNSIGNED_DIV_CEIL(*pRecSize, sizeof(NvU32));
+      |                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:817:58: note: expanded from macro 'NV_UNSIGNED_DIV_CEIL'
+  817 | #define NV_UNSIGNED_DIV_CEIL(a, b)      (((a) + (b - 1)) / (b))
+      |                                          ~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:431:22: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  431 |     pNewRec->xidId = num;
+      |                    ~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:433:64: warning: implicit conversion loses integer precision: 'unsigned long long' to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  433 |     pNewRec->timeStamp = nvswitch_os_get_platform_time_epoch() / NVSWITCH_NSEC_PER_SEC;
+      |                        ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:472:11: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  472 |     rem = recSize;
+      |         ~ ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:473:21: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  473 |     curPtr = pFifo->writeOffset;
+      |            ~ ~~~~~~~^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:535:49: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  535 |         NvU16                   bytesOccupied = DEM_BYTES_OCCUPIED(pFifo);
+      |                                 ~~~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:39:32: note: expanded from macro 'DEM_BYTES_OCCUPIED'
+   39 | #define DEM_BYTES_OCCUPIED(pf) DEM_PTR_DIFF((pf)->readOffset, (pf)->writeOffset)
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:37:61: note: expanded from macro 'DEM_PTR_DIFF'
+   37 | #define DEM_PTR_DIFF(cur, next) (((next) > (cur)) ? ((next) - (cur)) :      \
+      |                                                      ~~~~~~~^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:535:49: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  535 |         NvU16                   bytesOccupied = DEM_BYTES_OCCUPIED(pFifo);
+      |                                 ~~~~~~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:39:32: note: expanded from macro 'DEM_BYTES_OCCUPIED'
+   39 | #define DEM_BYTES_OCCUPIED(pf) DEM_PTR_DIFF((pf)->readOffset, (pf)->writeOffset)
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:38:36: note: expanded from macro 'DEM_PTR_DIFF'
+   38 |                     (DEM_FIFO_SIZE - ((cur) - (next))))
+      |                      ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:541:9: warning: implicit conversion loses integer precision: 'inforom_U016' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  541 |         FIFO_REC_LOOP_START(pFifo, bytesSeen < bytesOccupied)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:58:41: note: expanded from macro 'FIFO_REC_LOOP_START'
+   58 |     for (FIFO_REC_LOOP_ITERATOR = (pf)->readOffset; cond; FIFO_REC_LOOP_ITERATOR = _nextPtr)    \
+      |                                 ~ ~~~~~~^~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/lr10/smbpbi_lr10.c:611:14: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
+  611 |     status = flcnQueueCmdPostBlocking(device, pFlcn,
+      |            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  612 |                                 (PRM_FLCN_CMD)&cmd,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  613 |                                 NULL,   // pMsg             - not used for now
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  614 |                                 NULL,   // pPayload         - not used for now
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  615 |                                 SOE_RM_CMDQ_LOG_ID,
+      |                                 ~~~~~~~~~~~~~~~~~~~
+  616 |                                 &cmdSeqDesc,
+      |                                 ~~~~~~~~~~~~
+  617 |                                 &timeout);
+      |                                 ~~~~~~~~~
+19 warnings generated.

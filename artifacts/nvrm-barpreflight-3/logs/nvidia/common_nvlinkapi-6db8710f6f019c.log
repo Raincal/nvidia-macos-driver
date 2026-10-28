@@ -1,0 +1,146 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:26:
+In file included from inc/kernel/gpu/gpu.h:2:
+In file included from generated/g_gpu_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:28:
+In file included from inc/kernel/vgpu/rpc.h:42:
+In file included from inc/kernel/vgpu/vgpu_events.h:46:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:30:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:54:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:58:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:30:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+In file included from generated/g_kernel_nvlink_nvoc.h:74:
+inc/lib/protobuf/prb_util.h:90:88: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 | static NV_FORCEINLINE NvU8 prbEncNestingLevel(PRB_ENCODER *pPrbEnc)  { return pPrbEnc->depth; }
+      |                                                                        ~~~~~~ ~~~~~~~~~^~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:30:
+In file included from inc/kernel/gpu/nvlink/kernel_nvlink.h:2:
+generated/g_kernel_nvlink_nvoc.h:2458:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2458 |     pKernelNvlink_PRIVATE->maxRbmLinks = maxRbmLinks;
+      |                                        ~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:389:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  389 |     i = bitVectorCountSetBits(&localLinkMask);
+      |       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:230:5: note: expanded from macro 'bitVectorCountSetBits'
+  230 |     bitVectorCountSetBits_IMPL(&((pBitVector)->real),                       \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  231 |                                sizeof(((pBitVector)->last->_)))
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:396:5: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  396 |     FOR_EACH_IN_BITVECTOR(&localLinkMask, i)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:282:24: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  282 |         for ((index) = bitVectorCountTrailingZeros(&localMask);             \
+      |                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:222:5: note: expanded from macro 'bitVectorCountTrailingZeros'
+  222 |     bitVectorCountTrailingZeros_IMPL(&((pBitVector)->real),                 \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |                                      sizeof(((pBitVector)->last->_)))
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:396:5: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  396 |     FOR_EACH_IN_BITVECTOR(&localLinkMask, i)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:285:24: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  285 |              (index) = bitVectorCountTrailingZeros(&localMask))             \
+      |                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:222:5: note: expanded from macro 'bitVectorCountTrailingZeros'
+  222 |     bitVectorCountTrailingZeros_IMPL(&((pBitVector)->real),                 \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |                                      sizeof(((pBitVector)->last->_)))
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:792:21: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  792 |                 i = bitVectorCountSetBits(&localLinkMask);
+      |                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:230:5: note: expanded from macro 'bitVectorCountSetBits'
+  230 |     bitVectorCountSetBits_IMPL(&((pBitVector)->real),                       \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  231 |                                sizeof(((pBitVector)->last->_)))
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:796:17: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  796 |                 FOR_EACH_IN_BITVECTOR(&localLinkMask, i)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:282:24: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  282 |         for ((index) = bitVectorCountTrailingZeros(&localMask);             \
+      |                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:222:5: note: expanded from macro 'bitVectorCountTrailingZeros'
+  222 |     bitVectorCountTrailingZeros_IMPL(&((pBitVector)->real),                 \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |                                      sizeof(((pBitVector)->last->_)))
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:796:17: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  796 |                 FOR_EACH_IN_BITVECTOR(&localLinkMask, i)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:285:24: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  285 |              (index) = bitVectorCountTrailingZeros(&localMask))             \
+      |                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:222:5: note: expanded from macro 'bitVectorCountTrailingZeros'
+  222 |     bitVectorCountTrailingZeros_IMPL(&((pBitVector)->real),                 \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |                                      sizeof(((pBitVector)->last->_)))
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:944:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  944 |         FOR_EACH_IN_BITVECTOR(&localLinkMask, i)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:282:24: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  282 |         for ((index) = bitVectorCountTrailingZeros(&localMask);             \
+      |                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:222:5: note: expanded from macro 'bitVectorCountTrailingZeros'
+  222 |     bitVectorCountTrailingZeros_IMPL(&((pBitVector)->real),                 \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |                                      sizeof(((pBitVector)->last->_)))
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:944:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  944 |         FOR_EACH_IN_BITVECTOR(&localLinkMask, i)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:285:24: note: expanded from macro 'FOR_EACH_IN_BITVECTOR'
+  285 |              (index) = bitVectorCountTrailingZeros(&localMask))             \
+      |                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inc/libraries/utils/nvbitvector.h:222:5: note: expanded from macro 'bitVectorCountTrailingZeros'
+  222 |     bitVectorCountTrailingZeros_IMPL(&((pBitVector)->real),                 \
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  223 |                                      sizeof(((pBitVector)->last->_)))
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:960:94: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  960 |             pTmpData->nvlinkLinks[i].remoteBus = pKernelNvlink->nvlinkLinks[i].remoteEndInfo.bus;
+      |                                                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:961:97: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  961 |             pTmpData->nvlinkLinks[i].remoteDevice = pKernelNvlink->nvlinkLinks[i].remoteEndInfo.device;
+      |                                                   ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/nvlink/common_nvlinkapi.c:962:99: warning: implicit conversion loses integer precision: 'NvU16' (aka 'unsigned short') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  962 |             pTmpData->nvlinkLinks[i].remoteFunction = pKernelNvlink->nvlinkLinks[i].remoteEndInfo.function;
+      |                                                     ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+21 warnings generated.

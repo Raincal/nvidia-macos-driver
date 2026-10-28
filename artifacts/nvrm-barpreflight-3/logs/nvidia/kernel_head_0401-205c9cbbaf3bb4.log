@@ -1,0 +1,35 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/disp/head/arch/v04/kernel_head_0401.c:33:
+In file included from inc/kernel/os/os.h:2:
+In file included from generated/g_os_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/disp/head/arch/v04/kernel_head_0401.c:60:31: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   60 |             *pHeadIntrMask |= headIntr_RgSem(i);
+      |                            ~~ ^~~~~~~~~~~~~~~~~
+generated/g_kernel_head_nvoc.h:99:78: note: expanded from macro 'headIntr_RgSem'
+   99 | #define headIntr_RgSem(i)                                   (headIntr_RgSem0 << i)
+      |                                                              ~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/disp/head/arch/v04/kernel_head_0401.c:81:30: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   81 |         if (*pHeadIntrMask & headIntr_RgSem(rgSemIndex))
+      |                            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_kernel_head_nvoc.h:99:78: note: expanded from macro 'headIntr_RgSem'
+   99 | #define headIntr_RgSem(i)                                   (headIntr_RgSem0 << i)
+      |                                                              ~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/disp/head/arch/v04/kernel_head_0401.c:90:32: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   90 |             *pHeadIntrMask &= (~headIntr_RgSem(rgSemIndex));
+      |                            ~~  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 warnings generated.

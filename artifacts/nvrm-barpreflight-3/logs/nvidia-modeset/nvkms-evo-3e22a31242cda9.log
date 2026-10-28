@@ -1,0 +1,411 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:25:
+In file included from include/nvkms-types.h:31:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+In file included from ../common/unix/common/inc/nv_dpy_id.h:35:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:25:
+In file included from include/nvkms-types.h:31:
+In file included from os-interface/include/nvidia-modeset-os-interface.h:39:
+In file included from os-interface/include/nvkms.h:34:
+In file included from kapi/interface/nvkms-kapi.h:30:
+../common/unix/common/inc/nv_dpy_id.h:272:12: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  272 |     return nvPopCount32(dpyIdList.opaqueDpyIdList);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:310:33: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  310 |     dpyIdList.opaqueDpyIdList = val;
+      |                               ~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:320:55: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  320 |     dpyId.opaqueDpyId = (val == 0) ? 0 : 1 << (nv_ffs(val)-1);
+      |                                                ~~~~~~ ^~~
+../common/unix/common/inc/nv_dpy_id.h:344:38: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+../common/unix/common/inc/nv_dpy_id.h:344:25: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  344 |     return nv_ffs(dpyId.opaqueDpyId) - 1;
+      |            ~~~~~~ ~~~~~~^~~~~~~~~~~
+../common/unix/common/inc/nv_dpy_id.h:356:23: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+  356 |         1U << (nv_ffs(~excludeList.opaqueDpyIdList) - 1);
+      |                ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:25:
+In file included from include/nvkms-types.h:45:
+In file included from interface/nvkms-api.h:201:
+../common/unix/common/inc/nv_mode_timings.h:154:23: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  154 |     return (hz + 500) / 1000;
+      |     ~~~~~~ ~~~~~~~~~~~^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:25:
+include/nvkms-types.h:1565:44: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1565 |     viewPortOut.x = pViewPort->out.xAdjust +
+      |                   ~ ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1566 |                    (hVisible - pViewPort->out.width) / 2;
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:1567:45: warning: implicit conversion changes signedness: 'int' to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 1567 |     viewPortOut.y = (pViewPort->out.yAdjust +
+      |                   ~  ~~~~~~~~~~~~~~~~~~~~~~~^
+ 1568 |                    (vVisible - pViewPort->out.height) / 2);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:3403:9: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 3402 |     pApiHeadState->attributes.numberOfHardwareHeadsUsed =
+      |                                                         ~
+ 3403 |         nvPopCount32(hwHeadsMask);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:37:
+In file included from include/nvkms-modepool.h:28:
+include/nvkms-utils.h:101:45: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  101 |     return (a << 24) | (b << 16) | (c << 8) | d;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:268:34: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+  267 |     pDevEvo->hal->SetCursorImage(pDevEvo,
+      |     ~~~~~~~
+  268 |                                  head,
+      |                                  ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:369:53: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  369 |         GetSorIndexToAttachConnector(pConnectorEvo, isPrimaryHead);
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~                ^~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:443:54: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  443 |     pDevEvo->hal->SetNotifier(pDevEvo, notify, sync, notifier,
+      |     ~~~~~~~                                          ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:609:58: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  609 |     pModeTimings->vSyncStart    = pTimings->rasterSize.y - rasterBlankEndY;
+      |                                 ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:610:76: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  610 |     pModeTimings->vSyncEnd      = pTimings->rasterSize.y - rasterBlankEndY +
+      |                                 ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  611 |                                   rasterSyncEndY;
+      |                                   ~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:619:63: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  619 |     pModeTimings->RRx1k         = (pModeTimings->pixelClockHz /
+      |                                 ~  ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  620 |                                    (pModeTimings->hTotal *
+      |                                    ~~~~~~~~~~~~~~~~~~~~~~~
+  621 |                                     pModeTimings->vTotal));
+      |                                     ~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:767:73: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  767 |     pTimings->rasterSyncEnd.x           = gsyncOptTimingParams.hSyncEnd - 1;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:768:73: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  768 |     pTimings->rasterSyncEnd.y           = gsyncOptTimingParams.vSyncEnd - 1;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:769:74: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  769 |     pTimings->rasterBlankEnd.x          = gsyncOptTimingParams.hBlankEnd - 1;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:770:74: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  770 |     pTimings->rasterBlankEnd.y          = gsyncOptTimingParams.vBlankEnd - 1;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:771:76: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  771 |     pTimings->rasterBlankStart.x        = gsyncOptTimingParams.hBlankStart - 1;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:772:76: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  772 |     pTimings->rasterBlankStart.y        = gsyncOptTimingParams.vBlankStart - 1;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:773:64: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  773 |     pTimings->rasterSize.x              = gsyncOptTimingParams.hTotal;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:774:64: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  774 |     pTimings->rasterSize.y              = gsyncOptTimingParams.vTotal;
+      |                                         ~ ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:959:44: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+  959 |     pDevEvo->hal->SetRasterParams(pDevEvo, head,
+      |     ~~~~~~~                                ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:1501:40: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 1501 |                     pHC->flipLockPin = NV_EVO_LOCK_PIN_INTERNAL(0);
+      |                                      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:1876:17: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1875 |             pDevEvo->gpus[sd].flipLockPinSetForSliHeadMask =
+      |                                                            ~
+ 1876 |                 HEAD_MASK_SET(pDevEvo->gpus[sd].flipLockPinSetForSliHeadMask, head);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:125:46: note: expanded from macro 'HEAD_MASK_SET'
+  125 | #define HEAD_MASK_SET(_mask, _head) ((_mask) | (1 << (_head)))
+      |                                      ~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:1880:17: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1879 |             pDevEvo->gpus[sd].flipLockEnabledForSliHeadMask =
+      |                                                             ~
+ 1880 |                 HEAD_MASK_SET(pDevEvo->gpus[sd].flipLockEnabledForSliHeadMask, head);
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:125:46: note: expanded from macro 'HEAD_MASK_SET'
+  125 | #define HEAD_MASK_SET(_mask, _head) ((_mask) | (1 << (_head)))
+      |                                      ~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3025:45: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+ 3025 |     pDevEvo->hal->HeadSetControlOR(pDevEvo, head, pTimings, pixelDepth,
+      |     ~~~~~~~                                 ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3248:45: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 3248 |     pDevEvo->hal->SetDither(pDispEvo, head, enabled, type, algo,
+      |     ~~~~~~~                                 ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3248:39: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+ 3248 |     pDevEvo->hal->SetDither(pDispEvo, head, enabled, type, algo,
+      |     ~~~~~~~                           ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3679:63: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 3679 |                     pDevEvo->hal->SetHeadControl(pDevEvo, sd, head,
+      |                     ~~~~~~~                                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3679:59: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 3679 |                     pDevEvo->hal->SetHeadControl(pDevEvo, sd, head,
+      |                     ~~~~~~~                               ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3737:53: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 3737 |                 if (!HeadCanStereoLock(pDevEvo, sd, head)) {
+      |                      ~~~~~~~~~~~~~~~~~              ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:3737:49: warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+ 3737 |                 if (!HeadCanStereoLock(pDevEvo, sd, head)) {
+      |                      ~~~~~~~~~~~~~~~~~          ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4091:42: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 4091 |     pDevEvo->hal->SetHeadRefClk(pDevEvo, head, external, updateState);
+      |     ~~~~~~~                              ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4267:17: warning: implicit conversion loses integer precision: 'int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 4265 |         pEvoSubDev->flipLockEnabledForFrameLockHeadMask =
+      |                                                         ~
+ 4266 |             setVal ?
+ 4267 |                 HEAD_MASK_SET(pEvoSubDev->flipLockEnabledForFrameLockHeadMask, head) :
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+include/nvkms-types.h:125:46: note: expanded from macro 'HEAD_MASK_SET'
+  125 | #define HEAD_MASK_SET(_mask, _head) ((_mask) | (1 << (_head)))
+      |                                      ~~~~~~~~^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4437:11: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 4437 |     pin = NV_EVO_LOCK_PIN_INTERNAL(head);
+      |         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4440:55: warning: implicit conversion changes signedness: 'NVEvoLockPin' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 4440 |     NvBool stereo = !NV_EVO_LOCK_PIN_IS_INTERNAL(pHC->stereoPin);
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4462:60: warning: implicit conversion changes signedness: 'const NVEvoLockPin' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 4462 |                 if (!NV_EVO_LOCK_PIN_IS_INTERNAL(pOtherHC->stereoPin)) {
+      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4467:25: warning: implicit conversion changes signedness: 'NVEvoLockPin' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 4467 |             signalPin = nvEvoGetPinForSignal(pDispEvo,
+      |                       ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 4468 |                                              pEvoSubDev,
+      |                                              ~~~~~~~~~~~
+ 4469 |                                              NV_EVO_LOCK_SIGNAL_STEREO);
+      |                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4471:23: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 4471 |                 pin = signalPin;
+      |                     ~ ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4502:46: warning: implicit conversion changes signedness: 'NVEvoLockPin' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 4502 |     return !NV_EVO_LOCK_PIN_IS_INTERNAL(pHC->stereoPin);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4512:45: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+ 4512 |     pDevEvo->hal->SetViewportInOut(pDevEvo, head,
+      |     ~~~~~~~                                 ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4532:47: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+ 4532 |     pDevEvo->hal->SetViewportPointIn(pDevEvo, head, x, y, updateState);
+      |     ~~~~~~~                                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4608:37: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 4608 |     const int dispIndex = pDispEvo->displayOwner;
+      |               ~~~~~~~~~   ~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4616:39: warning: implicit conversion changes signedness: 'const int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 4616 |         nvInitFlipEvoHwState(pDevEvo, dispIndex, head, &workarea->head[head].oldState);
+      |         ~~~~~~~~~~~~~~~~~~~~          ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:4620:39: warning: implicit conversion changes signedness: 'const int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 4620 |         nvInitFlipEvoHwState(pDevEvo, dispIndex, head, &workarea->head[head].newState);
+      |         ~~~~~~~~~~~~~~~~~~~~          ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5393:29: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 5393 |     params.sorExcludeMask = sorExcludeMask;
+      |                           ~ ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5451:31: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 5449 |         NV0073_CTRL_DFP_ASSIGN_SOR_PARAMS params = {
+      |                                                    ~
+ 5450 |             .displayId = nvDpyIdToNvU32(sorAssignList[sorIndex]->displayId),
+ 5451 |             .sorExcludeMask = ~NVBIT(sorIndex),
+      |                               ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5702:38: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 5702 |             return NV_EVO_LOCK_PIN_0 + pin;
+      |             ~~~~~~ ~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5712:38: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 5712 |             return NV_EVO_LOCK_PIN_0 + pin;
+      |             ~~~~~~ ~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5737:38: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 5737 |             return NV_EVO_LOCK_PIN_0 + pin;
+      |             ~~~~~~ ~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5748:38: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 5748 |             return NV_EVO_LOCK_PIN_0 + pin;
+      |             ~~~~~~ ~~~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5776:34: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 5776 |     pHeadState->procAmp.satCos = dvc;
+      |                                ~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5813:45: warning: implicit conversion changes signedness: 'const NvS16' (aka 'const short') to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 5812 |             pDevEvo->hal->SetImmPointOut(pDevEvo, pChannel, sd, pUpdateState,
+      |             ~~~~~~~
+ 5813 |                                          x, y);
+      |                                             ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5813:42: warning: implicit conversion changes signedness: 'const NvS16' (aka 'const short') to 'NvU16' (aka 'unsigned short') [-Wsign-conversion]
+ 5812 |             pDevEvo->hal->SetImmPointOut(pDevEvo, pChannel, sd, pUpdateState,
+      |             ~~~~~~~
+ 5813 |                                          x, y);
+      |                                          ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5961:20: warning: declaration shadows a local variable [-Wshadow]
+ 5961 |         for (NvU32 head = 1; head < numHeads; head++) {
+      |                    ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5911:11: note: previous declaration is here
+ 5911 |     NvU32 head;
+      |           ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:5976:12: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 5976 |     return ret;
+      |     ~~~~~~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6073:54: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6073 |     pTimings->rasterSyncEnd.x           = hSyncWidth - 1;
+      |                                         ~ ~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6074:54: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6074 |     pTimings->rasterSyncEnd.y           = vSyncWidth - 1;
+      |                                         ~ ~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6075:55: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6075 |     pTimings->rasterBlankStart.x        = hBlankStart - 1;
+      |                                         ~ ~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6076:55: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6076 |     pTimings->rasterBlankStart.y        = vBlankStart - 1;
+      |                                         ~ ~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6077:53: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6077 |     pTimings->rasterBlankEnd.x          = hBlankEnd - 1;
+      |                                         ~ ~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6078:53: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6078 |     pTimings->rasterBlankEnd.y          = vBlankEnd - 1;
+      |                                         ~ ~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6213:16: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6213 |     *pFactor = tmp;
+      |              ~ ^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6245:45: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6244 |         if (!ComputeScalingFactor(pTapsCaps->maxVDownscaleFactor,
+      |              ~~~~~~~~~~~~~~~~~~~~
+ 6245 |                                   inHeight, outHeight,
+      |                                             ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6245:35: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6244 |         if (!ComputeScalingFactor(pTapsCaps->maxVDownscaleFactor,
+      |              ~~~~~~~~~~~~~~~~~~~~
+ 6245 |                                   inHeight, outHeight,
+      |                                   ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6254:44: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6253 |         if (!ComputeScalingFactor(pTapsCaps->maxHDownscaleFactor,
+      |              ~~~~~~~~~~~~~~~~~~~~
+ 6254 |                                   inWidth, outWidth,
+      |                                            ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6254:35: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6253 |         if (!ComputeScalingFactor(pTapsCaps->maxHDownscaleFactor,
+      |              ~~~~~~~~~~~~~~~~~~~~
+ 6254 |                                   inWidth, outWidth,
+      |                                   ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6298:30: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6296 |             if (!ComputeScalingFactor(
+      |                  ~~~~~~~~~~~~~~~~~~~~
+ 6297 |                     pScalerCaps->taps[hTaps].maxHDownscaleFactor,
+ 6298 |                     inWidth, outWidth,
+      |                              ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6298:21: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6296 |             if (!ComputeScalingFactor(
+      |                  ~~~~~~~~~~~~~~~~~~~~
+ 6297 |                     pScalerCaps->taps[hTaps].maxHDownscaleFactor,
+ 6298 |                     inWidth, outWidth,
+      |                     ^~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6481:35: warning: implicit conversion changes signedness: 'int' to 'NVEvoScalerTaps' [-Wsign-conversion]
+ 6481 |                 pScaling->vTaps = j;
+      |                                 ~ ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6526:28: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6526 |     pViewPort->out.width = outWidth;
+      |                          ~ ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6527:29: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6527 |     pViewPort->out.height = outHeight;
+      |                           ~ ^~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6562:41: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6560 |         if (A_plus_B_greater_than_C_U16(viewPortOut.x,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6561 |                                         viewPortOut.width,
+ 6562 |                                         hVisible)) {
+      |                                         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6568:41: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 6566 |         if (A_plus_B_greater_than_C_U16(viewPortOut.y,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 6567 |                                         viewPortOut.height,
+ 6568 |                                         vVisible)) {
+      |                                         ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6572:53: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvS16' (aka 'short') [-Wimplicit-int-conversion]
+ 6572 |         offset = (hVisible - viewPortOut.width) / 2 * -1;
+      |                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6572:55: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 6572 |         offset = (hVisible - viewPortOut.width) / 2 * -1;
+      |                                                     ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6573:41: warning: implicit conversion loses integer precision: 'int' to 'NvS16' (aka 'short') [-Wimplicit-int-conversion]
+ 6573 |         pViewPort->out.xAdjust = offset + viewPortOut.x;
+      |                                ~ ~~~~~~~^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6575:54: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvS16' (aka 'short') [-Wimplicit-int-conversion]
+ 6575 |         offset = (vVisible - viewPortOut.height) / 2 * -1;
+      |                ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6575:56: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 6575 |         offset = (vVisible - viewPortOut.height) / 2 * -1;
+      |                                                      ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:6576:41: warning: implicit conversion loses integer precision: 'int' to 'NvS16' (aka 'short') [-Wimplicit-int-conversion]
+ 6576 |         pViewPort->out.yAdjust = offset + viewPortOut.y;
+      |                                ~ ~~~~~~~^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:7563:21: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 7561 |             if (downgradeFuncs[i].downgradeFunc(
+      |                 ~~~~~~~~~~~~~~
+ 7562 |                     pDevEvo,
+ 7563 |                     head,
+      |                     ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:7652:58: warning: implicit conversion loses integer precision: 'const NvU32' (aka 'const unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 7652 |         pImpInput->head[head].orType = pConnectorEvo->or.type;
+      |                                      ~ ~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:7853:41: warning: variable 'newIsoBandwidthKBPS' may be uninitialized when used here [-Wconditional-uninitialized]
+ 7853 |                                         newIsoBandwidthKBPS,
+      |                                         ^~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:7813:30: note: initialize the variable 'newIsoBandwidthKBPS' to silence this warning
+ 7813 |     NvU32 newIsoBandwidthKBPS, newDramFloorKBPS;
+      |                              ^
+      |                               = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:7854:41: warning: variable 'newDramFloorKBPS' may be uninitialized when used here [-Wconditional-uninitialized]
+ 7854 |                                         newDramFloorKBPS)) {
+      |                                         ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:7813:48: note: initialize the variable 'newDramFloorKBPS' to silence this warning
+ 7813 |     NvU32 newIsoBandwidthKBPS, newDramFloorKBPS;
+      |                                                ^
+      |                                                 = 0
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:8177:37: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 8177 |     const int dispIndex = pDispEvo->displayOwner;
+      |               ~~~~~~~~~   ~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:8429:53: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+ 8426 |         pDevEvo->hal->FillLUTSurface(pLUTBuffer->base,
+      |         ~~~~~~~
+ 8427 |                                      red, green, blue,
+ 8428 |                                      pParams->input.end + 1,
+ 8429 |                                      pParams->input.depth);
+      |                                      ~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:8428:57: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 8426 |         pDevEvo->hal->FillLUTSurface(pLUTBuffer->base,
+      |         ~~~~~~~
+ 8427 |                                      red, green, blue,
+ 8428 |                                      pParams->input.end + 1,
+      |                                      ~~~~~~~~~~~~~~~~~~~^~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:8839:61: warning: implicit conversion changes signedness: 'NvU64' (aka 'unsigned long long') to 'NvS64' (aka 'long long') [-Wsign-conversion]
+ 8839 |         pDevEvo->gpuCpuTimeDiff = params.samples[0].gpuTime - params.samples[0].cpuTime;
+      |                                 ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9143:67: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+ 9143 |     pDevEvo->hal->SetHeadControl(pDevEvo, pDispEvo->displayOwner, head, updateState);
+      |     ~~~~~~~                                                       ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9143:53: warning: implicit conversion changes signedness: 'const NvU32' (aka 'const unsigned int') to 'int' [-Wsign-conversion]
+ 9143 |     pDevEvo->hal->SetHeadControl(pDevEvo, pDispEvo->displayOwner, head, updateState);
+      |     ~~~~~~~                               ~~~~~~~~~~^~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9391:63: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 9391 |         if (!nvWriteDPCDReg(pConnectorEvo, NV_DPCD_MSTM_CTRL, dpcdData)) {
+      |              ~~~~~~~~~~~~~~                                   ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9673:34: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 9673 |             pHC->serverLockPin = NV_EVO_LOCK_PIN_INTERNAL(primaryHead);
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9678:34: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 9678 |             pHC->clientLockPin = NV_EVO_LOCK_PIN_INTERNAL(primaryHead);
+      |                                ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9724:28: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 9724 |         pHC->flipLockPin = NV_EVO_LOCK_PIN_INTERNAL(primaryHead);
+      |                          ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9758:30: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 9758 |         pHC->serverLockPin = NV_EVO_LOCK_PIN_INTERNAL(0);
+      |                            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9760:30: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 9760 |         pHC->clientLockPin = NV_EVO_LOCK_PIN_INTERNAL(0);
+      |                            ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia-modeset/src/nvkms-evo.c:9763:28: warning: implicit conversion changes signedness: 'NvU32' (aka 'unsigned int') to 'NVEvoLockPin' [-Wsign-conversion]
+ 9763 |         pHC->flipLockPin = NV_EVO_LOCK_PIN_INTERNAL(0);
+      |                          ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+103 warnings generated.

@@ -1,0 +1,30 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/containers/multimap.c:23:
+In file included from inc/libraries/containers/multimap.h:27:
+In file included from inc/libraries/containers/type_safety.h:27:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/containers/multimap.c:99:60: warning: implicit conversion changes signedness: 'NvUPtr' (aka 'unsigned long long') to 'NvS32' (aka 'int') [-Wsign-conversion]
+   99 |         NvS32 submapNodeOffset = pBase->multimapNodeOffset +
+      |               ~~~~~~~~~~~~~~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  100 |                                  NV_OFFSETOF(MultimapNode, submapNode);
+      |                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/containers/multimap.c:99:41: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvUPtr' (aka 'unsigned long long') [-Wsign-conversion]
+   99 |         NvS32 submapNodeOffset = pBase->multimapNodeOffset +
+      |                                  ~~~~~~~^~~~~~~~~~~~~~~~~~ ~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/containers/multimap.c:140:23: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'unsigned long' [-Wsign-conversion]
+  140 |     leafSize = pBase->multimapNodeOffset + sizeof(MultimapNode);
+      |                ~~~~~~~^~~~~~~~~~~~~~~~~~ ~
+7 warnings generated.

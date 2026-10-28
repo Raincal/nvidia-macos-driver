@@ -1,0 +1,22 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-init.c:26:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d.h:36:
+In file included from ../common/unix/nvidia-push/interface/nvidia-push-types.h:40:
+../common/unix/common/inc/nv_common_utils.h:89:49: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+   89 |     return (val << (result_size - source_size)) |
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   90 |         (val >> ((source_size << 1) - result_size));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/unix/common/inc/nv_common_utils.h:96:12: warning: implicit conversion loses integer precision: 'unsigned int' to 'unsigned short' [-Wimplicit-int-conversion]
+   96 |     return NV_UNDER_REPLICATE(val, depth, 8);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-init.c:26:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d.h:37:
+In file included from ../common/unix/nvidia-3d/interface/nvidia-3d-types.h:30:
+../common/unix/nvidia-push/interface/nvidia-push-methods.h:102:58: warning: implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int' [-Wshorten-64-to-32]
+  102 |     nvDmaMoveDWORDS(p->main.buffer, (const NvU32 *)data, dwords);
+      |     ~~~~~~~~~~~~~~~                                      ^~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/nvidia-3d/src/nvidia-3d-init.c:35:
+../common/unix/nvidia-push/interface/nvidia-push-utils.h:124:32: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  124 |         return notifierIndex & ~NV_PUSH_NOTIFIER_INTERNAL_BIT;
+      |                              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+4 warnings generated.

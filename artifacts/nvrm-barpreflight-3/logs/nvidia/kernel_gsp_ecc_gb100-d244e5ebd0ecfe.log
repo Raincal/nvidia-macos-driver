@@ -1,0 +1,49 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gsp/arch/blackwell/kernel_gsp_ecc_gb100.c:29:
+In file included from inc/kernel/gpu/falcon/kernel_falcon.h:2:
+In file included from generated/g_kernel_falcon_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gsp/arch/blackwell/kernel_gsp_ecc_gb100.c:31:
+In file included from inc/kernel/gpu/rc/kernel_rc.h:2:
+In file included from generated/g_kernel_rc_nvoc.h:51:
+In file included from inc/kernel/gpu/fifo/kernel_channel.h:2:
+In file included from generated/g_kernel_channel_nvoc.h:56:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gsp/arch/blackwell/kernel_gsp_ecc_gb100.c:79:51: warning: implicit conversion changes signedness: 'int' to 'NvV32' (aka 'unsigned int') [-Wsign-conversion]
+   79 |     GPU_REG_WR32(pGpu, NV_PGSP_FALCON_ECC_STATUS, DRF_DEF(_PGSP, _FALCON_ECC_STATUS, _RESET, _TASK));
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:241:58: note: expanded from macro 'DRF_DEF'
+  241 | #define DRF_DEF(d,r,f,c)        ((NV ## d ## r ## f ## c)<<DRF_SHIFT(NV ## d ## r ## f))
+      |                                                          ^
+generated/g_gpu_access_nvoc.h:259:56: note: expanded from macro 'GPU_REG_WR32'
+  259 | #define GPU_REG_WR32(g,a,v)    REG_INST_WR32(g,GPU,0,a,v)
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~^~
+generated/g_gpu_access_nvoc.h:229:112: note: expanded from macro 'REG_INST_WR32'
+  229 | #define REG_INST_WR32(g,dev,inst,a,v)     regWrite032(GPU_GET_REGISTER_ACCESS(g), DEVICE_INDEX_##dev, inst, a, v, NULL)
+      |                                           ~~~~~~~~~~~                                                          ^
+8 warnings generated.

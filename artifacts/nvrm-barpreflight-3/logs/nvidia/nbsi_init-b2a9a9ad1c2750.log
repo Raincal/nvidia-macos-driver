@@ -1,0 +1,61 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:29:
+In file included from inc/kernel/os/os.h:2:
+In file included from generated/g_os_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:870:32: warning: implicit conversion loses integer precision: 'NBSI_GLOB_TYPE' (aka 'enum _NBSI_GLOB_TYPES') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+  868 |         status = testNbsiTable(pGpu,
+      |                  ~~~~~~~~~~~~~
+  869 |                                (PNBSI_GEN_OBJ) pNbsiGenObj,
+  870 |                                wantedGlobType,
+      |                                ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:1687:48: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+ 1686 |         *(NvU32 *) inOutData = (globTypeWanted & 0xffff) << 16 |
+      |                                                                ~
+ 1687 |                                (curGlob & 0xf) << 12 |
+      |                                ~~~~~~~~~~~~~~~~^~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:1765:54: warning: implicit conversion changes signedness: 'unsigned int' to 'char' [-Wsign-conversion]
+ 1765 |     uefiVariableName[10] = (globTypeWanted & 0xFF00) >> 8;
+      |                          ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:1766:43: warning: implicit conversion changes signedness: 'unsigned int' to 'char' [-Wsign-conversion]
+ 1766 |     uefiVariableName[11] = globTypeWanted & 0xFF;
+      |                          ~ ~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:1989:32: warning: implicit conversion loses integer precision: 'NBSI_GLOB_TYPE' (aka 'enum _NBSI_GLOB_TYPES') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 1987 |         status = testNbsiTable(pGpu,
+      |                  ~~~~~~~~~~~~~
+ 1988 |                                (PNBSI_GEN_OBJ) pNbsiDrvrObj,
+ 1989 |                                wantedGlobType,
+      |                                ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:2097:32: warning: implicit conversion loses integer precision: 'NBSI_GLOB_TYPE' (aka 'enum _NBSI_GLOB_TYPES') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2095 |         status = testNbsiTable(pGpu,
+      |                  ~~~~~~~~~~~~~
+ 2096 |                                (PNBSI_GEN_OBJ) pNbsiDrvrObj,
+ 2097 |                                wantedGlobType,
+      |                                ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:2406:32: warning: implicit conversion loses integer precision: 'NBSI_GLOB_TYPE' (aka 'enum _NBSI_GLOB_TYPES') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2404 |         status = testNbsiTable(pGpu,
+      |                  ~~~~~~~~~~~~~
+ 2405 |                                (PNBSI_GEN_OBJ) pNbsiDrvrObj,
+ 2406 |                                wantedGlobType,
+      |                                ^~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/platform/nbsi/nbsi_init.c:2547:36: warning: implicit conversion loses integer precision: 'NBSI_GLOB_TYPE' (aka 'enum _NBSI_GLOB_TYPES') to 'NvU16' (aka 'unsigned short') [-Wimplicit-int-conversion]
+ 2545 |             status = testNbsiTable(pGpu,
+      |                      ~~~~~~~~~~~~~
+ 2546 |                                    (PNBSI_GEN_OBJ) pNbsiDrvrObj,
+ 2547 |                                    wantedGlobType,
+      |                                    ^~~~~~~~~~~~~~
+12 warnings generated.

@@ -1,0 +1,10 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/common/utils/nv_vasprintf.c:52:42: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   52 |     char *b = (char *)nv_vasprintf_alloc(current_len);
+      |                       ~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/common/utils/nv_vasprintf.c:58:41: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   58 |         len = nv_vasprintf_vsnprintf(b, current_len, f, tmp_ap);
+      |               ~~~~~~~~~~~~~~~~~~~~~~    ^~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/common/utils/nv_vasprintf.c:70:40: warning: implicit conversion changes signedness: 'int' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
+   70 |         b = (char *)nv_vasprintf_alloc(current_len);
+      |                     ~~~~~~~~~~~~~~~~~~ ^~~~~~~~~~~
+3 warnings generated.

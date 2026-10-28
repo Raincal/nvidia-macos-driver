@@ -1,0 +1,4 @@
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f64_to_ui64_r_minMag.c:64:24: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast64_t' (aka 'unsigned long long') [-Wsign-conversion]
+   64 |         if ( exact && (exp | sig) ) {
+      |                        ^~~ ~
+1 warning generated.

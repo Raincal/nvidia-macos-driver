@@ -1,0 +1,186 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:24:
+In file included from inc/libraries/tls/tls.h:29:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:361:52: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  361 |     NV_ASSERT_OR_RETURN(tlsDatabase.initCount > 0, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:405:52: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  405 |     NV_ASSERT_OR_RETURN(tlsDatabase.initCount > 0, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:408:47: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  408 |     NV_ASSERT_OR_RETURN(pThreadEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:411:44: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  411 |     NV_ASSERT_OR_RETURN(pTlsEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:420:52: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  420 |     NV_ASSERT_OR_RETURN(tlsDatabase.initCount > 0, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:421:51: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  421 |     NV_ASSERT_OR_RETURN(pCustomAllocator != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:424:47: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  424 |     NV_ASSERT_OR_RETURN(pThreadEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:427:44: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  427 |     NV_ASSERT_OR_RETURN(pTlsEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:471:52: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  471 |     NV_ASSERT_OR_RETURN(tlsDatabase.initCount > 0, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:474:47: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  474 |     NV_ASSERT_OR_RETURN(pThreadEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:477:44: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  477 |     NV_ASSERT_OR_RETURN(pTlsEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:486:52: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  486 |     NV_ASSERT_OR_RETURN(tlsDatabase.initCount > 0, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:489:47: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  489 |     NV_ASSERT_OR_RETURN(pThreadEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/tls/tls.c:492:44: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  492 |     NV_ASSERT_OR_RETURN(pTlsEntry != NULL, TLS_ERROR_VAL);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+inc/libraries/tls/tls.h:98:23: note: expanded from macro 'TLS_ERROR_VAL'
+   98 | #define TLS_ERROR_VAL ~0
+      |                       ^~
+inc/libraries/utils/nvassert.h:388:48: note: expanded from macro 'NV_ASSERT_OR_RETURN'
+  388 |     NV_ASSERT_OR_ELSE_STR(expr, #expr, return (retval))
+      |                                        ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:420:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR'
+  420 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+18 warnings generated.

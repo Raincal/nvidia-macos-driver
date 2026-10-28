@@ -1,0 +1,88 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:30:
+In file included from inc/kernel/gpu/gr/kernel_graphics_manager.h:2:
+In file included from generated/g_kernel_graphics_manager_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:31:
+In file included from inc/kernel/gpu/gr/kernel_graphics.h:2:
+generated/g_kernel_graphics_nvoc.h:1136:37: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
+ 1136 |     return pKernelGraphics_PRIVATE->bOverrideContextBuffersPteKind;
+      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:32:
+In file included from inc/kernel/gpu/fifo/kernel_channel.h:2:
+In file included from generated/g_kernel_channel_nvoc.h:56:
+In file included from inc/kernel/gpu/mig_mgr/kernel_mig_manager.h:2:
+In file included from generated/g_kernel_mig_manager_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:39:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1239:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1239 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:39:
+In file included from inc/kernel/gpu/mem_sys/kern_mem_sys.h:2:
+generated/g_kern_mem_sys_nvoc.h:1247:36: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 1247 |     NV_ASSERT_OR_RETURN_PRECOMP(0, -1);
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+inc/libraries/utils/nvassert.h:907:56: note: expanded from macro 'NV_ASSERT_OR_RETURN_PRECOMP'
+  907 |     NV_ASSERT_OR_ELSE_STR_PRECOMP(expr, #expr, return (retval))
+      |                                                ~~~~~~  ^~~~~~
+inc/libraries/utils/nvassert.h:919:13: note: expanded from macro 'NV_ASSERT_OR_ELSE_STR_PRECOMP'
+  919 |             elseStmt;                                                          \
+      |             ^~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:43:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:3316:13: warning: variable 'pKernelGraphics' may be uninitialized when used here [-Wconditional-uninitialized]
+ 3316 |         if (pKernelGraphics == NULL)
+      |             ^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:3299:36: note: initialize the variable 'pKernelGraphics' to silence this warning
+ 3299 |     KernelGraphics *pKernelGraphics;
+      |                                    ^
+      |                                     = NULL
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:3394:13: warning: variable 'pKernelGraphics' may be uninitialized when used here [-Wconditional-uninitialized]
+ 3394 |         if (pKernelGraphics == NULL)
+      |             ^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:3377:36: note: initialize the variable 'pKernelGraphics' to silence this warning
+ 3377 |     KernelGraphics *pKernelGraphics;
+      |                                    ^
+      |                                     = NULL
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:3494:13: warning: variable 'pKernelGraphics' may be uninitialized when used here [-Wconditional-uninitialized]
+ 3494 |         if (pKernelGraphics == NULL)
+      |             ^~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/gr/kernel_graphics.c:3477:36: note: initialize the variable 'pKernelGraphics' to silence this warning
+ 3477 |     KernelGraphics *pKernelGraphics;
+      |                                    ^
+      |                                     = NULL
+14 warnings generated.

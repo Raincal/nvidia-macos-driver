@@ -1,0 +1,165 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:24:
+In file included from inc/kernel/core/core.h:26:
+In file included from inc/kernel/core/prelude.h:41:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:27:
+In file included from inc/kernel/gpu/mem_mgr/mem_mgr.h:2:
+generated/g_mem_mgr_nvoc.h:2914:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2914 |     return -1;
+      |     ~~~~~~ ^~
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:29:
+In file included from inc/kernel/gpu/bus/kern_bus.h:2:
+In file included from generated/g_kern_bus_nvoc.h:54:
+In file included from inc/kernel/gpu/mmu/kern_gmmu.h:2:
+generated/g_kern_gmmu_nvoc.h:2600:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2600 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2605:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2605 |     return -1;
+      |     ~~~~~~ ^~
+generated/g_kern_gmmu_nvoc.h:2812:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+ 2812 |     return -1;
+      |     ~~~~~~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:885:107: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  885 |                         NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &vidSurface, &sysSurface, pVidMemDesc->Size,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+  886 |                                                    TRANSFER_FLAGS_PREFER_CE | TRANSFER_FLAGS_CE_PRI_DEFER_FLUSH));
+      |                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:890:107: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  890 |                         NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &sysSurface, &vidSurface, pVidMemDesc->Size,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+  891 |                                                    TRANSFER_FLAGS_PREFER_CE | TRANSFER_FLAGS_CE_PRI_DEFER_FLUSH));
+      |                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:905:107: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  905 |                         NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &vidSurface, &sysSurface, pVidMemDesc->Size,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+  906 |                                                    TRANSFER_FLAGS_PREFER_CE | TRANSFER_FLAGS_CE_PRI_DEFER_FLUSH));
+      |                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:910:107: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  910 |                         NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &sysSurface, &vidSurface, pVidMemDesc->Size,
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+  911 |                                                    TRANSFER_FLAGS_PREFER_CE | TRANSFER_FLAGS_CE_PRI_DEFER_FLUSH));
+      |                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:975:98: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  975 |                             NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &vidSurface, &sysSurface, copySize, TRANSFER_FLAGS_PREFER_CE));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:979:98: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+  979 |                             NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &sysSurface, &vidSurface, copySize, TRANSFER_FLAGS_PREFER_CE));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:1079:98: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1079 |                             NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &vidSurface, &sysSurface, copySize, TRANSFER_FLAGS_PREFER_CE));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:1083:98: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1083 |                             NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &sysSurface, &vidSurface, copySize, TRANSFER_FLAGS_PREFER_CE));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:1140:98: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1140 |                             NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &vidSurface, &sysSurface, copySize, TRANSFER_FLAGS_PREFER_CE));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/kernel/gpu/mem_mgr/arch/maxwell/fbsr_gm107.c:1144:98: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
+ 1144 |                             NV_ASSERT_OK(memmgrMemCopy(pMemoryManager, &sysSurface, &vidSurface, copySize, TRANSFER_FLAGS_PREFER_CE));
+      |                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+generated/g_mem_mgr_nvoc.h:891:111: note: expanded from macro 'memmgrMemCopy'
+  891 | #define memmgrMemCopy(pMemoryManager, pDst, pSrc, size, flags) memmgrMemCopy_IMPL(pMemoryManager, pDst, pSrc, size, flags)
+      |                                                                ~~~~~~~~~~~~~~~~~~                             ^~~~
+inc/libraries/utils/nvassert.h:463:49: note: expanded from macro 'NV_ASSERT_OK'
+  463 |         NV_ASSERT_OK_OR_ELSE_STR(rm_pvt_status, expr, #expr,                   \
+      |                                                 ^~~~
+inc/libraries/utils/nvassert.h:583:19: note: expanded from macro 'NV_ASSERT_OK_OR_ELSE_STR'
+  583 |         status = (expr);                                                       \
+      |                   ^~~~
+18 warnings generated.

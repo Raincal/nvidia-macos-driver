@@ -1,0 +1,54 @@
+In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:26:
+In file included from inc/libraries/resserv/resserv.h:2:
+In file included from generated/g_resserv_nvoc.h:11:
+In file included from inc/libraries/nvoc/runtime.h:31:
+In file included from inc/libraries/nvport/nvport.h:217:
+In file included from inc/libraries/nvport/util.h:270:
+In file included from inc/libraries/nvport/inline/util_generic.h:184:
+inc/libraries/nvport/inline/util_gcc_clang.h:119:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  119 |     return __builtin_clzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:126:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  126 |     return __builtin_clz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:135:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  135 |     return __builtin_ctzll(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~~~
+inc/libraries/nvport/inline/util_gcc_clang.h:142:12: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
+  142 |     return __builtin_ctz(n);
+      |     ~~~~~~ ^~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:335:38: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+  335 |     pServer->allClientLockOwnerTid = ~0;
+      |                                    ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:2872:38: warning: implicit conversion changes signedness: 'int' to 'NvHandle' (aka 'unsigned int') [-Wsign-conversion]
+ 2872 |         NvHandle hClientNextBucket = ~0;
+      |                  ~~~~~~~~~~~~~~~~~   ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:2927:46: warning: implicit conversion changes signedness: 'int' to 'NvHandle' (aka 'unsigned int') [-Wsign-conversion]
+ 2926 |                 hClientNextBucket = NV_MIN(hClientNextBucket,
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2927 |                     (pClientEntry->hClient & ~RS_CLIENT_HANDLE_BUCKET_MASK));
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:766:38: note: expanded from macro 'NV_MIN'
+  766 | #define NV_MIN(a, b)        (((a) < (b)) ? (a) : (b))
+      |                                      ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:2927:46: warning: implicit conversion changes signedness: 'int' to 'NvHandle' (aka 'unsigned int') [-Wsign-conversion]
+ 2926 |                 hClientNextBucket = NV_MIN(hClientNextBucket,
+      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~
+ 2927 |                     (pClientEntry->hClient & ~RS_CLIENT_HANDLE_BUCKET_MASK));
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../common/sdk/nvidia/inc/nvmisc.h:766:51: note: expanded from macro 'NV_MIN'
+  766 | #define NV_MIN(a, b)        (((a) < (b)) ? (a) : (b))
+      |                                                   ^
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:2998:38: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+ 2998 |     pServer->allClientLockOwnerTid = ~0;
+      |                                    ~ ^~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:3355:29: warning: implicit conversion changes signedness: 'int' to 'NvHandle' (aka 'unsigned int') [-Wsign-conversion]
+ 3355 |     hPrefixIn = hClientIn & ~RS_CLIENT_HANDLE_DECODE_MASK;
+      |                           ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:3356:31: warning: implicit conversion changes signedness: 'int' to 'NvHandle' (aka 'unsigned int') [-Wsign-conversion]
+ 3356 |     hPrefixOut = hClientOut & ~RS_CLIENT_HANDLE_DECODE_MASK;
+      |                             ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/resserv/src/rs_server.c:3811:38: warning: implicit conversion changes signedness: 'int' to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
+ 3811 |         pClientEntry->lockOwnerTid = ~0;
+      |                                    ~ ^~
+12 warnings generated.
