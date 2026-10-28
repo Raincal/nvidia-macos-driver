@@ -1,10 +1,10 @@
 name: Build NVRM (bar-preflight port)
 
-# 两种触发：
-#   1. 手动：指定上游 tag（留空 = 最新 release）
-#   2. 定时：每天 04:00 (CST) 检查上游是否有新 release，有就自动构建
-# 构建方式：克隆上游 tag → 拷入 ci/ → 应用社区 BAR preflight 移植补丁 → 编译 → 打包
-# 成功后把 tag 写回 ci/upstream-tag 并提交，下次定时检查据此判断是否已构建。
+# 上游发新版后尽快构建：每 10 分钟轮询一次 releases/latest
+#   检查 job 跑在 ubuntu-latest（便宜、秒级退出），只有确实有新 tag 才起 macOS runner
+#   构建方式：克隆上游 tag → 拷入 ci/ → 应用社区 BAR preflight 补丁 → 测试 → 编译 → 打包
+#   成功后把 tag 写回 ci/upstream-tag 并提交，下次轮询据此判断已构建
+# 手动：可指定任意 tag；上次构建失败后 3 小时内不自动重试，避免反复烧 macOS 分钟
 
 on:
   workflow_dispatch:
@@ -13,11 +13,11 @@ on:
         description: "上游 tag（留空 = 最新 release）"
         required: false
       package:
-        description: "打包成完整驱动（否则只留 kext）"
+        description: "打包成完整驱动 + 1401 安装器"
         type: boolean
         default: true
   schedule:
-    - cron: '0 20 * * *'      # 20:00 UTC = 04:00 CST
+    - cron: '*/10 * * * *'
 
 permissions:
   contents: write
@@ -27,45 +27,86 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
-    runs-on: macos-15-intel
-    timeout-minutes: 120
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      tag: ${{ steps.c.outputs.tag }}
+      build: ${{ steps.c.outputs.build }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
-      - name: Resolve upstream tag
-        id: r
+      - name: Resolve upstream release and decide
+        id: c
         env:
           GH_TOKEN: ${{ github.token }}
+          FORCED_TAG: ${{ inputs.tag }}
         run: |
-          TAG="${{ inputs.tag }}"
-          if [ -z "$TAG" ]; then
-            TAG=$(gh api repos/nullmoth/nvidia-macos-driver/releases/latest --jq .tag_name)
-          fi
-          BASE=$(cat ci/upstream-tag)
-          echo "tag=$TAG"   >> "$GITHUB_OUTPUT"
-          echo "base=$BASE" >> "$GITHUB_OUTPUT"
-          if [ "$TAG" = "$BASE" ]; then
-            echo "skip=true"  >> "$GITHUB_OUTPUT"
-            echo "上游仍是 $TAG，无需构建"
-          else
-            echo "skip=false" >> "$GITHUB_OUTPUT"
-            echo "将构建 $TAG（上次构建的是 $BASE）"
-          fi
+          python3 - <<'PY'
+          import json, os, subprocess, datetime, pathlib
 
-      - name: Decide whether to build
-        id: gate
-        run: |
-          if [ "${{ steps.r.outputs.skip }}" = "true" ] && [ "${{ github.event_name }}" = "schedule" ]; then
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          fi
+          def out(k, v):
+              with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                  f.write(f"{k}={v}\n")
+
+          forced = (os.environ.get("FORCED_TAG") or "").strip()
+          base = pathlib.Path("ci/upstream-tag").read_text().strip()
+
+          if forced:
+              tag = forced
+          else:
+              rel = json.loads(subprocess.check_output(
+                  ["gh", "api", "repos/nullmoth/nvidia-macos-driver/releases/latest"]))
+              tag = rel["tag_name"]
+
+          build, reason = False, ""
+          if forced:
+              build, reason = True, "手动触发"
+          elif tag == base:
+              reason = f"上游仍是 {tag}，已构建过"
+          else:
+              # 失败退避：最近 3 小时内有一次失败就等人工，别反复烧 macOS 分钟
+              try:
+                  runs = json.loads(subprocess.check_output([
+                      "gh", "run", "list", "--workflow=build-barpreflight.yml",
+                      "--limit", "5", "--status", "completed",
+                      "--json", "conclusion,createdAt,displayTitle"]))
+              except subprocess.CalledProcessError:
+                  runs = []
+              now = datetime.datetime.now(datetime.timezone.utc)
+              recent_fail = None
+              for r in runs:
+                  if r.get("conclusion") != "failure":
+                      continue
+                  started = datetime.datetime.fromisoformat(r["createdAt"].replace("Z", "+00:00"))
+                  if now - started < datetime.timedelta(hours=3):
+                      recent_fail = r
+                      break
+              if recent_fail:
+                  reason = f"{tag} 的构建最近失败过（{recent_fail['createdAt']}），3 小时内不自动重试；修好后手动触发"
+              else:
+                  build, reason = True, f"发现新版 {tag}（上次构建 {base}）"
+
+          print(reason)
+          out("tag", tag)
+          out("build", "true" if build else "false")
+          PY
+
+  build:
+    needs: check
+    if: needs.check.outputs.build == 'true'
+    runs-on: macos-15-intel
+    timeout-minutes: 120
+    env:
+      TAG: ${{ needs.check.outputs.tag }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Toolchain
-        if: steps.gate.outputs.run == 'true'
         run: |
           test "$(uname -m)" = x86_64
           if [ -d /Applications/Xcode_16.4.app ]; then
@@ -73,11 +114,10 @@ jobs:
           fi
           xcodebuild -version
           command -v gmake || brew install make
+          echo "building $TAG"
 
       - name: Fetch upstream tree + apply the port patch
-        if: steps.gate.outputs.run == 'true'
         run: |
-          TAG="${{ steps.r.outputs.tag }}"
           git clone --depth 1 --branch "$TAG" https://github.com/nullmoth/nvidia-macos-driver.git src
           cp -R ci src/ci
           echo "$TAG" > src/ci/upstream-tag
@@ -86,8 +126,12 @@ jobs:
             || { echo "STOP: 移植补丁套不上 $TAG，需要人工 rebase 后更新 ci/patches/community-bar-preflight.patch"; exit 1; }
           grep -n "nvrmBarAddressMax(physBits" kexts/NVRM/NVRM.cpp
 
+      - name: Test address limits and fault-inject the preflight staging
+        run: |
+          cd src
+          python3 ci/test-bar-preflight.py
+
       - name: Fetch pinned NVIDIA source and apply patches
-        if: steps.gate.outputs.run == 'true'
         run: |
           cd src
           mkdir -p .deps build-out/logs
@@ -100,17 +144,23 @@ jobs:
           git apply --directory=src/nvidia-modeset ../../kexts/NVRM/patches/610-backlight-register-log.patch
           git apply --recount --directory=src/nvidia-modeset ../../kexts/NVRM/patches/615-viewport-scaling.patch
 
+      - name: Restore compiled objects
+        uses: actions/cache@v4
+        with:
+          path: src/build-out/objects
+          key: nvobj-${{ hashFiles('ci/build-macos-kexts.py', 'ci/export-nvidia.mk', 'ci/patches/*.patch') }}-615.78.08
+          restore-keys: |
+            nvobj-
+
       - name: Build kexts
-        if: steps.gate.outputs.run == 'true'
         run: |
           cd src
           python3 ci/build-macos-kexts.py --vendor .deps/open-gpu-kernel-modules --output build-out --jobs 4
 
       - name: Package — replace only NVRM in the official package
-        if: steps.gate.outputs.run == 'true' && (github.event_name == 'schedule' || inputs.package)
+        if: github.event_name == 'schedule' || inputs.package
         run: |
           cd src
-          TAG="${{ steps.r.outputs.tag }}"
           VER="${TAG#v}"
           SUM_URL="https://github.com/nullmoth/nvidia-macos-driver/releases/download/$TAG/SHA256SUMS.txt"
           PKG_URL="https://github.com/nullmoth/nvidia-macos-driver/releases/download/$TAG/nullmoth-nvidia-$VER.tar.gz"
@@ -119,30 +169,39 @@ jobs:
           echo "stock: $PKG_URL  sha=$SHA"
           python3 ci/package-experiment.py --output build-out --tag "$TAG" --stock-url "$PKG_URL" --stock-sha "$SHA"
 
+      - name: Build the paired offline 1401 App
+        if: github.event_name == 'schedule' || inputs.package
+        run: |
+          cd src
+          git clone --depth 1 --branch "$TAG" https://github.com/nullmoth/1401 .deps/1401
+          python3 ci/package-test-app.py --tag "$TAG"
+
       - uses: actions/upload-artifact@v4
-        if: steps.gate.outputs.run == 'true'
         with:
-          name: nvrm-${{ steps.r.outputs.tag }}-${{ github.run_number }}
+          name: nvrm-${{ env.TAG }}-${{ github.run_number }}
           path: |
             src/build-out/nullmoth-*.tar.gz
+            src/build-out/1401-*.zip
             src/build-out/SHA256SUMS.txt
             src/build-out/build-proof.json
+            src/build-out/installer-proof.json
             src/build-out/kexts/
           if-no-files-found: warn
           retention-days: 30
 
+      # 编译日志只在失败时需要：1100 个单元一台一份，成功时纯噪音
       - uses: actions/upload-artifact@v4
-        if: steps.gate.outputs.run == 'true'
+        if: failure()
         with:
-          name: logs-${{ steps.r.outputs.tag }}-${{ github.run_number }}
+          name: logs-${{ env.TAG }}-${{ github.run_number }}
           path: src/build-out/logs/
-          if-no-files-found: warn
-          retention-days: 14
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Record the built tag
-        if: steps.gate.outputs.run == 'true' && steps.r.outputs.tag != steps.r.outputs.base
         run: |
-          TAG="${{ steps.r.outputs.tag }}"
+          BASE=$(cat ci/upstream-tag)
+          if [ "$TAG" = "$BASE" ]; then echo "tag 未变化，不提交"; exit 0; fi
           echo "$TAG" > ci/upstream-tag
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
