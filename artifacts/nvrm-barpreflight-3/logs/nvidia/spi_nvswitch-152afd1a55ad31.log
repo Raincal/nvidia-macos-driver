@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/spi_nvswitch.c:68:12: warning: implicit conversion changes signedness: 'NV_STATUS' (aka 'unsigned int') to 'NvlStatus' (aka 'int') [-Wsign-conversion]
-   68 |     return status;
-      |     ~~~~~~ ^~~~~~
-1 warning generated.

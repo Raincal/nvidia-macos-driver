@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_requester_lib/libspdm_req_common.c:94:64: warning: implicit conversion changes signedness: 'long' to 'size_t' (aka 'unsigned long') [-Wsign-conversion]
-   94 |                      *data_out_size - ((uint8_t*)versions_list - (uint8_t*)data_out),
-      |                                     ~  ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
-1 warning generated.

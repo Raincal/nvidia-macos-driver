@@ -1,7 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/8086-SSE/s_commonNaNToF16UI.c:48:52: warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint_fast16_t' (aka 'unsigned short') [-Wimplicit-int-conversion]
-   48 |     return (uint_fast16_t) aPtr->sign<<15 | 0x7E00 | aPtr->v64>>54;
-      |     ~~~~~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/8086-SSE/s_commonNaNToF16UI.c:48:43: warning: implicit conversion changes signedness: 'int' to 'uint64_t' (aka 'unsigned long long') [-Wsign-conversion]
-   48 |     return (uint_fast16_t) aPtr->sign<<15 | 0x7E00 | aPtr->v64>>54;
-      |            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~ ~
-2 warnings generated.

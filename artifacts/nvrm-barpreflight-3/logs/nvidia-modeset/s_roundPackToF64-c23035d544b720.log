@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_roundPackToF64.c:76:51: warning: implicit conversion changes signedness: 'int' to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
-   76 |             sig = softfloat_shiftRightJam64( sig, -exp );
-      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~       ^~~~
-1 warning generated.

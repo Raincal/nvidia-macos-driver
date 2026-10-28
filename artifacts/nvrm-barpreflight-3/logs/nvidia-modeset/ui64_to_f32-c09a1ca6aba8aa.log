@@ -1,9 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/ui64_to_f32.c:58:66: warning: implicit conversion changes signedness: 'int' to 'uint_fast8_t' (aka 'unsigned char') [-Wsign-conversion]
-   58 |             (shiftDist < 0) ? softfloat_shortShiftRightJam64( a, -shiftDist )
-      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~     ^~~~~~~~~~
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/ui64_to_f32.c:58:31: warning: implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint_fast32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
-   57 |         sig =
-      |             ~
-   58 |             (shiftDist < 0) ? softfloat_shortShiftRightJam64( a, -shiftDist )
-      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-2 warnings generated.

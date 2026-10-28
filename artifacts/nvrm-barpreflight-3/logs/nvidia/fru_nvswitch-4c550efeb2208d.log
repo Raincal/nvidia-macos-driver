@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/ipmi/fru_nvswitch.c:147:64: warning: implicit conversion changes signedness: 'int' to 'NvU32' (aka 'unsigned int') [-Wsign-conversion]
-  147 |     pBoardInfo->mfgDateTime = pInfoSrc[0] | (pInfoSrc[1] << 8) | (pInfoSrc[2] << 16);
-      |                             ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
-1 warning generated.

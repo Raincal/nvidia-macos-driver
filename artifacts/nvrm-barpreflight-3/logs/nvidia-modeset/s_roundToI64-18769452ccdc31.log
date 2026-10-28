@@ -1,7 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_roundToI64.c:86:19: warning: operand of ? changes signedness: 'unsigned long long' to 'int_fast64_t' (aka 'long long') [-Wsign-conversion]
-   86 |     return sign ? i64_fromNegOverflow : i64_fromPosOverflow;
-      |     ~~~~~~        ^~~~~~~~~~~~~~~~~~~
-../common/softfloat/source/8086-SSE/specialize.h:68:63: note: expanded from macro 'i64_fromNegOverflow'
-   68 | #define i64_fromNegOverflow  (-UINT64_C( 0x7FFFFFFFFFFFFFFF ) - 1)
-      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
-1 warning generated.

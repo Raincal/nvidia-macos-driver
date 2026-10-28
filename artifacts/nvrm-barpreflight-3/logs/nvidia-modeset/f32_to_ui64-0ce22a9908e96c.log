@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/f32_to_ui64.c:77:64: warning: implicit conversion changes signedness: 'int_fast16_t' (aka 'short') to 'uint_fast32_t' (aka 'unsigned int') [-Wsign-conversion]
-   77 |         sig64Extra = softfloat_shiftRightJam64Extra( sig64, 0, shiftDist );
-      |                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            ^~~~~~~~~
-1 warning generated.

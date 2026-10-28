@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_roundToI32.c:68:16: warning: implicit conversion loses integer precision: 'uint_fast64_t' (aka 'unsigned long long') to 'uint_fast32_t' (aka 'unsigned int') [-Wshorten-64-to-32]
-   68 |     sig32 = sig>>12;
-      |           ~ ~~~^~~~
-1 warning generated.

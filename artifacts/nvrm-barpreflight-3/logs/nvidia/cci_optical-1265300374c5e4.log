@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/cci/cables/cci_optical.c:495:42: warning: implicit conversion loses integer precision: 'NvU32' (aka 'unsigned int') to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
-  495 |         link = nvswitch_get_link(device, linkId);
-      |                ~~~~~~~~~~~~~~~~~         ^~~~~~
-1 warning generated.

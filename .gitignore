@@ -2,5 +2,7 @@ __pycache__/
 *.pyc
 
 # 下载的构建产物不进仓库
-artifacts/
-artifacts2/
+artifacts*/
+
+# macOS
+.DS_Store

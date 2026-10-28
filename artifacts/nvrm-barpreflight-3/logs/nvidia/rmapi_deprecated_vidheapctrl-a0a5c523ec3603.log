@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/interface/deprecated/rmapi_deprecated_vidheapctrl.c:268:93: warning: implicit conversion changes signedness: 'NvS32' (aka 'int') to 'NvU64' (aka 'unsigned long long') [-Wsign-conversion]
-  268 |         (NvU64)pArgs->data.AllocTiledPitchHeight.height * pArgs->data.AllocTiledPitchHeight.pitch;
-      |                                                         ~ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
-1 warning generated.

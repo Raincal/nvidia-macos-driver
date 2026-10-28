@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/nvidia/src/libraries/libspdm/3.5.0/library/spdm_common_lib/libspdm_com_context_data_session.c:219:41: warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
-  219 |     session_id = (rsp_session_id << 16) | req_session_id;
-      |                ~ ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
-1 warning generated.

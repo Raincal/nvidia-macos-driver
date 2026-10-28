@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/i64_to_f64.c:50:13: warning: implicit conversion changes signedness: 'int64_t' (aka 'long long') to 'unsigned long long' [-Wsign-conversion]
-   50 |     if ( ! (a & UINT64_C( 0x7FFFFFFFFFFFFFFF )) ) {
-      |             ^ ~
-1 warning generated.

@@ -1,9 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/nvswitch/kernel/inforom/inforom_nvl_v3_nvswitch.c:267:21: warning: implicit conversion loses integer precision: 'unsigned int' to 'NvU8' (aka 'unsigned char') [-Wimplicit-int-conversion]
-  267 |         *pSubtype = FLD_SET_DRF_NUM(_INFOROM_NVL_OBJECT_V3, _NVLIPT_ERROR,
-      |                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  268 |                                     _LINK_ID, localLinkIdx, *pSubtype);
-      |                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../common/sdk/nvidia/inc/nvmisc.h:327:86: note: expanded from macro 'FLD_SET_DRF_NUM'
-  327 | #define FLD_SET_DRF_NUM(d,r,f,n,v)              (((v) & ~DRF_SHIFTMASK(NV##d##r##f)) | DRF_NUM(d,r,f,n))
-      |                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
-1 warning generated.

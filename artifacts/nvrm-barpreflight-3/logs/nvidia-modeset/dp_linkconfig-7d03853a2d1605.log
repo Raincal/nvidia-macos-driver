@@ -1,8 +1,0 @@
-In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/displayport/src/dp_linkconfig.cpp:32:
-../common/displayport/inc/dp_linkconfig.h:588:36: warning: declaration shadows a field of 'DisplayPort::LinkConfiguration' [-Wshadow]
-  588 |         void setChannelCoding(bool bIs128b132bChannelCoding)
-      |                                    ^
-../common/displayport/inc/dp_linkconfig.h:284:18: note: previous declaration is here
-  284 |         bool     bIs128b132bChannelCoding;
-      |                  ^
-1 warning generated.

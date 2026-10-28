@@ -1,9 +1,0 @@
-In file included from /Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/common/utils/nv_mode_timings_utils.c:24:
-In file included from ../common/unix/common/utils/interface/nv_mode_timings_utils.h:33:
-../common/unix/common/inc/nv_mode_timings.h:154:23: warning: implicit conversion loses integer precision: 'NvU64' (aka 'unsigned long long') to 'NvU32' (aka 'unsigned int') [-Wshorten-64-to-32]
-  154 |     return (hz + 500) / 1000;
-      |     ~~~~~~ ~~~~~~~~~~~^~~~~~
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/unix/common/utils/nv_mode_timings_utils.c:95:41: warning: implicit conversion loses integer precision: 'const NvU16' (aka 'const unsigned short') to 'NvBool' (aka 'unsigned char') [-Wimplicit-int-conversion]
-   95 |     pModeTimings->interlaced = pTiming->interlaced;
-      |                              ~ ~~~~~~~~~^~~~~~~~~~
-2 warnings generated.

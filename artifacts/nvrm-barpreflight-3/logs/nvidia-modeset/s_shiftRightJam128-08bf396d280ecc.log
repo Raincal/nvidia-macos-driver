@@ -1,4 +1,0 @@
-/Users/runner/work/nvidia-macos-driver/nvidia-macos-driver/.deps/open-gpu-kernel-modules/src/common/softfloat/source/s_shiftRightJam128.c:51:21: warning: implicit conversion loses integer precision: 'uint_fast32_t' (aka 'unsigned int') to 'uint_fast8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
-   51 |         u8NegDist = -dist;
-      |                   ~ ^~~~~
-1 warning generated.
