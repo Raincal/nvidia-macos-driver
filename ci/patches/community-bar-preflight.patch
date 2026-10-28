@@ -140,3 +140,35 @@ index 750c742..a8fd978 100644
      fPCI->setProperty("nvrm-bar1-placed", bar1Base, 64);
      LOG("bar1: PLACED — BAR1 %llu MB live at 0x%llx", bar1Size >> 20, bar1Base);
      return true;
+diff --git a/kexts/NVRM/nvrm_bar_limits.h b/kexts/NVRM/nvrm_bar_limits.h
+new file mode 100644
+index 0000000..fce012a
+--- /dev/null
++++ b/kexts/NVRM/nvrm_bar_limits.h
+@@ -0,0 +1,26 @@
++/* Personal BAR preflight experiment; no PCI or IOKit side effects here. */
++#ifndef NVRM_BAR_LIMITS_H
++#define NVRM_BAR_LIMITS_H
++
++// XNU IOGeneralMemoryDescriptor::initWithOptions rejects a non-remote physical
++// range when ceil((address + length) / PAGE_SIZE) exceeds UINT_MAX. This is
++// independent of CPUID MAXPHYADDR. Leave the final page outside the aperture.
++static inline unsigned long long nvrmBarAddressMax(unsigned cpuBits, unsigned pageShift)
++{
++    if (!cpuBits || pageShift >= 32) return 0;
++    const unsigned long long cpuMax = cpuBits >= 64 ? ~0ULL : (1ULL << cpuBits) - 1;
++    const unsigned long long ioMax = (0xffffffffULL << pageShift) - 1;
++    return cpuMax < ioMax ? cpuMax : ioMax;
++}
++
++static inline bool nvrmClipBarWindow(unsigned long long minimum,
++                                     unsigned long long maximum,
++                                     unsigned long long addressMax,
++                                     unsigned long long *clippedMax)
++{
++    if (maximum < minimum || minimum > addressMax) return false;
++    *clippedMax = maximum < addressMax ? maximum : addressMax;
++    return *clippedMax > minimum;
++}
++
++#endif
