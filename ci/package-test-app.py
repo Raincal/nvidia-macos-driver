@@ -1,30 +1,69 @@
 #!/usr/bin/env python3
-"""Build a checksum-paired offline 1401 from the matching official app source."""
+"""Build a checksum-paired offline 1401 from the matching official app source.
+
+用法（在 src/ 里跑，build-out/ 已由 package-experiment.py 产出配对包）：
+    python3 ci/package-test-app.py --tag v2.6.3 [--expect-commit <sha>]
+
+1401 的源码 commit 默认从 ci/1401-pins.json 里按 tag 查；没有记录时用当前
+HEAD 并在输出里提示，方便第一次构建某个 tag 后把 commit 补进 pins。
+"""
+import argparse
 import hashlib
 import json
 from pathlib import Path
+import re
 import subprocess
 
 root = Path(__file__).resolve().parents[1]
-app = root / ".deps/1401"
 out = root / "build-out"
-expected = "fc09d19530b4e6aca0b2b41416cbb16440531911"
+app = root / ".deps/1401"
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--tag", default=None, help="上游 tag，默认读 ci/upstream-tag")
+parser.add_argument("--expect-commit", default=None, help="1401 源码应处的 commit")
+args = parser.parse_args()
+
+tag = args.tag or (root / "ci/upstream-tag").read_text().strip()
+ver = tag.lstrip("v")
+
 actual = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=app, text=True).strip()
-if actual != expected:
-    raise SystemExit("Installer source commit mismatch")
-package = out / "nullmoth-2.5.2-rtx6000-bar-preflight-v1.tar.gz"
+pins_file = root / "ci/1401-pins.json"
+pins = json.loads(pins_file.read_text()) if pins_file.is_file() else {}
+expect = args.expect_commit or pins.get(tag)
+if expect and actual != expect:
+    raise SystemExit(f"Installer source commit mismatch: {actual} != {expect}")
+if not expect:
+    print(f"note: {tag} 未固定 1401 commit，本次用 {actual}（建议写入 ci/1401-pins.json）")
+
+packages = sorted(out.glob(f"nullmoth-{ver}-*.tar.gz"))
+if len(packages) != 1:
+    raise SystemExit(f"expected exactly one packaged driver for {ver}, found {len(packages)}")
+package = packages[0]
 sha = hashlib.sha256(package.read_bytes()).hexdigest()
+
 main = app / "mac/Sources/main.swift"
 source = main.read_text()
-assert source.count('static let name = "nullmoth-nvidia-2.5.2.tar.gz"') == 1
-source = source.replace('static let name = "nullmoth-nvidia-2.5.2.tar.gz"', f'static let name = "{package.name}"')
-source = source.replace('static let sha256 = "b3c01bbdce788e6181636836c73653be19052e217442c87763923ed37296007d"', f'static let sha256 = "{sha}"', 1)
-source = source.replace('window.title = "1401";', 'window.title = "1401 - RTX6000 BAR Preflight TEST 2.5.2";', 1)
+
+# 1) 包名：官方的 nullmoth-nvidia-<ver>.tar.gz → 我们打出来的包名
+old_name = f'static let name = "nullmoth-nvidia-{ver}.tar.gz"'
+assert source.count(old_name) == 1, f"package name literal not found: {old_name}"
+source = source.replace(old_name, f'static let name = "{package.name}"')
+
+# 2) 校验和：官方包 sha256 → 我们的包 sha256
+m = re.search(r'static let sha256 = "([0-9a-f]{64})"', source)
+assert m, "sha256 literal not found"
+source = source[:m.start(1)] + sha + source[m.end(1):]
+
+# 3) 标题标出这是 preflight 测试版
+source = source.replace('window.title = "1401";',
+                        f'window.title = "1401 - BAR Preflight TEST {ver}";', 1)
+
+# 4) 除了 Downloads，也从 app 同级目录找配对包
 needle = '        c.append(fm.urls(for: .downloadsDirectory, in: .userDomainMask)[0].appendingPathComponent(Package.name))'
 assert source.count(needle) == 1
 source = source.replace(needle, needle + '\n        c.append(Bundle.main.bundleURL.deletingLastPathComponent().appendingPathComponent(Package.name))')
-# The test app installs only its checksum-paired local file. An upstream update
-# through this app would silently replace the experiment with a different build.
+
+# 5) 关掉联网更新：这个 app 只装本地配对包
 for old, new in [
     ('case "checkUpdate": checkUpdate()', 'case "checkUpdate": send("upd", ["state": "error", "why": "Offline BAR preflight test: use this paired package; official updates are disabled in the test app."])'),
     ('case "updateDriver": updateDriver(efi: b["efi"] as? String ?? "auto")', 'case "updateDriver": send("upd", ["state": "error", "why": "Use Install the driver with the paired local test archive."])'),
@@ -34,17 +73,20 @@ for old, new in [
     assert source.count(old) == 1, old
     source = source.replace(old, new)
 main.write_text(source)
+
 subprocess.run(["bash", "mac/build.sh", str(root / "app-build")], cwd=app, check=True)
 old_bundle = root / "app-build/1401.app"
-bundle = old_bundle.with_name("1401-RTX6000-BAR-Preflight-Test.app")
+bundle = old_bundle.with_name("1401-BAR-Preflight-Test.app")
 old_bundle.rename(bundle)
 subprocess.run(["codesign", "--verify", "--deep", "--strict", str(bundle)], check=True)
 subprocess.run(["xcrun", "lipo", str(bundle / "Contents/MacOS/1401"), "-verify_arch", "x86_64"], check=True)
-# Do not ship a different uninstall/setup helper under the official app's UI.
+
+# 不把不同的 setup/uninstall 助手藏在官方 app 的界面下
 for name in ("nullmoth-setup.sh", "nullmoth-uninstall.sh", "NullMothSafe.efi"):
-    upstream = subprocess.check_output(["git", "show", f"{expected}:mac/Resources/{name}"], cwd=app)
+    upstream = subprocess.check_output(["git", "show", f"{actual}:mac/Resources/{name}"], cwd=app)
     assert upstream == (bundle / "Contents/Resources" / name).read_bytes(), name
-zipfile = out / "1401-Mac-2.5.2-RTX6000-BAR-Preflight-Test.zip"
+
+zipfile = out / f"1401-Mac-{ver}-BAR-Preflight-Test.zip"
 subprocess.run(["ditto", "-c", "-k", "--sequesterRsrc", "--keepParent", str(bundle), str(zipfile)], check=True)
 with (out / "SHA256SUMS.txt").open("a") as sums:
     sums.write(f"{hashlib.sha256(zipfile.read_bytes()).hexdigest()}  {zipfile.name}\n")
@@ -54,4 +96,4 @@ with (out / "SHA256SUMS.txt").open("a") as sums:
     "official_setup_uninstall_and_efi_helper_preserved": True,
     "hardware_tested": False,
 }, indent=2) + "\n")
-print("Paired offline App built; official setup/uninstall helpers preserved.")
+print(f"Paired offline App built for {tag}; official setup/uninstall helpers preserved.")
