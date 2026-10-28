@@ -12,6 +12,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import shutil
 import subprocess
 
 root = Path(__file__).resolve().parents[1]
@@ -74,7 +75,36 @@ for old, new in [
     source = source.replace(old, new)
 main.write_text(source)
 
-subprocess.run(["bash", "mac/build.sh", str(root / "app-build")], cwd=app, check=True)
+
+def bash_for_build():
+    """1401's mac/build.sh needs bash >= 4.4.
+
+    2.6.3 added `RUN=(); [ arm64 ] && RUN=(arch -x86_64)` and then expands
+    "${RUN[@]}". On an Intel host RUN stays empty, and bash 3.2 -- the
+    /bin/bash every macOS still ships -- treats that as an unbound variable
+    under `set -u`, so the build dies at the EFI rule test. Bash 4.4 and
+    later expand an empty array to nothing, which is what the author
+    intended. Homebrew bash is preferred over the system one for that
+    reason; failing loudly beats silently building nothing.
+    """
+    for candidate in ("/usr/local/bin/bash", "/opt/homebrew/bin/bash", shutil.which("bash"), "/bin/bash"):
+        if not candidate or not Path(candidate).is_file():
+            continue
+        try:
+            version = subprocess.check_output([candidate, "-c", "echo ${BASH_VERSION}"], text=True).strip()
+        except (OSError, subprocess.CalledProcessError):
+            continue
+        parts = version.split(".")[:2]
+        if len(parts) == 2 and all(p.isdigit() for p in parts) and tuple(map(int, parts)) >= (4, 4):
+            print(f"note: building 1401 with {candidate} (bash {version})")
+            return candidate
+    raise SystemExit(
+        "1401 needs bash >= 4.4: /bin/bash on macOS is 3.2 and rejects the empty "
+        'array expansion in mac/build.sh under `set -u`. Install one with `brew install bash`.'
+    )
+
+
+subprocess.run([bash_for_build(), "mac/build.sh", str(root / "app-build")], cwd=app, check=True)
 old_bundle = root / "app-build/1401.app"
 bundle = old_bundle.with_name("1401-BAR-Preflight-Test.app")
 old_bundle.rename(bundle)

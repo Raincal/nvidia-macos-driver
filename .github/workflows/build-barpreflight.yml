@@ -114,6 +114,9 @@ jobs:
           fi
           xcodebuild -version
           command -v gmake || brew install make
+          # 1401's build.sh expands an empty array under `set -u`; system bash 3.2 rejects that.
+          [ -x /usr/local/bin/bash ] || brew install bash
+          /usr/local/bin/bash --version | head -1
           echo "building $TAG"
 
       - name: Fetch upstream tree + apply the port patch
