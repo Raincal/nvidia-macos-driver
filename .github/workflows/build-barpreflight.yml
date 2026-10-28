@@ -196,6 +196,9 @@ jobs:
           # 克隆本身要 78 秒（纯网络），缓存命中时跳过；commit 由下面的脚本校验
           if [ -d .deps/1401/.git ]; then
             echo "using the cached 1401 checkout"
+            # 缓存保存的是上一次运行结束时的状态，里面 main.swift 和 build.sh
+            # 已被改过；恢复成干净检出，否则下面的字面量断言会失败
+            git -C .deps/1401 checkout -- .
           else
             git clone --depth 1 --branch "$TAG" https://github.com/nullmoth/1401 .deps/1401
           fi
