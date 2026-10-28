@@ -56,11 +56,15 @@ def main():
             magic, cpu, _, kind = struct.unpack("<4I", f.read(16))
         if (magic, cpu, kind) != (0xfeedfacf, 0x1000007, 11):
             raise SystemExit(f"Unexpected kext format: {name}")
-    stock = out / "stock-2.6.3.tar.gz"
-    with urllib.request.urlopen(args.stock_url, timeout=300) as response, stock.open("wb") as f:
-        shutil.copyfileobj(response, f)
-    if digest(stock) != args.stock_sha:
-        raise SystemExit("Stock release checksum mismatch.")
+    stock = out / f"stock-{tag.lstrip('v')}.tar.gz"
+    # 252 MB 每次从 GitHub 重新下要一分多钟；缓存命中时直接复用，仍按 sha 校验
+    if stock.is_file() and digest(stock) == args.stock_sha:
+        print(f"note: reusing the cached stock package {stock.name}")
+    else:
+        with urllib.request.urlopen(args.stock_url, timeout=300) as response, stock.open("wb") as f:
+            shutil.copyfileobj(response, f)
+        if digest(stock) != args.stock_sha:
+            raise SystemExit("Stock release checksum mismatch.")
     stage = out / "package-stage"
     if stage.exists():
         raise SystemExit("Package staging directory must be fresh.")

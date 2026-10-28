@@ -11,6 +11,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import os
 import re
 import shutil
 import subprocess
@@ -76,6 +77,27 @@ for old, new in [
 main.write_text(source)
 
 
+def parallel_swift():
+    """让 1401 的整模块优化编译并行跑。
+
+    build.sh 用一次 `swiftc -O <17 个文件>` 编完整个 app，默认是单线程 IRGen，
+    在 4 核 runner 上实测占掉这一步 135 秒里的绝大部分。加 -num-threads N 后
+    swiftc 会并行生成 IR，产物字节数不变（本机对同一份源码两种方式编出来都是
+    14696 字节）。改的是克隆下来的副本，上游仓库不动。
+    """
+    script = app / "mac/build.sh"
+    text = script.read_text()
+    if "-num-threads" in text:
+        return
+    threads = os.cpu_count() or 2
+    patched = text.replace("xcrun swiftc -O ", f"xcrun swiftc -O -num-threads {threads} ")
+    if patched == text:
+        print("note: build.sh 里没有预期的 `xcrun swiftc -O` 调用，跳过 -num-threads")
+        return
+    script.write_text(patched)
+    print(f"note: 1401 用 -num-threads {threads} 并行编译")
+
+
 def bash_for_build():
     """1401's mac/build.sh needs bash >= 4.4.
 
@@ -104,6 +126,7 @@ def bash_for_build():
     )
 
 
+parallel_swift()
 subprocess.run([bash_for_build(), "mac/build.sh", str(root / "app-build")], cwd=app, check=True)
 old_bundle = root / "app-build/1401.app"
 bundle = old_bundle.with_name("1401-BAR-Preflight-Test.app")

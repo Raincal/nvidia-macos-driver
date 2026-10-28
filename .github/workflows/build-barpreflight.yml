@@ -163,6 +163,13 @@ jobs:
           cd src
           python3 ci/build-macos-kexts.py --vendor .deps/open-gpu-kernel-modules --output build-out --jobs 4
 
+      - name: Restore the stock package
+        if: github.event_name == 'schedule' || inputs.package
+        uses: actions/cache@v4
+        with:
+          path: src/build-out/stock-*.tar.gz
+          key: stock-${{ needs.check.outputs.tag }}
+
       - name: Package — replace only NVRM in the official package
         if: github.event_name == 'schedule' || inputs.package
         run: |
@@ -175,11 +182,23 @@ jobs:
           echo "stock: $PKG_URL  sha=$SHA"
           python3 ci/package-experiment.py --output build-out --tag "$TAG" --stock-url "$PKG_URL" --stock-sha "$SHA"
 
+      - name: Restore the 1401 checkout
+        if: github.event_name == 'schedule' || inputs.package
+        uses: actions/cache@v4
+        with:
+          path: src/.deps/1401
+          key: 1401-${{ needs.check.outputs.tag }}-${{ hashFiles('ci/1401-pins.json') }}
+
       - name: Build the paired offline 1401 App
         if: github.event_name == 'schedule' || inputs.package
         run: |
           cd src
-          git clone --depth 1 --branch "$TAG" https://github.com/nullmoth/1401 .deps/1401
+          # 克隆本身要 78 秒（纯网络），缓存命中时跳过；commit 由下面的脚本校验
+          if [ -d .deps/1401/.git ]; then
+            echo "using the cached 1401 checkout"
+          else
+            git clone --depth 1 --branch "$TAG" https://github.com/nullmoth/1401 .deps/1401
+          fi
           python3 ci/package-test-app.py --tag "$TAG"
 
       - uses: actions/upload-artifact@v4
