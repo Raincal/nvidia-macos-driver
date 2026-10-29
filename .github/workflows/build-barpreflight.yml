@@ -34,6 +34,7 @@ jobs:
       tag: ${{ steps.c.outputs.tag }}
       ver: ${{ steps.c.outputs.ver }}
       build: ${{ steps.c.outputs.build }}
+      rev: ${{ steps.c.outputs.rev }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -94,6 +95,15 @@ jobs:
           out("tag", tag)
           out("ver", tag.lstrip("v"))
           out("build", "true" if build else "false")
+
+          # 构建序号按版本从 1 开始：取该版本已有产物的最大序号 + 1
+          import re
+          names = subprocess.check_output(
+              ["gh", "api", "--paginate", "repos/{owner}/{repo}/actions/artifacts?per_page=100",
+               "-q", ".artifacts[].name"], text=True).split()
+          pat = re.compile(rf"^nullmoth-{re.escape(tag.lstrip('v'))}-bar-preflight-(\d+)$")
+          revs = [int(m.group(1)) for m in map(pat.match, names) if m]
+          out("rev", max(revs, default=0) + 1)
           PY
 
   build:
@@ -206,7 +216,7 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: nullmoth-${{ env.VER }}-bar-preflight-${{ github.run_number }}
+          name: nullmoth-${{ env.VER }}-bar-preflight-${{ needs.check.outputs.rev }}
           path: |
             src/build-out/nullmoth-*.tar.gz
             src/build-out/1401-*.zip
@@ -221,7 +231,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
-          name: logs-${{ env.VER }}-${{ github.run_number }}
+          name: logs-${{ env.VER }}-${{ needs.check.outputs.rev }}
           path: src/build-out/logs/
           if-no-files-found: ignore
           retention-days: 7
