@@ -219,11 +219,17 @@ jobs:
           name: nullmoth-${{ env.VER }}-bar-preflight-${{ needs.check.outputs.rev }}
           path: |
             src/build-out/nullmoth-*.tar.gz
-            src/build-out/1401-*.zip
             src/build-out/SHA256SUMS.txt
             src/build-out/build-proof.json
             src/build-out/installer-proof.json
             src/build-out/kexts/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: 1401-app-${{ env.VER }}-bar-preflight-${{ needs.check.outputs.rev }}
+          path: src/build-out/1401-*.zip
           if-no-files-found: warn
           retention-days: 30
 
